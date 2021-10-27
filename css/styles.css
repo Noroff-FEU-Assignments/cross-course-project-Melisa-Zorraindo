@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #dce7f3;
+  /*position: fixed;*/
+}
+.header-icons {
+  margin-top: 20px;
+  padding: 10px;
+  min-width: 60px;
+  display: flex;
+  justify-content: space-between;
+  color: #0a3641;
+}
+.logo {
+  width: 90px;
+  margin-top: 5px;
+}
+
+body {
+  margin: 0px;
+}
