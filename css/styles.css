@@ -1,19 +1,9 @@
 /* --------------- Global styles --------------- */
 
 header {
-  display: flex;
-  justify-content: space-around;
   background-color: #dce7f3;
-  /*position: fixed;*/
 }
-.header-icons {
-  margin-top: 20px;
-  padding: 10px;
-  min-width: 60px;
-  display: flex;
-  justify-content: space-between;
-  color: #0a3641;
-}
+
 .logo {
   width: 90px;
   margin-top: 5px;
@@ -24,12 +14,14 @@ body {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 16px;
   text-align: center;
+  color: #fff;
 }
 
 h1,
 h2 {
   font-family: "Alegreya", serif;
   font-size: 36px;
+  color: #fff;
 }
 
 .button {
@@ -47,11 +39,8 @@ h2 {
 ul {
   list-style-type: none;
   display: flex;
-}
-
-.navbar {
-  justify-content: space-between;
   background-color: #0a3641;
+  position: sticky;
 }
 
 .navbar a {
@@ -61,11 +50,41 @@ ul {
   display: block;
   font-weight: 400;
 }
-/*ul .navbar {
-  padding: 15px;
-  text-align: center;
+
+.navbar i {
+  display: block;
 }
 
-.navbar a {
-  color: #fff;
-}*/
+/* --------------- Home page --------------- */
+
+.main {
+  background-image: url(../images/homepage/main-picture.jpg);
+  min-height: 700px;
+  background-size: cover;
+  background-position: center right;
+  padding-top: 20px;
+}
+
+.women {
+  background-image: url(../images/homepage/women-jackets\ copy.jpg);
+  min-height: 350px;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 40px;
+}
+
+.men {
+  background-image: url(../images/homepage/men-jackets.jpg);
+  min-height: 350px;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 40px;
+}
+
+.about {
+  background-image: url(../images/homepage/about-us\ copy.jpg);
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+}
