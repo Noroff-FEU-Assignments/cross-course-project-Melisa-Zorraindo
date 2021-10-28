@@ -2,6 +2,8 @@
 
 header {
   background-color: #dce7f3;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
@@ -35,17 +37,27 @@ h2 {
   font-weight: 700;
   font-size: 22px;
 }
+nav {
+  padding: 0px;
+  margin: 0px;
+  min-height: 55px;
+}
 
 ul {
   list-style-type: none;
   display: flex;
+  justify-content: space-around;
   background-color: #0a3641;
   position: sticky;
+  padding-left: 0px;
 }
 
+li {
+  padding: 10px;
+}
 .navbar a {
   color: #fff;
-  padding: 20px;
+  /*padding: 20px;*/
   text-decoration: none;
   display: block;
   font-weight: 400;
@@ -56,18 +68,39 @@ ul {
 }
 
 /* --------------- Home page --------------- */
+.content {
+  /*min-height: 40vh;*/
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 40px;
+}
 
+.content h1,
+.content h2,
+.content p {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.content h1,
+.content h2 {
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+.content p {
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
 .main {
   background-image: url(../images/homepage/main-picture.jpg);
-  min-height: 700px;
-  background-size: cover;
+  min-height: 100vh;
   background-position: center right;
   padding-top: 20px;
 }
 
 .women {
-  background-image: url(../images/homepage/women-jackets\ copy.jpg);
-  min-height: 350px;
+  background-image: url(../images/homepage/women-jackets.jpg);
+  min-height: 40vh;
   background-size: cover;
   background-position: bottom;
   padding-top: 40px;
@@ -75,16 +108,14 @@ ul {
 
 .men {
   background-image: url(../images/homepage/men-jackets.jpg);
-  min-height: 350px;
+  min-height: 40vh;
   background-size: cover;
   background-position: bottom;
   padding-top: 40px;
 }
 
 .about {
-  background-image: url(../images/homepage/about-us\ copy.jpg);
-  min-height: 350px;
-  background-size: cover;
+  background-image: url(../images/homepage/about-us.jpg);
   background-position: center;
-  padding-top: 40px;
+  min-height: 50vh;
 }
