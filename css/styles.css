@@ -40,7 +40,9 @@ h2 {
 nav {
   padding: 0px;
   margin: 0px;
-  min-height: 55px;
+  min-height: 5vh;
+  position: fixed;
+  min-width: 100%;
 }
 
 ul {
@@ -99,6 +101,9 @@ li {
   padding-top: 20px;
 }
 
+.main div {
+  margin-top: 40px;
+}
 .women {
   background-image: url(../images/homepage/women-jackets.jpg);
   min-height: 40vh;
