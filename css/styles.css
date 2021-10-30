@@ -38,20 +38,18 @@ h2 {
   font-weight: 700;
   /*font-size: 22px;*/
 }
-nav {
-  /*min-height: 5vh;*/
+/*nav {
   position: fixed;
   min-width: 100%;
   bottom: 0px;
   z-index: 10;
-}
+}*/
 
 ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   background-color: #0a3641;
-  position: sticky;
   padding-left: 0px;
   margin: 0px;
 }
@@ -59,6 +57,46 @@ ul {
 li {
   padding: 10px;
 }
+.navbar-desktop {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.navbar-desktop ul {
+  background-image: linear-gradient(#757c82, #dce7f3);
+  flex: auto;
+}
+.links {
+  align-items: center;
+  justify-content: flex-end;
+}
+.links li a {
+  color: #0a3641;
+}
+
+.margin {
+  margin-right: 15px;
+}
+
+.navbar-desktop a {
+  color: #fff;
+  text-decoration: none;
+  font-variant: small-caps;
+}
+
+.navbar-desktop li {
+  padding: 5px;
+}
+.navbar {
+  position: fixed;
+  min-width: 100%;
+  bottom: 0px;
+  z-index: 10;
+}
+
 .navbar a {
   color: #fff;
   /*padding: 20px;*/
@@ -71,6 +109,58 @@ li {
   display: block;
 }
 
+footer {
+  z-index: 10;
+  display: inline-flex;
+  justify-content: space-around;
+  min-width: 100%;
+  background-image: linear-gradient(#0a3641, #00151b);
+}
+
+.footer-info {
+  display: block;
+  background-image: linear-gradient(#0a3641, #00151b);
+  color: #fff;
+}
+
+.footer-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-info li {
+  color: #fff;
+  list-style-type: none;
+}
+
+.footer-info p {
+  text-align: right;
+  margin-top: 0px;
+  margin-right: 20px;
+}
+
+.contact {
+  text-align: left;
+}
+
+.contact li:first-child {
+  padding-top: 0px;
+  /*font-variant: small-caps;*/
+}
+
+.social-media {
+  margin-right: 10px;
+}
+.social-media-icons {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.social-media-icons li {
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: flex-end;
+}
 /* --------------- Home page --------------- */
 .content {
   display: flex;
@@ -105,7 +195,6 @@ li {
   background-size: cover;
   background-position: center right;
   padding-top: 40px;
-  position: relative;
 }
 
 .text {
@@ -160,3 +249,5 @@ li {
   min-height: 50vh;
   padding-top: 40px;
 }
+
+/* --------------- Media queries --------------- */
