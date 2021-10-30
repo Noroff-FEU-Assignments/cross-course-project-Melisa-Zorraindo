@@ -4,6 +4,7 @@ header {
   background-image: linear-gradient(#757c82, #dce7f3);
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 .logo {
@@ -38,11 +39,11 @@ h2 {
   /*font-size: 22px;*/
 }
 nav {
-  padding: 0px;
-  margin: 0px;
-  min-height: 5vh;
+  /*min-height: 5vh;*/
   position: fixed;
   min-width: 100%;
+  bottom: 0px;
+  z-index: 10;
 }
 
 ul {
@@ -72,9 +73,10 @@ li {
 
 /* --------------- Home page --------------- */
 .content {
-  /*min-height: 40vh;*/
-  background-size: cover;
-  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 9;
 }
 
 .content h1,
@@ -82,6 +84,9 @@ li {
 .content p {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 .content h1,
@@ -93,11 +98,41 @@ li {
   margin-top: 0px;
   padding-bottom: 10px;
 }
+
 .main {
   background-image: url(../images/homepage/main-picture.jpg);
-  min-height: 90vh;
+  min-height: 100vh;
+  background-size: cover;
   background-position: center right;
-  padding-top: 20px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  /*padding: 20px;
+  text-align: center;*/
+}
+
+.textwomen {
+  position: absolute;
+  top: 25%;
+  /*padding: 20px;
+  text-align: center;*/
+}
+
+.textmen {
+  position: absolute;
+  top: 75%;
+  /*padding: 20px;
+  text-align: center;*/
+}
+.textabout {
+  position: absolute;
+  top: 25%;
+  /*padding: 20px;
+  text-align: center;*/
 }
 
 .main div {
@@ -105,7 +140,7 @@ li {
 }
 .women {
   background-image: url(../images/homepage/women-jackets.jpg);
-  min-height: 40vh;
+  min-height: 50vh;
   background-size: cover;
   background-position: bottom;
   padding-top: 40px;
@@ -113,7 +148,7 @@ li {
 
 .men {
   background-image: url(../images/homepage/men-jackets.jpg);
-  min-height: 40vh;
+  min-height: 50vh;
   background-size: cover;
   background-position: bottom;
   padding-top: 40px;
