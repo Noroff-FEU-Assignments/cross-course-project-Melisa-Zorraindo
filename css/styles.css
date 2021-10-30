@@ -64,7 +64,9 @@ li {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  display: none;
 }
+
 .navbar-desktop ul {
   background-image: linear-gradient(#757c82, #dce7f3);
   flex: auto;
@@ -115,6 +117,7 @@ footer {
   justify-content: space-around;
   min-width: 100%;
   background-image: linear-gradient(#0a3641, #00151b);
+  display: none;
 }
 
 .footer-info {
@@ -161,6 +164,7 @@ footer {
   padding-right: 20px;
   justify-content: flex-end;
 }
+
 /* --------------- Home page --------------- */
 .content {
   display: flex;
@@ -251,3 +255,84 @@ footer {
 }
 
 /* --------------- Media queries --------------- */
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  footer {
+    display: flex;
+  }
+
+  header {
+    display: none;
+  }
+  .navbar-desktop {
+    display: flex;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main {
+    float: left;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .women {
+    float: left;
+    width: 50%;
+    background-position: center;
+  }
+
+  .men {
+    float: right;
+    width: 50%;
+  }
+
+  .about {
+    float: left;
+    width: 100%;
+  }
+
+  .content h1,
+  .content h2,
+  .content p {
+    width: 100%;
+    margin-left: 40%;
+    text-align: left;
+    float: left;
+    padding-left: 10px;
+  }
+
+  .text,
+  .textabout {
+    max-width: 40%;
+  }
+  .textwomen,
+  .textmen,
+  .textabout {
+    top: 50%;
+  }
+
+  .textwomen {
+    max-width: 35%;
+  }
+
+  .textwomen h2,
+  .textwomen p {
+    text-align: right;
+  }
+
+  .textmen {
+    max-width: 35%;
+  }
+
+  .textmen h2,
+  .textmen p {
+    text-align: left;
+  }
+}
