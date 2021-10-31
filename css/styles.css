@@ -15,7 +15,7 @@ header {
 body {
   margin: 0px;
   font-family: "Alegreya Sans", sans-serif;
-  /*font-size: 16px;*/
+  font-size: 16px;
   text-align: center;
   color: #fff;
 }
@@ -23,7 +23,7 @@ body {
 h1,
 h2 {
   font-family: "Alegreya", serif;
-  /*font-size: 36px;*/
+  font-size: 36px;
   color: #fff;
 }
 
@@ -36,14 +36,8 @@ h2 {
   font-variant-caps: all-small-caps;
   text-decoration: none;
   font-weight: 700;
-  /*font-size: 22px;*/
+  font-size: 22px;
 }
-/*nav {
-  position: fixed;
-  min-width: 100%;
-  bottom: 0px;
-  z-index: 10;
-}*/
 
 ul {
   list-style-type: none;
@@ -99,9 +93,12 @@ li {
   z-index: 10;
 }
 
+.navbar ul {
+  background-image: linear-gradient(#0a3641, #07262d);
+}
+
 .navbar a {
   color: #fff;
-  /*padding: 20px;*/
   text-decoration: none;
   display: block;
   font-weight: 400;
@@ -148,7 +145,6 @@ footer {
 
 .contact li:first-child {
   padding-top: 0px;
-  /*font-variant: small-caps;*/
 }
 
 .social-media {
@@ -257,6 +253,9 @@ footer {
 /* --------------- Media queries --------------- */
 
 @media only screen and (min-width: 600px) {
+  body {
+    font-size: 22px;
+  }
   .navbar {
     display: none;
   }
@@ -311,15 +310,19 @@ footer {
   .text,
   .textabout {
     max-width: 40%;
+    left: 40%;
   }
+
   .textwomen,
   .textmen,
   .textabout {
-    top: 50%;
+    top: 25%;
   }
 
   .textwomen {
     max-width: 35%;
+    right: 70%;
+    left: 0px;
   }
 
   .textwomen h2,
