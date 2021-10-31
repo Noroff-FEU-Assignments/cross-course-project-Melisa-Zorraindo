@@ -237,7 +237,7 @@ footer {
 
 /* --------------- Media queries --------------- */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 690px) {
   body {
     font-size: 22px;
   }
@@ -263,65 +263,24 @@ footer {
     flex-direction: row;
   }
 
-  .main {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .women {
-    width: 50%;
-    background-position: center;
-  }
-
-  .men {
-    width: 50%;
-  }
-
+  .main,
   .about {
     width: 100%;
   }
 
-  .content h1,
-  .content h2,
-  .content p {
-    width: 100%;
-    margin-left: 40%;
-    text-align: left;
-    padding-left: 10px;
-  }
-
-  .text,
-  .textabout {
-    max-width: 40%;
-    left: 40%;
+  .women,
+  .men {
+    width: 50%;
+    background-position: center;
   }
 
   .textwomen,
   .textmen {
-    top: 25%;
+    top: 50%;
+    max-width: 50%;
+    text-align: center;
   }
 
-  .textwomen {
-    max-width: 35%;
-    right: 70%;
-    left: 0px;
-  }
-
-  .textwomen h2,
-  .textwomen p {
-    text-align: right;
-  }
-
-  .textmen {
-    max-width: 35%;
-  }
-  .textabout {
-    top: 15%;
-  }
-  .textmen h2,
-  .textmen p {
-    text-align: left;
-  }
   .contact i {
     padding-right: 15px;
   }
@@ -337,5 +296,26 @@ footer {
   .social-media-icons li {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .content h1,
+  .content h2,
+  .content p {
+    width: 100%;
+    margin-left: 40%;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .text,
+  .textabout {
+    max-width: 40%;
+    left: 40%;
+  }
+
+  .textabout {
+    top: 15%;
   }
 }
