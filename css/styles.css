@@ -110,10 +110,9 @@ li {
 
 footer {
   z-index: 10;
-  display: inline-flex;
-  justify-content: space-around;
-  min-width: 100%;
-  background-image: linear-gradient(#0a3641, #00151b);
+  /*display: inline-flex;
+  justify-content: space-around;*/
+
   display: none;
 }
 
@@ -145,20 +144,6 @@ footer {
 
 .contact li:first-child {
   padding-top: 0px;
-}
-
-.social-media {
-  margin-right: 10px;
-}
-.social-media-icons {
-  display: inline-flex;
-  justify-content: flex-end;
-}
-
-.social-media-icons li {
-  padding-left: 20px;
-  padding-right: 20px;
-  justify-content: flex-end;
 }
 
 /* --------------- Home page --------------- */
@@ -260,7 +245,10 @@ footer {
     display: none;
   }
   footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 100%;
+    background-image: linear-gradient(#0a3641, #00151b);
   }
 
   header {
@@ -276,24 +264,20 @@ footer {
   }
 
   .main {
-    float: left;
     width: 100%;
     padding: 10px;
   }
 
   .women {
-    float: left;
     width: 50%;
     background-position: center;
   }
 
   .men {
-    float: right;
     width: 50%;
   }
 
   .about {
-    float: left;
     width: 100%;
   }
 
@@ -303,7 +287,6 @@ footer {
     width: 100%;
     margin-left: 40%;
     text-align: left;
-    float: left;
     padding-left: 10px;
   }
 
@@ -314,8 +297,7 @@ footer {
   }
 
   .textwomen,
-  .textmen,
-  .textabout {
+  .textmen {
     top: 25%;
   }
 
@@ -333,9 +315,27 @@ footer {
   .textmen {
     max-width: 35%;
   }
-
+  .textabout {
+    top: 15%;
+  }
   .textmen h2,
   .textmen p {
     text-align: left;
+  }
+  .contact i {
+    padding-right: 15px;
+  }
+  .social-media {
+    margin-right: 10px;
+  }
+  .social-media-icons {
+    display: inline-flex;
+    justify-content: flex-end;
+    min-width: 100%;
+  }
+
+  .social-media-icons li {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
