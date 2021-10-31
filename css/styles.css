@@ -276,7 +276,7 @@ footer {
 
   .textwomen,
   .textmen {
-    top: 50%;
+    top: 25%;
     max-width: 50%;
     text-align: center;
   }
