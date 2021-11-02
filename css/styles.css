@@ -43,7 +43,6 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  background-color: #0a3641;
   padding-left: 0px;
   margin: 0px;
 }
@@ -237,7 +236,7 @@ footer {
 
 /* --------------- Media queries --------------- */
 
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 695px) {
   body {
     font-size: 22px;
   }
