@@ -252,9 +252,17 @@ footer {
   .contact i {
     padding-right: 15px;
   }
+
+  .about-footer {
+    text-align: center;
+  }
+
   .social-media {
     margin-right: 10px;
+    text-align: right;
+    text-decoration: none;
   }
+
   .social-media-icons {
     display: inline-flex;
     justify-content: flex-end;
