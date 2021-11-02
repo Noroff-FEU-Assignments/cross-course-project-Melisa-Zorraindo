@@ -101,13 +101,15 @@ li {
   color: #fff;
   text-decoration: none;
   display: block;
-  font-weight: 400;
 }
 
 .navbar i {
   display: block;
 }
 
+.active {
+  font-weight: 700;
+}
 footer {
   z-index: 10;
   /*display: inline-flex;
@@ -206,7 +208,7 @@ footer {
 
 /* --------------- Media queries --------------- */
 
-@media only screen and (min-width: 695px) {
+@media only screen and (min-width: 724px) {
   body {
     font-size: 22px;
   }
