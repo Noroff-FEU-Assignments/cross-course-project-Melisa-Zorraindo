@@ -1,0 +1,83 @@
+h1,
+h2 {
+  font-family: "Alegreya", serif;
+  font-size: 36px;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 9;
+}
+
+.content h1,
+.content h2,
+.content p {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.content h1,
+.content h2 {
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+.content p {
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+.main {
+  background-image: url(../images/homepage/main-picture.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center right;
+  padding-top: 40px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+}
+
+.textwomen,
+.textabout {
+  position: absolute;
+  top: 25%;
+}
+
+.textmen {
+  position: absolute;
+  top: 75%;
+}
+
+.main div {
+  margin-top: 40px;
+}
+
+.women {
+  background-image: url(../images/homepage/women-jackets.jpg);
+}
+
+.men {
+  background-image: url(../images/homepage/men-jackets.jpg);
+}
+
+.women,
+.men {
+  min-height: 50vh;
+  background-size: cover;
+  padding-top: 40px;
+}
+
+.about {
+  background-image: url(../images/homepage/about-us.jpg);
+  background-position: center;
+  min-height: 50vh;
+  padding-top: 40px;
+}
