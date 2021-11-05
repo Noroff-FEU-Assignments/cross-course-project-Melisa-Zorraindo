@@ -3,6 +3,13 @@ h2 {
   font-family: "Alegreya", serif;
   font-size: 36px;
   color: #fff;
+  margin: 0px;
+  font-style: normal;
+}
+
+body {
+  color: #fff;
+  text-align: center;
 }
 
 .content {
@@ -20,6 +27,7 @@ h2 {
   display: inline-block;
   width: 100%;
   text-align: center;
+  margin: 0px;
 }
 
 .content h1,
