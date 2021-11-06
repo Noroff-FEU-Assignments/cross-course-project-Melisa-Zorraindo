@@ -2,6 +2,11 @@
   margin: 10px;
 }
 
+.items i {
+  font-size: 1.7rem;
+  padding-left: 10px;
+  margin-top: 0px;
+}
 .jacket-image {
   max-width: 40%;
   border: var(--dark-blue);
@@ -16,18 +21,19 @@
   overflow-wrap: break-word;
 }
 
-.jacket-info p,
-.jacket-info i {
-  margin-top: 0px;
+.jacket-name {
+  text-transform: uppercase;
+  margin: 0px 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
-.jacket-info i {
-  margin: 5px;
-  font-size: 1.5rem;
+.jacket-description {
+  margin: 0px 10px;
 }
 
-.jacket-highlights {
+.jacket-price {
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }

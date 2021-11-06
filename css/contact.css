@@ -1,0 +1,41 @@
+.get-in-touch a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  margin-top: 5px;
+}
+.get-in-touch i {
+  padding-right: 5px;
+  margin-top: 5px;
+}
+.get-in-touch .links-in-text {
+  color: var(--green);
+  text-decoration: underline;
+  font-weight: 700;
+}
+fieldset {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 300px;
+  border: var(--dark-blue);
+  border-style: solid;
+}
+fieldset p {
+  display: inline-flex;
+  margin: 0px;
+  padding-left: 10px;
+}
+.image-wrapper {
+  max-width: 300px;
+  border: var(--dark-blue);
+  border-style: solid;
+  margin: 10px;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.map-image {
+  max-width: 100%;
+  margin-bottom: -5px;
+}

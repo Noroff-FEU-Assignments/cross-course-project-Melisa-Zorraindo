@@ -35,6 +35,8 @@ h2 {
   font-family: "Alegreya", serif;
   font-weight: 400;
   color: var(--dark-blue);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 h1 {
@@ -42,8 +44,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.62rem;
+  font-size: 2rem;
   font-style: italic;
+  margin-top: 15px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 10px;
 }
 
 body {
@@ -55,8 +64,9 @@ body {
   text-align: left;
   color: var(--dark-blue);
 }
+
 p {
-  margin-left: 5px;
+  margin: 0px 10px;
 }
 
 /* --------------- Breadcrumbs --------------- */
@@ -66,12 +76,14 @@ p {
   padding-top: 65px;
   text-transform: capitalize;
   align-items: center;
+  margin-left: 10px;
 }
 
 .breadcrumbs a,
 .breadcrumbs i,
 .breadcrumbs p {
-  padding: 10px 5px;
+  padding: 5px;
+  margin-left: 0px;
 }
 
 .breadcrumbs-previous {
