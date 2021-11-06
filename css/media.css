@@ -1,10 +1,13 @@
 @media only screen and (min-width: 724px) {
-  body {
-    font-size: 22px;
-  }
-  .navbar {
+  /* --------------- Header, Footer & Body --------------- */
+  header {
     display: none;
   }
+
+  body {
+    font-size: 1.37rem;
+  }
+
   footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -23,12 +26,12 @@
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-decoration: underline;
   }
 
   .footer-info a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
   }
 
@@ -53,7 +56,7 @@
     margin-right: 10px;
     text-align: right;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
   }
 
   .social-media-icons {
@@ -66,13 +69,15 @@
     padding: 0px 15px;
   }
 
-  header {
+  /* --------------- Navbars mobile & desktop --------------- */
+  .navbar-mobile-bottom {
     display: none;
   }
   .navbar-desktop {
     display: flex;
   }
 
+  /* --------------- Home page --------------- */
   .content {
     display: flex;
     flex-direction: row;
@@ -98,6 +103,7 @@
 }
 
 @media only screen and (min-width: 950px) {
+  /* --------------- Home page --------------- */
   .content h1,
   .content h2,
   .content p {
