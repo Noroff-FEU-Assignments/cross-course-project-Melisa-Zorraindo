@@ -1,0 +1,36 @@
+.items {
+  margin: 10px;
+}
+
+.jacket-image {
+  max-width: 40%;
+  border: var(--dark-blue);
+  border-style: solid;
+  align-items: left;
+}
+
+.jacket-info {
+  float: right;
+  min-width: 55%;
+  inline-size: 178px;
+  overflow-wrap: break-word;
+}
+
+.jacket-info p,
+.jacket-info i {
+  margin-top: 0px;
+}
+
+.jacket-info i {
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
+.jacket-highlights {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.last-item {
+  margin-bottom: 75px;
+}
