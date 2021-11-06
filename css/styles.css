@@ -47,7 +47,9 @@ h2 {
 }
 
 body {
+  background-image: linear-gradient(#dce7f3 80%, #757c82);
   margin: 0px;
+  margin-bottom: 75px;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 1rem;
   text-align: left;
@@ -76,6 +78,14 @@ p {
   color: var(--green);
   font-weight: 700;
   text-decoration: underline;
+}
+
+/* --------------- Links --------------- */
+
+.links-in-text {
+  color: var(--green);
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 /* --------------- Buttons --------------- */
