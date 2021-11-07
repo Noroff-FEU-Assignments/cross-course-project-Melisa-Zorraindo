@@ -26,6 +26,8 @@
   margin: 0px 10px;
   font-size: 1.4rem;
   font-weight: 700;
+  text-decoration: none;
+  color: var(--dark-blue);
 }
 
 .jacket-description {
