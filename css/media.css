@@ -70,11 +70,29 @@
   }
 
   /* --------------- Navbars mobile & desktop --------------- */
-  .navbar-mobile-bottom {
+  /*.navbar-mobile-bottom {
     display: none;
   }
   .navbar-desktop {
     display: flex;
+  }*/
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation-menu-links {
+    display: flex;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  .navigation-menu-links a {
+    text-decoration: none;
+    padding: 5px;
+  }
+  .logo {
+    margin-left: 20px;
+    width: 120px;
   }
 
   /* --------------- Home page --------------- */

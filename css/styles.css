@@ -155,7 +155,11 @@ li {
 
 /* --------------- Navbar desktop --------------- */
 
-.navbar-desktop {
+.navigation-menu-links {
+  display: none;
+}
+
+/*.navbar-desktop {
   position: fixed;
   top: 0px;
   z-index: 10;
