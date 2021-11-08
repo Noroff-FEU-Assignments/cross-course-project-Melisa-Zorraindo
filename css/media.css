@@ -70,10 +70,10 @@
   }
 
   /* --------------- Navbars mobile & desktop --------------- */
-  /*.navbar-mobile-bottom {
+  .navbar-mobile-bottom {
     display: none;
   }
-  .navbar-desktop {
+  /*.navbar-desktop {
     display: flex;
   }*/
   header {
