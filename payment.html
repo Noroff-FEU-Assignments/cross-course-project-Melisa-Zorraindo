@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Payment" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainy Days | Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,400;0,500;0,700;1,400&family=Alegreya:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/payment.css" rel="stylesheet" />
+    <link href="/css/media.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/9aef28119c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="navigation-menu">
+        <a href="index.html"
+          ><img
+            alt="Rainy days logo"
+            src="/images/RainyDays_Logo.png"
+            class="logo"
+        /></a>
+      </div>
+      <nav class="navigation-menu-links">
+        <ul class="links">
+          <li class="margin"><a href="womens.html"> shop</a></li>
+          <li class="margin"><a href="about.html"> about us</a></li>
+          <li class="margin"><a href="contact.html">contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="breadcrumbs">
+        <a class="breadcrumbs-previous" href="/index.html">home</a>
+        <i class="fas fa-arrow-right"></i>
+        <a class="breadcrumbs-previous" href="/womens.html">shop</a>
+        <i class="fas fa-arrow-right"></i>
+        <a class="breadcrumbs-previous" href="/womens.html">
+          women's jackets
+        </a>
+        <i class="fas fa-arrow-right"></i>
+        <a class="breadcrumbs-previous" href="/jackets/alaska.html">alaska</a>
+        <i class="fas fa-arrow-right"></i>
+        <p class="breadcrumbs-current">check out</p>
+      </div>
+      <section>
+        <h1>Payment</h1>
+        <h2>Order summary</h2>
+        <h3>alaska</h3>
+        <p>Gore-Tex insulated jacket</p>
+        <img
+          alt="Gore-Tex insulated orange jacket"
+          class="jacket-image"
+          src="/images/jackets/alaska.jpg"
+        />
+        <div class="colour-wrapper">
+          <div class="colour-box">
+            <i class="fas fa-circle orange"></i>
+            <p>Orange</p>
+            <i class="fas fa-circle"></i>
+            <p>Size</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Payment summary</h2>
+        <div class="payment-wrapper">
+          <p>Sub-total</p>
+          <p class="currency">usd 500</p>
+        </div>
+        <div class="payment-wrapper">
+          <p>Shipping</p>
+          <p>Free</p>
+        </div>
+        <p class="estimated-shipping">estimated in three to five days</p>
+        <hr />
+        <div  class="payment-wrapper total">
+          <p>Total</p>
+          <p class="currency">usd 500</p>
+        </div>
+      </section>
+      <section>
+        <h2>Contact information</h2>
+        <form class="form-wrapper">
+          <label for="name">full name</label>
+          <input type="text" name="fullname" />
+          <label for="email">e mail</label>
+          <input type="email" name="email" />
+          <label for="address">address</label>
+          <input type="text" name="address" />
+          <div class="form-wrapper-location">
+              <div class="form-wrapper-specs">
+          <label for="city">city</label>
+          <input type="text" name="city" />
+        </div>
+        <div class="form-wrapper-specs">
+          <label for="postcode">post code</label>
+          <input type="text" name="postcode" />
+        </div>
+        </div>
+          <label for="country">country</label>
+          <input type="text" name="country" />
+          <div>
+            <input
+              type="checkbox"
+              name="billing-address"
+              id="billing-address"
+            /><label for="billing-address">This is my billing address</label>
+          </div>
+        </form>
+      </section>
+      <section>
+        <h2>Payment information</h2>
+        <p>Choose payment method below</p>
+        <div class="payment-method">
+        <i class="far fa-credit-card"></i>
+        <i class="fab fa-cc-paypal"></i>
+    </div>
+        <form class="form-wrapper">
+          <label for="cardholder-name">cardholder's name</label>
+          <input type="text" name="cardholder-name" />
+          <div >
+          <label for="card-numer">card number</label>
+          <input type="text" name="card-numer" />
+          <i class="fab fa-cc-visa"></i>
+        </div>
+          <label for="expire-date">expire date</label>
+          <input type="date" name="expire-date" />
+          <label for="cvv">cvv</label>
+          <input type="text" name="cvv" />
+        </form>
+      </section>
+      <div class="cta-check-out">
+      <a class="cta" href="#">check out</a>
+    </div>
+      <nav class="navbar-mobile-bottom">
+        <ul>
+          <li>
+            <a href="index.html"> <i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a class="active" href="womens.html">
+              <i class="fab fa-shopify"></i>Shop</a
+            >
+          </li>
+          <li>
+            <a href="about.html"> <i class="fas fa-info-circle"></i>About us</a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <i class="fas fa-comment-alt"></i>Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </main>
+    <footer>
+        <section class="footer-info contact">
+          <h4><a href="contact.html">contact us</a></h4>
+          <ul>
+            <li>
+              <a href="#"> <i class="fas fa-envelope"></i>info@rainydays.com</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fas fa-phone-alt"></i>+01 256 88 896</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fas fa-map-marker-alt"></i>Find a store</a>
+            </li>
+          </ul>
+          <h5><a href="#">faq</a></h5>
+        </section>
+        <section class="footer-info">
+          <h4 class="about-footer"><a href="about.html">about us</a></h4> 
+        </section>
+        <section class="footer-info">
+          <h4 class="social-media">social media</h4>
+          <div> 
+            <ul class="social-media-icons">
+              <li>
+                <a href="#"> <i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"> <i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"> <i class="fab fa-facebook-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        </div>
+      </footer>
+  </body>
+</html>
