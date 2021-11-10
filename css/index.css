@@ -10,8 +10,11 @@ h2 {
 body {
   color: #fff;
   text-align: center;
+  margin-bottom: 0px;
 }
-
+main {
+  margin-bottom: 0px;
+}
 .content {
   display: flex;
   flex-direction: column;

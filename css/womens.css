@@ -1,5 +1,6 @@
 .items {
   margin: 10px;
+  display: flex;
 }
 
 .items i {
@@ -8,15 +9,14 @@
   margin-top: 0px;
 }
 .jacket-image {
-  max-width: 40%;
+  max-width: 200px;
   border: var(--dark-blue);
   border-style: solid;
   align-items: left;
 }
 
 .jacket-info {
-  float: right;
-  min-width: 55%;
+  max-width: 200px;
   inline-size: 178px;
   overflow-wrap: break-word;
 }

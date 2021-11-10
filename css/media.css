@@ -8,6 +8,11 @@
     font-size: 1.37rem;
   }
 
+  .breadcrumbs a,
+  .breadcrumbs i,
+  .breadcrumbs p {
+    margin-top: 20px;
+  }
   footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

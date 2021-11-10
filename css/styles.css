@@ -59,11 +59,14 @@ h3 {
 body {
   background-image: linear-gradient(#dce7f3 80%, #757c82);
   margin: 0px;
-  margin-bottom: 75px;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 1rem;
   text-align: left;
   color: var(--dark-blue);
+}
+
+main {
+  margin-bottom: 75px;
 }
 
 p {
@@ -159,42 +162,6 @@ li {
 .navigation-menu-links {
   display: none;
 }
-
-/*.navbar-desktop {
-  position: fixed;
-  top: 0px;
-  z-index: 10;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  display: none;
-}
-
-.navbar-desktop ul {
-  background-image: linear-gradient(#757c82, #dce7f3);
-  flex: auto;
-}
-.navbar-desktop li {
-  padding: 5px;
-}
-.navbar-desktop a {
-  color: var(--white);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-
-.links {
-  align-items: center;
-  justify-content: flex-end;
-}
-.links li a {
-  color: var(--dark-blue);
-}
-
-/*.margin {
-  margin-right: 15px;
-}*/
 
 .active {
   font-weight: 700;
