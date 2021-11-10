@@ -92,6 +92,7 @@
     color: var(--white);
     text-transform: uppercase;
     font-size: 1.5rem;
+    align-items: center;
   }
   .navigation-menu-links a {
     text-decoration: none;
@@ -139,7 +140,7 @@
     display: flex;
     margin-left: 20px;
   }
-  .jacket-image {
+  .product-specific-page-jacket-image {
     max-width: 323px;
   }
 
