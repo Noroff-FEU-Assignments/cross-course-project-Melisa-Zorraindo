@@ -132,6 +132,32 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  /* --------------- Alaska --------------- */
+
+  .product-wrapper {
+    display: flex;
+    margin-left: 20px;
+  }
+  .product-wrapper-info {
+    margin-left: 50px;
+    text-align: left;
+  }
+  .product-wrapper-info .colours h2 {
+    margin-top: 0px;
+    text-align: left;
+  }
+  .colour-wrapper {
+    justify-content: start;
+  }
+  .product-wrapper-info .sizes h2 {
+    text-align: left;
+  }
+  .cta-container,
+  .add-wishlist {
+    text-align: left;
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (min-width: 950px) {
