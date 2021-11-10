@@ -139,6 +139,10 @@
     display: flex;
     margin-left: 20px;
   }
+  .jacket-image {
+    max-width: 323px;
+  }
+
   .product-wrapper-info {
     margin-left: 50px;
     text-align: left;
