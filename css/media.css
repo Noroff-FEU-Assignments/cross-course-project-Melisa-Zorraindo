@@ -145,13 +145,18 @@
   }
   .product-wrapper-info .colours h2 {
     margin-top: 0px;
+    margin-left: 0px;
     text-align: left;
   }
   .colour-wrapper {
     justify-content: start;
   }
   .product-wrapper-info .sizes h2 {
+    margin-left: 0px;
     text-align: left;
+  }
+  .sizes .first-circle {
+    padding-left: 0px;
   }
   .cta-container,
   .add-wishlist {
