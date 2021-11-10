@@ -12,20 +12,19 @@
   text-decoration: underline;
   font-weight: 700;
 }
-fieldset {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  max-width: 300px;
+
+.search-bar {
+  margin: 10px;
+}
+
+.search-field {
+  width: 300px;
+  padding: 10px;
+  text-align: left;
   border: var(--dark-blue);
   border-style: solid;
 }
-fieldset p {
-  display: inline-flex;
-  margin: 0px;
-  padding-left: 10px;
-}
+
 .image-wrapper {
   max-width: 300px;
   border: var(--dark-blue);

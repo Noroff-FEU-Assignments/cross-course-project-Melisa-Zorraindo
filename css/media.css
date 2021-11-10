@@ -7,7 +7,9 @@
   body {
     font-size: 1.37rem;
   }
-
+  main {
+    margin-bottom: 20px;
+  }
   .breadcrumbs a,
   .breadcrumbs i,
   .breadcrumbs p {
@@ -123,6 +125,13 @@
     max-width: 50%;
     text-align: center;
   }
+
+  /* --------------- Women's jackets --------------- */
+
+  .items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 950px) {
@@ -144,5 +153,12 @@
 
   .textabout {
     top: 15%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

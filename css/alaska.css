@@ -5,7 +5,7 @@
   margin: 0px 10px;
 }
 .jacket-image {
-  max-width: 40%;
+  max-width: 200px;
   border: var(--dark-blue);
   border-style: solid;
   align-items: left;
