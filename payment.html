@@ -128,11 +128,13 @@
         <form class="form-wrapper">
           <label for="cardholder-name">cardholder's name</label>
           <input type="text" name="cardholder-name" />
-          <div >
-          <label for="card-numer">card number</label>
-          <input type="text" name="card-numer" />
-          <i class="fab fa-cc-visa"></i>
-        </div>
+          <div class="card-wrapper">
+              <div class="card-wrapper-field">
+                 <label for="card-number">card number</label>
+                <input type="text" name="card-number" />
+            </div>
+                <i class="fab fa-cc-visa"></i>
+          </div>
           <label for="expire-date">expire date</label>
           <input type="date" name="expire-date" />
           <label for="cvv">cvv</label>

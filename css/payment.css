@@ -1,5 +1,7 @@
-.breadcrumbs {
-  display: inline-block;
+.breadcrumbs li {
+  display: block ruby;
+  padding: 0px;
+  flex-wrap: wrap;
 }
 
 h3 {
@@ -51,7 +53,10 @@ hr {
   max-width: 250px;
   margin: 10px;
 }
-
+input {
+  min-height: 20px;
+  margin-bottom: 7px;
+}
 .form-wrapper {
   max-width: 350px;
   display: flex;
@@ -76,4 +81,28 @@ hr {
 
 .cta-check-out {
   margin: 20px 10px;
+}
+
+/*.test {
+  display: flex;
+  flex-direction: row;
+}
+
+.test-two {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.card-wrapper-field {
+  display: grid;
+}
+
+.fa-cc-visa {
+  font-size: 2rem;
+  padding-left: 20px;
 }
