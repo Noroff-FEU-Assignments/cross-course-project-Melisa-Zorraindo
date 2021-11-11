@@ -77,11 +77,19 @@
   color: #cdab3d;
 }
 
-.sizes .fa-circle {
-  padding: 10px;
-  font-size: 1.9rem;
+.size-choices {
+  display: flex;
 }
 
+.size-choices p {
+  background-color: transparent;
+  color: var(--dark-blue);
+  padding: 10px;
+  border-radius: 999px;
+  border: var(--dark-blue);
+  border-style: solid;
+  margin-bottom: 5px;
+}
 .cta-container,
 .add-wishlist {
   text-align: center;
