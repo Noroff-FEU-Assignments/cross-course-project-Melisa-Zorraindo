@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .get-in-touch a {
   text-decoration: none;
   color: var(--dark-blue);
@@ -12,29 +15,37 @@
   text-decoration: underline;
   font-weight: 700;
 }
-
-.search-bar {
+.store-search {
+  display: flex;
+}
+.store-search-info {
+  margin-left: 20px;
+}
+.search-box {
   margin: 10px;
+  max-width: 400px;
+  height: 40px;
+  border: solid var(--dark-blue);
 }
 
-.search-field {
-  width: 300px;
+.search-box input {
   padding: 10px;
-  text-align: left;
-  border: var(--dark-blue);
-  border-style: solid;
+  width: 80%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
 }
 
-.image-wrapper {
-  max-width: 300px;
-  border: var(--dark-blue);
-  border-style: solid;
+.search-box i {
+  padding-left: 10%;
+}
+
+.map-wrapper {
+  max-width: 400px;
+  border: solid var(--dark-blue);
   margin: 10px;
-  padding: 12px;
-  background-color: #fff;
 }
 
-.map-image {
-  max-width: 100%;
-  margin-bottom: -5px;
+.google-map {
+  width: 100%;
 }
