@@ -98,6 +98,10 @@
     text-decoration: none;
     padding: 5px;
   }
+
+  .navigation-menu-links a:hover {
+    text-decoration: overline;
+  }
   .logo {
     margin-left: 20px;
     width: 120px;

@@ -120,6 +120,11 @@ p {
   font-size: 1.37rem;
 }
 
+.cta:hover {
+  padding: 10px 45px;
+  background-color: #ff5e0080;
+}
+
 /* --------------- Navbar Global --------------- */
 
 ul {
