@@ -15,9 +15,6 @@
   text-align: center;
 }
 
-.picture-swipe {
-  text-align: center;
-}
 .jacket-price {
   text-transform: uppercase;
   font-weight: 700;
@@ -41,7 +38,46 @@
 .sizes {
   text-align: center;
 }
+#modalbox {
+  max-width: 340px;
+  border: solid var(--dark-blue);
+  line-height: 40px;
+  text-align: center;
+}
+#modalbox h2 {
+  text-align: center;
+}
 
+.modal {
+  transition: 0.4s;
+  visibility: hidden;
+}
+.modal:target {
+  visibility: visible;
+}
+
+.payment-wrapper {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.currency {
+  text-transform: uppercase;
+}
+.estimated-shipping {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.total {
+  font-weight: 700;
+}
+
+hr {
+  max-width: 250px;
+  margin: 10px;
+}
 .colour-wrapper {
   display: grid;
   grid-template-columns: auto auto;
