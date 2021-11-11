@@ -1,3 +1,6 @@
+body {
+  opacity: 100%;
+}
 .breadcrumbs li {
   display: block ruby;
   padding: 0px;
@@ -112,9 +115,9 @@ input {
 .popup-box h2 {
   text-align: center;
 }
-#toggle {
+#pop-up-cta {
   display: none;
 }
-#toggle:checked + .popup-box {
+#pop-up-cta:checked + .popup-box {
   display: block;
 }
