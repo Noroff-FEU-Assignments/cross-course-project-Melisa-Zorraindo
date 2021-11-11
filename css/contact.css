@@ -15,9 +15,7 @@
   text-decoration: underline;
   font-weight: 700;
 }
-.store-search {
-  display: flex;
-}
+
 .store-search-info {
   margin-left: 20px;
 }

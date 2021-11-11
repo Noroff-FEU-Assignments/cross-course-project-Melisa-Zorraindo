@@ -168,6 +168,12 @@
     text-align: left;
     margin-top: 10px;
   }
+
+  /* --------------- Contact --------------- */
+
+  .store-search {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 950px) {
