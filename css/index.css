@@ -68,10 +68,6 @@ main {
   top: 75%;
 }
 
-/*.main div {
-  margin-top: 40px;
-}*/
-
 .women {
   background-image: url(../images/homepage/women-jackets.jpg);
 }
@@ -89,6 +85,7 @@ main {
 
 .about {
   background-image: url(../images/homepage/about-us.jpg);
+  background-size: cover;
   background-position: center;
   min-height: 750px;
   padding-top: 40px;

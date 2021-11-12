@@ -19,9 +19,6 @@
   body {
     font-size: 1.37rem;
   }
-  /*main {
-    margin-bottom: 20px;
-  }*/
 
   .breadcrumbs a,
   .breadcrumbs i,
@@ -193,38 +190,46 @@
 }
 
 @media only screen and (min-width: 950px) {
-  /* --------------- Global styles --------------- */
-  main {
-    margin-left: 50px;
-  }
   /* --------------- Home page --------------- */
+
+  .main,
+  .about {
+    min-height: 1000px;
+  }
+
   .homepage-intro-text {
     margin-top: 0px;
-    max-width: 750px;
-    text-align: center;
+    max-width: 60%;
+    text-align: left;
     position: absolute;
     top: 50%;
-    left: 30%;
+    right: 0%;
   }
 
   .homepage-intro-text h1,
   .homepage-intro-text h2 {
-    text-align: center;
-    padding-right: 10px;
+    text-align: left;
   }
   .homepage-intro-text p {
     text-align: left;
-    padding-left: 10px;
   }
-
+  .women,
+  .men {
+    min-height: 500px;
+  }
   .womens-collection {
-    max-width: 375px;
-    left: 10%;
+    text-align: right;
+    max-width: 30%;
+    left: 0%;
+  }
+  .womens-collection h2,
+  .womens-collection p {
+    text-align: right;
   }
 
   .mens-collection {
-    max-width: 375px;
-    left: 70%;
+    max-width: 30%;
+    right: 0%;
   }
 }
 
