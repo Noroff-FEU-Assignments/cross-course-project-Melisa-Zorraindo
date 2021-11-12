@@ -25,7 +25,7 @@ main {
 .content h1,
 .content h2,
 .content p {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   display: inline-block;
   width: 100%;
@@ -49,27 +49,28 @@ main {
   background-size: cover;
   background-position: center right;
   padding-top: 40px;
+  position: relative;
 }
 
-.text {
+.homepage-intro-text {
   position: absolute;
   top: 50%;
 }
 
-.textwomen,
-.textabout {
-  position: absolute;
+.homepage-intro-text p {
+  margin-bottom: 15px;
+}
+.womens-collection {
   top: 25%;
 }
 
-.textmen {
-  position: absolute;
+.mens-collection {
   top: 75%;
 }
 
-.main div {
+/*.main div {
   margin-top: 40px;
-}
+}*/
 
 .women {
   background-image: url(../images/homepage/women-jackets.jpg);
