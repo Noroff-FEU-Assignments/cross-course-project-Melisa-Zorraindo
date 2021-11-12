@@ -22,6 +22,7 @@
   /*main {
     margin-bottom: 20px;
   }*/
+
   .breadcrumbs a,
   .breadcrumbs i,
   .breadcrumbs p {
@@ -192,6 +193,10 @@
 }
 
 @media only screen and (min-width: 950px) {
+  /* --------------- Global styles --------------- */
+  main {
+    margin-left: 50px;
+  }
   /* --------------- Home page --------------- */
   .homepage-intro-text {
     margin-top: 0px;
