@@ -131,6 +131,11 @@ hr {
   margin: 3px;
 }
 
+.colour-box:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .orange {
   color: #fea037;
 }
@@ -159,15 +164,27 @@ hr {
   display: flex;
 }
 
-.size-choices p {
+.size-choices li:first-child {
+  padding-left: 0px;
+}
+.size-choices button {
+  border: solid var(--dark-blue);
+  border-radius: 100px;
   background-color: transparent;
   color: var(--dark-blue);
+  text-transform: uppercase;
   padding: 10px;
-  border-radius: 999px;
-  border: var(--dark-blue);
-  border-style: solid;
   margin-bottom: 5px;
+  width: 45px;
+  font-size: 1rem;
 }
+
+.sizes button:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  cursor: pointer;
+}
+
 .cta-container,
 .add-wishlist {
   text-align: center;
