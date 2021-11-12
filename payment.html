@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Payment" />
@@ -83,7 +83,7 @@
         </div>
         <p class="estimated-shipping">estimated in three to five days</p>
         <hr />
-        <div  class="payment-wrapper total">
+        <div class="payment-wrapper total">
           <p>Total</p>
           <p class="currency">usd 500</p>
         </div>
@@ -92,27 +92,28 @@
         <h2>Contact information</h2>
         <form class="form-wrapper" method="post">
           <label for="name">full name</label>
-          <input type="text" name="fullname" />
+          <input type="text" name="fullname" id="name" />
           <label for="email">e mail</label>
-          <input type="email" name="email" />
+          <input type="email" name="email" id="email" />
           <label for="address">address</label>
-          <input type="text" name="address" />
+          <input type="text" name="address" id="address" />
           <div class="form-wrapper-location">
-              <div class="form-wrapper-specs">
-          <label for="city">city</label>
-          <input type="text" name="city" />
-        </div>
-        <div class="form-wrapper-specs">
-          <label for="postcode">post code</label>
-          <input type="text" name="postcode" />
-        </div>
-        </div>
+            <div class="form-wrapper-specs">
+              <label for="city">city</label>
+              <input type="text" name="city" id="city" />
+            </div>
+            <div class="form-wrapper-specs">
+              <label for="postcode">post code</label>
+              <input type="text" name="postcode" id="postcode" />
+            </div>
+          </div>
           <label for="country">country</label>
-          <input type="text" name="country" />
+          <input type="text" name="country" id="country" />
           <div>
             <input
               type="checkbox"
-              name="billing-address"  
+              name="billing-address"
+              id="billing-address"
             /><label for="billing-address">This is my billing address</label>
           </div>
         </form>
@@ -121,36 +122,37 @@
         <h2>Payment information</h2>
         <p>Choose payment method below</p>
         <div class="payment-method">
-        <i class="far fa-credit-card"></i>
-        <i class="fab fa-cc-paypal"></i>
-    </div>
+          <i class="far fa-credit-card"></i>
+          <i class="fab fa-cc-paypal"></i>
+        </div>
         <form class="form-wrapper" method="post">
           <label for="cardholder-name">cardholder's name</label>
-          <input type="text" name="cardholder-name" />
+          <input type="text" name="cardholder-name" id="cardholder-name" />
           <div class="card-wrapper">
-              <div class="card-wrapper-field">
-                 <label for="card-number">card number</label>
-                <input type="text" name="card-number" />
+            <div class="card-wrapper-field">
+              <label for="card-number">card number</label>
+              <input type="text" name="card-number" id="card-number" />
             </div>
-                <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-visa"></i>
           </div>
           <label for="expire-date">expire date</label>
-          <input type="date" name="expire-date" />
+          <input type="date" name="expire-date" id="expire-date" />
           <label for="cvv">cvv</label>
-          <input type="text" name="cvv" />
+          <input type="text" name="cvv" id="cvv" />
         </form>
       </section>
       <div class="cta-check-out">
-      <label for="pop-up-cta" class="cta">check out</label>
-      <input type="checkbox" id="pop-up-cta"/>
-      <div class="popup-box">
-        <h2>Thank you for your purchase!</h2>
-        <p>We've sent you an email with an order confirmation and details of your order.
-          If you don't find it, please check your spam folder.
+        <label for="pop-up-cta" class="cta">check out</label>
+        <input type="checkbox" id="pop-up-cta" />
+        <div class="popup-box">
+          <h2>Thank you for your purchase!</h2>
+          <p>
+            We've sent you an email with an order confirmation and details of
+            your order. If you don't find it, please check your spam folder.
           </p>
           <p>Your order # is: 45225</p>
+        </div>
       </div>
-    </div>
       <nav class="navbar-mobile-bottom">
         <ul>
           <li>
@@ -176,26 +178,28 @@
       <section class="footer-info contact">
         <h4><a href="contact.html">contact us</a></h4>
         <address>
-        <ul>
-          <li>
-            <a href="#"> <i class="fas fa-envelope"></i>info@rainydays.com</a>
-          </li>
-          <li>
-            <a href="#"> <i class="fas fa-phone-alt"></i>+01 256 88 896</a>
-          </li>
-          <li>
-            <a href="contact.html"> <i class="fas fa-map-marker-alt"></i>Find a store</a>
-          </li>
-        </ul>
-      </address>
+          <ul>
+            <li>
+              <a href="#"> <i class="fas fa-envelope"></i>info@rainydays.com</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fas fa-phone-alt"></i>+01 256 88 896</a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <i class="fas fa-map-marker-alt"></i>Find a store</a
+              >
+            </li>
+          </ul>
+        </address>
         <h5><a href="contact.html">faq</a></h5>
       </section>
       <section class="footer-info">
-        <h4 class="about-footer"><a href="about.html">about us</a></h4> 
+        <h4 class="about-footer"><a href="about.html">about us</a></h4>
       </section>
       <section class="footer-info">
         <h4 class="social-media">social media</h4>
-        <div> 
+        <div>
           <ul class="social-media-icons">
             <li>
               <a href="#"> <i class="fab fa-instagram"></i></a>
@@ -209,7 +213,6 @@
           </ul>
         </div>
       </section>
-      </div>
     </footer>
   </body>
 </html>
