@@ -45,7 +45,7 @@ main {
 
 .main {
   background-image: url(../images/homepage/main-picture.jpg);
-  min-height: 100vh;
+  min-height: 700px;
   background-size: cover;
   background-position: center right;
   padding-top: 40px;
@@ -82,7 +82,7 @@ main {
 
 .women,
 .men {
-  min-height: 50vh;
+  min-height: 350px;
   background-size: cover;
   padding-top: 40px;
 }
@@ -90,6 +90,6 @@ main {
 .about {
   background-image: url(../images/homepage/about-us.jpg);
   background-position: center;
-  min-height: 50vh;
+  min-height: 750px;
   padding-top: 40px;
 }
