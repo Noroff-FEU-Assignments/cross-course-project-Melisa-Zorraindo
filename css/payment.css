@@ -107,9 +107,9 @@ input {
   text-align: left;
   background-color: var(--white);
   position: fixed;
-  left: 10%;
-  top: 20%;
-  transform: translate(-10%, -20%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
 }
 .popup-box h2 {

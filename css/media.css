@@ -1,3 +1,15 @@
+@media only screen and (min-width: 487px) {
+  /* --------------- Pop-up box in product specific jacket --------------- */
+
+  .popup-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
 @media only screen and (min-width: 724px) {
   /* --------------- Header, Footer & Body --------------- */
   header {
@@ -80,9 +92,7 @@
   .navbar-mobile-bottom {
     display: none;
   }
-  /*.navbar-desktop {
-    display: flex;
-  }*/
+
   header {
     display: flex;
     justify-content: space-between;

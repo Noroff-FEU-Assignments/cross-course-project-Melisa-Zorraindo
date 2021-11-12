@@ -43,19 +43,52 @@ body {
 }
 
 .popup-box {
-  max-width: 340px;
+  max-width: 300px;
   border: solid var(--dark-blue);
-  line-height: 40px;
-  text-align: center;
+  min-height: 320px;
   background-color: var(--white);
   position: fixed;
-  left: 10%;
-  top: 20%;
-  transform: translate(-10%, -20%);
+  top: 50%;
+  left: 18%;
+  transform: translate(-15%, -50%);
   display: none;
 }
 .popup-box h2 {
   text-align: center;
+}
+
+.cta-container-pop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+}
+.cta-pop-up {
+  font-size: 1rem;
+  border: solid var(--orange);
+  margin-bottom: 5px;
+}
+
+.cta-pop-up:hover {
+  padding: 7px 40px;
+  border: none;
+}
+
+.cta-secondary {
+  background-color: var(--white);
+  color: var(--orange);
+  border: solid var(--orange);
+  font-size: 1rem;
+}
+
+.cta-pop-up:hover {
+  padding: 7px 40px;
+}
+
+.cta-secondary:hover {
+  padding: 7px 40px;
+  border: none;
+  color: var(--white);
 }
 #pop-up-cta {
   display: none;
@@ -76,7 +109,7 @@ body {
 .estimated-shipping {
   text-transform: uppercase;
   font-size: 0.9rem;
-  text-align: left;
+  text-align: left; /*necessary for the pop-up box*/
 }
 
 .total {
