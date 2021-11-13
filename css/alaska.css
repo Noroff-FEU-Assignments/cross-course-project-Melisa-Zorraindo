@@ -192,8 +192,17 @@ hr {
 }
 
 .add-wishlist {
+  cursor: pointer;
   display: block ruby;
   font-size: 1.2rem;
+}
+
+.add-wishlist p:hover {
+  text-decoration: underline;
+}
+
+.fa-heart:hover {
+  color: var(--orange);
 }
 
 .user-reviews {

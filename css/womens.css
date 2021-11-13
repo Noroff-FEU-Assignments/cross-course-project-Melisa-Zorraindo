@@ -37,3 +37,8 @@
   font-weight: 700;
   margin-bottom: 0px;
 }
+
+.fa-heart:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
