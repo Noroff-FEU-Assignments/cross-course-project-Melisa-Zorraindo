@@ -133,8 +133,8 @@
     background-position: center;
   }
 
-  .womens-collection,
-  .mens-collection {
+  .womens-collection-intro,
+  .mens-collection-intro {
     top: 25%;
     max-width: 50%;
     text-align: center;
@@ -217,17 +217,17 @@
   .men {
     min-height: 500px;
   }
-  .womens-collection {
+  .womens-collection-intro {
     text-align: right;
     max-width: 30%;
     left: 0%;
   }
-  .womens-collection h2,
-  .womens-collection p {
+  .womens-collection-intro h2,
+  .womens-collection-intro p {
     text-align: right;
   }
 
-  .mens-collection {
+  .mens-collection-intro {
     max-width: 30%;
     right: 0%;
   }

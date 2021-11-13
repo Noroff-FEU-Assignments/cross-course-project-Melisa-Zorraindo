@@ -47,7 +47,7 @@ main {
   background-image: url(../images/homepage/main-picture.jpg);
   min-height: 700px;
   background-size: cover;
-  background-position: center right;
+  background-position: bottom;
   padding-top: 40px;
   position: relative;
 }
@@ -60,11 +60,11 @@ main {
 .homepage-intro-text p {
   margin-bottom: 15px;
 }
-.womens-collection {
+.womens-collection-intro {
   top: 25%;
 }
 
-.mens-collection {
+.mens-collection-intro {
   top: 75%;
 }
 
