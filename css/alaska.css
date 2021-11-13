@@ -209,7 +209,8 @@ hr {
 
 .add-wishlist {
   cursor: pointer;
-  display: block ruby;
+  display: flex;
+  justify-content: center;
   font-size: 1.2rem;
 }
 
@@ -222,7 +223,8 @@ hr {
 }
 
 .user-reviews {
-  display: block ruby;
+  display: flex;
+  align-items: baseline;
 }
 
 .user-reviews h3 {
