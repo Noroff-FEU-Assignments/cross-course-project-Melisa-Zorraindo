@@ -178,16 +178,27 @@
   .sizes .first-circle {
     padding-left: 0px;
   }
-  .cta-container,
-  .add-wishlist {
+  .cta-container/*,
+  .add-wishlist*/ {
     text-align: left;
     margin-top: 10px;
   }
 
+  .add-wishlist {
+    justify-content: left;
+  }
+
+  /* --------------- Payment --------------- */
+  .form-wrapper {
+    max-width: 400px;
+  }
   /* --------------- Contact --------------- */
 
   .store-search {
     display: flex;
+  }
+  .store-search-info {
+    margin-left: 20px;
   }
 }
 
@@ -236,8 +247,22 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  /* --------------- Women's jackets --------------- */
   .items-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .search-box,
+  .map-wrapper {
+    min-width: 650px;
+  }
+
+  /* --------------- Payment --------------- */
+  .form-wrapper {
+    max-width: 550px;
+  }
+
+  .form-wrapper-specs {
+    min-width: 250px;
   }
 }

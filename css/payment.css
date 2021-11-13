@@ -61,7 +61,7 @@ input {
   margin-bottom: 7px;
 }
 .form-wrapper {
-  max-width: 350px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -69,7 +69,6 @@ input {
 }
 
 .form-wrapper-location {
-  max-width: 350px;
   display: flex;
   justify-content: space-between;
 }
@@ -108,8 +107,8 @@ input {
   background-color: var(--white);
   position: fixed;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 18%;
+  transform: translate(-15%, -50%);
   display: none;
 }
 .popup-box h2 {
