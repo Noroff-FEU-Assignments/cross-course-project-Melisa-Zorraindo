@@ -75,6 +75,7 @@ input {
 .form-wrapper-specs {
   display: flex;
   flex-direction: column;
+  max-width: 120px;
 }
 .payment-method {
   margin: 10px;
