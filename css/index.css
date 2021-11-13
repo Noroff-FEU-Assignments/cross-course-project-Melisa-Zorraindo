@@ -70,10 +70,12 @@ main {
 
 .women {
   background-image: url(../images/homepage/women-jackets.jpg);
+  background-position: left;
 }
 
 .men {
   background-image: url(../images/homepage/men-jackets.jpg);
+  background-position: right;
 }
 
 .women,
