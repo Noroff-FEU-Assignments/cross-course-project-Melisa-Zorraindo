@@ -40,6 +40,7 @@ body {
 .sizes h2,
 .sizes {
   text-align: center;
+  margin: 15px 0 5px 0;
 }
 
 .popup-box {

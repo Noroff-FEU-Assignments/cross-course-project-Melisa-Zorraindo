@@ -26,22 +26,16 @@ header {
   margin-top: 5px;
 }
 
-/* --------------- Fonts --------------- */
+/* --------------- Headings, body, and paragraphs --------------- */
 
 h1,
 h2 {
   text-align: left;
-  margin: 5px 5px;
+  font-size: 2.25rem;
+  margin: 5px 10px;
   font-family: "Alegreya", serif;
   font-weight: 400;
   color: var(--dark-blue);
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-h1 {
-  font-size: 2.25rem;
-  margin-top: 10px;
 }
 
 h2 {
