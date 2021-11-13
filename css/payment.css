@@ -115,9 +115,26 @@ input {
 .popup-box h2 {
   text-align: center;
 }
+
 #pop-up-cta {
   display: none;
 }
 #pop-up-cta:checked + .popup-box {
   display: block;
+  animation-name: feedback-success;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes feedback-success {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
