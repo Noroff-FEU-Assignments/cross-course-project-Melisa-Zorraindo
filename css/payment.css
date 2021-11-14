@@ -12,9 +12,7 @@ h3 {
 }
 .jacket-image {
   max-width: 150px;
-  border: var(--dark-blue);
-  border-style: solid;
-  /*align-items: left;*/
+  border: 1px solid var(--dark-blue);
   margin: 10px;
 }
 
@@ -107,7 +105,7 @@ input {
 
 .popup-box {
   max-width: 340px;
-  border: solid var(--dark-blue);
+  border: 1px solid var(--dark-blue);
   line-height: 40px;
   text-align: left;
   background-color: var(--white);

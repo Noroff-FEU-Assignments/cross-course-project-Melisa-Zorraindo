@@ -9,9 +9,7 @@ body {
 }
 .jacket-image {
   max-width: 150px;
-  border: var(--dark-blue);
-  border-style: solid;
-  /*align-items: left;*/
+  border: 1px solid var(--dark-blue);
 }
 
 .product-image {
@@ -45,7 +43,7 @@ body {
 
 .popup-box {
   max-width: 300px;
-  border: solid var(--dark-blue);
+  border: 1px solid var(--dark-blue);
   min-height: 320px;
   background-color: var(--white);
   position: fixed;
@@ -66,7 +64,7 @@ body {
 }
 .cta-pop-up {
   font-size: 1rem;
-  border: solid var(--orange);
+  border: 1px solid var(--orange);
   margin-bottom: 5px;
 }
 
@@ -78,7 +76,7 @@ body {
 .cta-secondary {
   background-color: var(--white);
   color: var(--orange);
-  border: solid var(--orange);
+  border: 1px solid var(--orange);
   font-size: 1rem;
 }
 
@@ -185,7 +183,7 @@ hr {
   padding-left: 0px;
 }
 .size-choices button {
-  border: solid var(--dark-blue);
+  border: 1px solid var(--dark-blue);
   border-radius: 100px;
   background-color: transparent;
   color: var(--dark-blue);

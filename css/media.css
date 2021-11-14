@@ -181,8 +181,7 @@
   .sizes .first-circle {
     padding-left: 0px;
   }
-  .cta-container/*,
-  .add-wishlist*/ {
+  .cta-container {
     text-align: left;
     margin-top: 10px;
   }

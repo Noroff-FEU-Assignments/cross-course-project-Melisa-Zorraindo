@@ -10,9 +10,7 @@
 }
 .jacket-image {
   max-width: 150px;
-  border: var(--dark-blue);
-  border-style: solid;
-  /*align-items: left;*/
+  border: 1px solid var(--dark-blue);
 }
 
 .jacket-info {

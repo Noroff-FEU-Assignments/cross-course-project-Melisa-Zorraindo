@@ -47,7 +47,6 @@ main {
   min-height: 700px;
   background-size: cover;
   background-position: bottom;
-  /*padding-top: 40px;*/
   position: relative;
 }
 
@@ -81,7 +80,6 @@ main {
 .men {
   min-height: 350px;
   background-size: cover;
-  /*padding-top: 40px;*/
 }
 
 .about {
@@ -89,5 +87,4 @@ main {
   background-size: cover;
   background-position: center;
   min-height: 750px;
-  /*padding-top: 40px;*/
 }

@@ -17,7 +17,7 @@
   margin: 10px;
   max-width: 400px;
   height: 40px;
-  border: solid var(--dark-blue);
+  border: 1px solid var(--dark-blue);
 }
 
 .search-box input {
@@ -30,7 +30,7 @@
 
 .map-wrapper {
   max-width: 400px;
-  border: solid var(--dark-blue);
+  border: 1px solid var(--dark-blue);
   margin: 10px;
 }
 
