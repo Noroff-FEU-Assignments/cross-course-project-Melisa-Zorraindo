@@ -103,13 +103,12 @@
     align-items: center;
   }
   .navigation-menu-links a {
+    color: var(--dark-blue);
     text-decoration: none;
     padding: 5px;
   }
 
-  .navigation-menu-links a:visited,
   .navigation-menu-links a:hover {
-    color: var(--dark-blue);
     text-decoration: underline;
   }
   .logo {
