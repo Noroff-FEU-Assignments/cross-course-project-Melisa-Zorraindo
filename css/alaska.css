@@ -125,6 +125,7 @@ body {
   text-transform: uppercase;
   font-size: 0.9rem;
   text-align: left; /*necessary for the pop-up box*/
+  border-bottom: 1px solid var(--dark-blue);
 }
 
 .total {

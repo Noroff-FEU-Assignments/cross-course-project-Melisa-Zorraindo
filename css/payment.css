@@ -38,12 +38,14 @@ h3 {
   font-size: 1.2rem;
   margin-bottom: 5px;
 }
+
 .currency {
   text-transform: uppercase;
 }
 .estimated-shipping {
   text-transform: uppercase;
   font-size: 0.9rem;
+  border-bottom: 1px solid var(--dark-blue);
 }
 
 .total {
