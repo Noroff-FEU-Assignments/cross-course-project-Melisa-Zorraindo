@@ -72,7 +72,7 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.form-wrapper-specs {
+.form-wrapper-small {
   display: flex;
   flex-direction: column;
   max-width: 120px;

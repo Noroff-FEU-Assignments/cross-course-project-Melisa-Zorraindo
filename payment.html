@@ -98,11 +98,11 @@
           <label for="address">address</label>
           <input type="text" name="address" id="address" />
           <div class="form-wrapper-flex">
-            <div class="form-wrapper-specs">
+            <div class="form-wrapper-small">
               <label for="city">city</label>
               <input type="text" name="city" id="city" />
             </div>
-            <div class="form-wrapper-specs">
+            <div class="form-wrapper-small">
               <label for="postcode">post code</label>
               <input type="text" name="postcode" id="postcode" />
             </div>
@@ -135,15 +135,23 @@
             </div>
             <i class="fab fa-cc-visa"></i>
           </div>
-          <label for="expire-date">expire date</label>
+          <label for="expiry-date">expiry date</label>
           <input
             type="text"
-            name="expire-date"
-            id="expire-date"
-            placeholder="mm / yy"
+            name="expiry-date"
+            id="expiry-date"
+            placeholder="mm / yyyy"
+            class="form-wrapper-small"
+            maxlength="9"
           />
           <label for="cvv">cvv</label>
-          <input type="text" name="cvv" id="cvv" />
+          <input
+            type="text"
+            name="cvv"
+            id="cvv"
+            class="form-wrapper-small"
+            maxlength="3"
+          />
         </form>
       </section>
       <div class="cta-check-out">
