@@ -148,6 +148,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .jacket-image {
+    max-width: 200px;
+  }
+
   /* --------------- Alaska --------------- */
 
   .product-wrapper {
