@@ -68,6 +68,9 @@ p {
   margin: 0px 10px;
 }
 
+address {
+  font-style: normal;
+}
 /* --------------- Breadcrumbs --------------- */
 
 .breadcrumbs {

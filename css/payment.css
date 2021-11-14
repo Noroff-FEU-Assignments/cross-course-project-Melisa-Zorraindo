@@ -68,7 +68,7 @@ input {
   margin: 10px;
 }
 
-.form-wrapper-location {
+.form-wrapper-flex {
   display: flex;
   justify-content: space-between;
 }
