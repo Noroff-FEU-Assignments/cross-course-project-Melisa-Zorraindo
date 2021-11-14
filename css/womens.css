@@ -42,3 +42,9 @@
   color: var(--orange);
   cursor: pointer;
 }
+
+@media only screen and (min-width: 1280px) {
+  main {
+    margin-left: 50px;
+  }
+}
