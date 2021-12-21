@@ -4,7 +4,7 @@ html {
   font-size: 16px;
 }
 :root {
-  --dark-blue: #0a3641;
+  --dark-blue: #1e1e1e;
   --light-blue: #dce7f3;
   --green: #767109;
   --orange: #ff5e00;
@@ -14,7 +14,8 @@ html {
 /* --------------- Header & Logo --------------- */
 
 header {
-  background-image: linear-gradient(#757c82, #dce7f3);
+  background-color: var(--white);
+  border-bottom: 1px solid var(--dark-blue);
   position: fixed;
   width: 100%;
   z-index: 10; /*header disappears from homepage when the z-index is removed*/
@@ -31,14 +32,14 @@ header {
 h1,
 h2 {
   text-align: left;
-  font: 2.25rem "Alegreya", serif;
+  font: 2.5rem "Quicksand", sans-serif;
   margin: 5px 10px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--dark-blue);
 }
 
 h2 {
-  font: italic 2rem "Alegreya", serif;
+  font: 2rem "Quicksand", sans-serif;
   margin-top: 15px;
 }
 
@@ -50,9 +51,8 @@ h3 {
 
 body {
   min-height: 100vh;
-  background-image: linear-gradient(#dce7f3 80%, #757c82);
   margin: 0px;
-  font: 1rem "Alegreya Sans", sans-serif;
+  font: 1rem "Raleway", sans-serif;
   text-align: left;
   color: var(--dark-blue);
 }
@@ -87,7 +87,7 @@ address {
 }
 
 .breadcrumbs-previous {
-  color: var(--green);
+  color: var(--dark-blue);
   font-weight: 700;
   text-decoration: underline;
 }
@@ -107,15 +107,15 @@ address {
   padding: 5px 35px;
   border-radius: 50px;
   color: var(--white);
-  font: 1.37rem "Alegreya", serif;
+  font: 1.37rem "Quicksand", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
+  transition: border-radius 0.5s;
 }
 
 .cta:hover {
-  padding: 10px 45px;
-  background-color: #ff5e0080;
+  border-radius: 5px;
 }
 
 /* --------------- Navbar Global --------------- */
@@ -140,14 +140,15 @@ li {
   min-width: 100%;
   bottom: 0px;
   z-index: 10; /*navigation bar at the bottom disappears from homepage when z-index removed*/
+  border-top: 1px solid var(--dark-blue);
 }
 
 .navbar-mobile-bottom ul {
-  background-image: linear-gradient(#0a3641, #07262d);
+  background-color: var(--white);
 }
 
 .navbar-mobile-bottom a {
-  color: var(--white);
+  color: var(--dark-blue);
   text-decoration: none;
   display: block;
 }
