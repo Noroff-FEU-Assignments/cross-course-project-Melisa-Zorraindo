@@ -32,21 +32,25 @@ header {
 h1,
 h2 {
   text-align: left;
-  font: 2.5rem "Quicksand", sans-serif;
+  font: 1.625rem "Quicksand", sans-serif;
   margin: 5px 10px;
-  font-weight: 500;
+  font-variation-settings: "wght" 600;
   color: var(--dark-blue);
 }
 
 h2 {
-  font: 2rem "Quicksand", sans-serif;
+  font: 1.375rem "Quicksand", sans-serif;
+  font-variation-settings: "wght" 600;
   margin-top: 15px;
 }
 
 h3 {
-  font-size: 1.4rem;
-  text-transform: uppercase;
+  font: 1.25rem "Raleway", sans-serif;
   margin: 10px;
+}
+
+h4 {
+  font: 1.125rem "Raleway", sans-serif;
 }
 
 body {
@@ -107,10 +111,9 @@ address {
   padding: 5px 35px;
   border-radius: 50px;
   color: var(--white);
-  font: 1.37rem "Quicksand", sans-serif;
-  text-transform: uppercase;
+  font: 1.125rem "Quicksand", sans-serif;
+  font-variation-settings: "wght" 500;
   text-decoration: none;
-  font-weight: 700;
   transition: border-radius 0.5s;
 }
 
@@ -153,6 +156,11 @@ li {
   display: block;
 }
 
+a.active {
+  color: var(--orange);
+  font-variation-settings: "wght" 600;
+}
+
 .navbar-mobile-bottom i {
   display: block;
 }
@@ -164,7 +172,7 @@ li {
 }
 
 .active {
-  font-weight: 700;
+  font-variation-settings: "wght" 600;
 }
 
 /* --------------- Footer --------------- */
