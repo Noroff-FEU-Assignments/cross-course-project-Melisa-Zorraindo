@@ -24,10 +24,9 @@
 header {
   background-color: var(--white);
   /*border-bottom: 2px solid #26559180;*/
-  /*box-shadow: 0 0.5px 3px var(--primary-colour);*/
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
-  z-index: 10; /*header disappears from homepage when the z-index is removed*/
+  /*z-index: 10; /*header disappears from homepage when the z-index is removed*/
   text-align: center;
 }
 
@@ -45,6 +44,7 @@ h2 {
   /*margin: 5px 10px;*/
   font-weight: var(--bold);
   color: var(--secondary-colour);
+  margin: 2.5rem 1rem;
 }
 
 h2 {
@@ -86,26 +86,35 @@ address {
 
 .breadcrumbs {
   display: flex;
-  padding-top: 65px;
-  text-transform: capitalize;
   align-items: center;
-  margin-left: 10px;
+  margin-top: 2rem;
+  margin-left: 1rem;
   flex-wrap: wrap;
+  border-top: 1px solid #26559180;
+  border-bottom: 1px solid #26559180;
 }
 
 .breadcrumbs a,
 .breadcrumbs i,
 .breadcrumbs p {
   padding: 5px;
-  margin-left: 0px;
+  margin-left: 0;
+}
+
+.breadcrumbs p {
+  margin: 0;
 }
 
 .breadcrumbs-previous {
   color: var(--secondary-colour);
-  font-weight: var(--bold);
+  /*font-weight: var(--bold);*/
   text-decoration: underline;
 }
 
+.breadcrumbs-current {
+  color: var(--primary-colour);
+  font-weight: var(--bold);
+}
 /* --------------- Links in text --------------- */
 
 p a {
@@ -118,7 +127,7 @@ p a {
 
 .cta {
   background-color: var(--primary-colour);
-  box-shadow: 0px 0px 20px var(--white);
+  box-shadow: 0 0 1rem var(--white);
   padding: 5px 35px;
   border-radius: 50px;
   color: var(--white);
@@ -139,8 +148,8 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  padding-left: 0px;
-  margin: 0px;
+  padding-left: 0;
+  margin: 0;
 }
 
 li {
@@ -153,7 +162,7 @@ li {
 .navbar-mobile-bottom {
   position: fixed;
   min-width: 100%;
-  bottom: 0px;
+  bottom: 0;
   z-index: 10; /*navigation bar at the bottom disappears from homepage when z-index removed*/
   /*border-top: 1px solid var(--primary-colour);*/
 }
