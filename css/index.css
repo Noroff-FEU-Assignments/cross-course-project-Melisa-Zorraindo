@@ -23,7 +23,7 @@ body {
 .content h1,
 .content h2 {
   font: 1.625rem "Quicksand", sans-serif;
-  font-variation-settings: "wght" 600;
+  font-weight: 600;
   color: var(--white);
   text-align: center;
   margin-bottom: 15px;
