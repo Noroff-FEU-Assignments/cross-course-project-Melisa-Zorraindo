@@ -79,9 +79,9 @@ body {
 
 .women {
   background-image: url(../images/homepage/women-jackets.jpg);
-  min-height: 350px;
-  /*background-size: cover;
-  /*background-position: right;*/
+  min-height: 400px;
+  background-position: left;
+  /*background-size: cover;/*
   /*display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -91,7 +91,7 @@ body {
 .men {
   background-image: url(../images/homepage/men-jackets.jpg);
   background-position: right;
-  min-height: 350px;
+  min-height: 400px;
   /*background-size: cover;
   display: flex;
   flex-direction: column;
