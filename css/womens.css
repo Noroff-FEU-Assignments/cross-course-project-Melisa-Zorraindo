@@ -10,12 +10,12 @@
 }
 
 .jacket-image {
-  max-width: 110px;
+  width: 110px;
   max-height: 150px;
 }
 
 .jacket-info {
-  max-width: 60%;
+  width: 200px;
   margin-left: 1rem;
 }
 
