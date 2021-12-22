@@ -16,6 +16,7 @@
   --headings-h4: 1.125rem "Raleway", sans-serif;
   --copy: 1rem "Raleway", sans-serif;
   --cta: 1.25rem "Quicksand", sans-serif;
+  --cta-small: 1rem "Quicksand", sans-serif;
   --bold: 600;
 }
 
@@ -140,6 +141,12 @@ p a {
 .cta:hover {
   border-radius: 5px;
   box-shadow: none;
+}
+
+.cta-small {
+  box-shadow: none;
+  padding: 5px 20px;
+  font: var(--cta-small);
 }
 
 /* --------------- Navbar Global --------------- */

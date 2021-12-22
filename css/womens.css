@@ -1,7 +1,6 @@
 .items {
-  margin: 1rem;
+  margin: 1rem 1rem 2.5rem;
   display: flex;
-  justify-content: space-around;
   max-width: 90%;
 }
 
@@ -11,13 +10,13 @@
 }
 
 .jacket-image {
-  max-width: 150px;
+  max-width: 110px;
   max-height: 150px;
-  flex: 0.7198;
 }
 
 .jacket-info {
   max-width: 60%;
+  margin-left: 1rem;
 }
 
 .jacket-info h2 {
@@ -45,12 +44,27 @@
   opacity: 0.4;
   cursor: pointer;
 }
-#fav-toggle {
+#fav-toggle-zero,
+#fav-toggle-one,
+#fav-toggle-two,
+#fav-toggle-three {
   display: none;
 }
-#fav-toggle:checked + label i {
+#fav-toggle-zero:checked + label i,
+#fav-toggle-one:checked + label i,
+#fav-toggle-two:checked + label i,
+#fav-toggle-three:checked + label i {
   color: var(--primary-colour);
   opacity: 1;
+}
+
+.interactions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.interactions .cta-small {
+  color: var(--white);
 }
 
 /*.jacket-name {
