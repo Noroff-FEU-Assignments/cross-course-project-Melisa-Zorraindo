@@ -91,7 +91,7 @@ address {
 
 .breadcrumbs-previous {
   color: var(--dark-blue);
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -100,7 +100,7 @@ address {
 .links-in-text {
   color: var(--green);
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* --------------- Buttons --------------- */
@@ -111,7 +111,7 @@ address {
   border-radius: 50px;
   color: var(--white);
   font: 1.125rem "Quicksand", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   transition: border-radius 0.5s;
 }
@@ -157,7 +157,7 @@ li {
 
 a.active {
   color: var(--orange);
-  font-variation-settings: "wght" 600;
+  font-weight: 600;
 }
 
 .navbar-mobile-bottom i {
@@ -171,7 +171,7 @@ a.active {
 }
 
 .active {
-  font-variation-settings: "wght" 600;
+  font-weight: 600;
 }
 
 /* --------------- Footer --------------- */
