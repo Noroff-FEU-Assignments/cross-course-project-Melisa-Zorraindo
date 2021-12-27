@@ -7,6 +7,7 @@
   /* --------------- Colour palette --------------- */
   --primary-colour: #265591;
   --secondary-colour: #1e1e1e;
+  --terciary-colour: #037327;
   --white: #fff;
 
   /* --------------- Fonts mobile --------------- */
@@ -18,6 +19,7 @@
   --cta: 1.25rem "Quicksand", sans-serif;
   --cta-small: 1rem "Quicksand", sans-serif;
   --bold: 600;
+  --semi-bold: 500;
 }
 
 /* --------------- Header & Logo --------------- */
