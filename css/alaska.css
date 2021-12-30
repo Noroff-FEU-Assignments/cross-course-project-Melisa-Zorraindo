@@ -162,7 +162,7 @@ body {
 }
 
 .item-description h2 {
-  margin: 2.5rem 1rem 1rem;
+  margin: 2.5rem 1rem 0.5rem;
 }
 
 .item-description p {
@@ -171,8 +171,20 @@ body {
 
 .user-reviews {
   display: flex;
+  justify-content: flex-start;
   align-items: baseline;
-  /*margin: 0 1rem;*/
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.user-reviews h3 {
+  font-weight: var(--bold);
+  margin-bottom: 0;
+}
+
+.star-wrapper {
+  color: var(--terciary-colour);
+  margin: 0 1rem 0.5rem;
 }
 
 .popup-box {
