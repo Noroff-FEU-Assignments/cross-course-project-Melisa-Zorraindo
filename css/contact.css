@@ -1,23 +1,21 @@
 .get-in-touch a {
   text-decoration: none;
-  color: var(--dark-blue);
-  margin-top: 5px;
+  color: var(--primary-colour);
 }
 .get-in-touch i {
   padding-right: 5px;
   margin-top: 5px;
 }
-.get-in-touch .links-in-text {
-  color: var(--green);
-  text-decoration: underline;
-  font-weight: 700;
+
+.get-in-touch p {
+  margin-bottom: 0.5rem;
 }
 
 .search-box {
   margin: 10px;
   max-width: 400px;
   height: 40px;
-  border: 1px solid var(--dark-blue);
+  border: 1px solid var(--primary-colour);
 }
 
 .search-box input {
@@ -36,6 +34,24 @@
 
 .google-map {
   width: 100%;
+}
+
+.store-search-info h3 {
+  margin-left: 1rem;
+  font-weight: var(--bold);
+}
+
+.store-search-info p {
+  margin-bottom: 0;
+}
+
+dt {
+  margin: 0.5rem 1rem;
+  font-weight: var(--bold);
+}
+
+dl {
+  margin-right: 1rem;
 }
 
 @media only screen and (min-width: 1280px) {
