@@ -16,10 +16,6 @@
     display: none;
   }
 
-  body {
-    font-size: 1.37rem;
-  }
-
   .breadcrumbs a,
   .breadcrumbs i,
   .breadcrumbs p {
@@ -158,10 +154,13 @@
   }
 
   /* --------------- Alaska --------------- */
-
+  .jacket-info {
+    max-width: 50%;
+    margin: auto;
+  }
   .product-wrapper {
     display: flex;
-    margin-left: 20px;
+    margin-top: 2rem;
   }
   .product-specific-page-jacket-image {
     max-width: 323px;
