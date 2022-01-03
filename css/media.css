@@ -195,8 +195,17 @@
   }
 
   /* --------------- Payment --------------- */
-  .form-wrapper {
+  .form-wrapper,
+  .payment-section {
     max-width: 400px;
+  }
+
+  .product-image {
+    text-align: left;
+  }
+
+  .specs-wrapper {
+    justify-content: flex-start;
   }
   /* --------------- Contact --------------- */
 
@@ -220,9 +229,6 @@
     margin-top: 0px;
     max-width: 60%;
     text-align: left;
-    position: absolute;
-    top: 50%;
-    right: 0%;
   }
 
   .homepage-intro-text h1,
