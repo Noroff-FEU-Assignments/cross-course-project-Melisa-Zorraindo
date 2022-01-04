@@ -29,7 +29,9 @@
   footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    min-width: 100%;
+    /* min-width: 100%; */
+    max-width: 1100px;
+    margin: auto;
   }
 
   footer ul {
@@ -223,10 +225,11 @@
   .main,
   .about {
     min-height: 1000px;
+    align-items: flex-end;
   }
 
   .homepage-intro-text {
-    margin-top: 0px;
+    /* margin-top: 0px; */
     max-width: 60%;
     text-align: left;
   }
@@ -242,10 +245,18 @@
   .men {
     min-height: 500px;
   }
+
+  .women {
+    align-items: flex-start;
+  }
+
+  .men {
+    align-items: flex-end;
+  }
   .womens-collection-intro {
     text-align: right;
-    max-width: 30%;
-    left: 0%;
+    max-width: 75%;
+    /* left: 0%; */
   }
   .womens-collection-intro h2,
   .womens-collection-intro p {
@@ -253,12 +264,38 @@
   }
 
   .mens-collection-intro {
-    max-width: 30%;
-    right: 0%;
+    max-width: 75%;
+    /* right: 0%; */
   }
 }
 
 @media only screen and (min-width: 1280px) {
+  /* --------------- Header & footer --------------- */
+
+  header {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  /* --------------- Home page --------------- */
+  .main,
+  .about {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .women,
+  .men {
+    max-width: 550px;
+  }
+
+  .women {
+    margin-left: auto;
+  }
+
+  .men {
+    margin-right: auto;
+  }
   /* --------------- Women's jackets --------------- */
   .items-wrapper {
     display: grid;
