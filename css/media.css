@@ -16,11 +16,15 @@
     display: none;
   }
 
-  .breadcrumbs a,
+  .breadcrumbs {
+    max-width: 1100px;
+    margin: auto;
+  }
+  /* .breadcrumbs a,
   .breadcrumbs i,
   .breadcrumbs p {
     margin-top: 20px;
-  }
+  } */
 
   .main {
     background-image: url(../images/homepage/main-picture.jpg);
@@ -32,6 +36,7 @@
     /* min-width: 100%; */
     max-width: 1100px;
     margin: auto;
+    border-top: 1px solid var(--primary-colour);
   }
 
   footer ul {
@@ -115,7 +120,8 @@
     text-decoration: underline;
   }
   .logo {
-    margin-left: 20px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     width: 120px;
     padding-left: 50px;
   }
@@ -151,13 +157,27 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .items-wrapper h1 {
+    grid-column: 1 / -1;
+  }
+
   .jacket-image {
     max-width: 200px;
   }
 
+  .items {
+    max-width: 75%;
+  }
+
   /* --------------- Alaska --------------- */
+
   .jacket-info {
-    max-width: 50%;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .item-description {
+    max-width: 1100px;
     margin: auto;
   }
   .product-wrapper {
@@ -204,6 +224,7 @@
 
   .product-image {
     text-align: left;
+    margin-left: 1rem;
   }
 
   .specs-wrapper {
@@ -267,10 +288,17 @@
     max-width: 75%;
     /* right: 0%; */
   }
+
+  .items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1100px;
+    margin: auto;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-  /* --------------- Header & footer --------------- */
+  /* --------------- Header --------------- */
 
   header {
     max-width: 1100px;
@@ -297,10 +325,10 @@
     margin-right: auto;
   }
   /* --------------- Women's jackets --------------- */
-  .items-wrapper {
+  /* .items-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
+  } */
   .search-box,
   .map-wrapper {
     min-width: 650px;
