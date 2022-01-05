@@ -220,6 +220,7 @@
   .form-wrapper,
   .payment-section {
     max-width: 400px;
+    margin: auto;
   }
 
   .product-image {
@@ -331,12 +332,17 @@
     min-width: 650px;
   }
 
-  /* --------------- Payment --------------- */
-  .form-wrapper {
-    max-width: 550px;
+  .large-screens-container {
+    max-width: 1100px;
+    margin: auto;
   }
 
-  .form-wrapper-small {
-    min-width: 250px;
+  /* --------------- Payment --------------- */
+  .form-wrapper {
+    max-width: 600px;
   }
+
+  /* .form-wrapper-small {
+    min-width: 250px;
+  } */
 }

@@ -98,7 +98,7 @@ input {
 .form-wrapper-small {
   display: flex;
   flex-direction: column;
-  max-width: 120px;
+  max-width: 50%;
 }
 #billing-address {
   min-width: 20px;
