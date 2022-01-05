@@ -324,11 +324,8 @@
   .men {
     margin-right: auto;
   }
-  /* --------------- Women's jackets --------------- */
-  /* .items-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  } */
+  /* --------------- Contact --------------- */
+
   .search-box,
   .map-wrapper {
     min-width: 650px;
