@@ -1,8 +1,9 @@
 /* --------------- Document level adjustments --------------- */
 
-/*html {
+html {
   font-size: 16px;
-}*/
+  scroll-behavior: smooth;
+}
 :root {
   /* --------------- Colour palette --------------- */
   --primary-colour: #265591;
