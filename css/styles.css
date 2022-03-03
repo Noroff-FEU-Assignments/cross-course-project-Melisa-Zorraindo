@@ -30,8 +30,12 @@ header {
   /*border-bottom: 2px solid #26559180;*/
   /*position: fixed;*/
   width: 100%;
-  /*z-index: 10; /*header disappears from homepage when the z-index is removed*/
+  z-index: 10; /*header disappears from homepage when the z-index is removed*/
   text-align: center;
+}
+
+nav ul li a {
+  color: var(--secondary-colour);
 }
 
 .logo {
@@ -116,7 +120,7 @@ address {
 }
 
 .breadcrumbs-current {
-  color: var(--primary-colour);
+  /* color: var(--primary-colour); */
   font-weight: var(--bold);
 }
 /* --------------- Links in text --------------- */

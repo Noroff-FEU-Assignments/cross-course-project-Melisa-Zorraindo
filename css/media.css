@@ -111,7 +111,7 @@
     align-items: center;
   }
   .navigation-menu-links a {
-    color: var(--primary-colour);
+    /* color: var(--primary-colour); */
     text-decoration: none;
     padding: 5px;
   }
