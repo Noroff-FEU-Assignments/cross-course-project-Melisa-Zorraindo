@@ -6,10 +6,13 @@ main {
 .shop-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 5rem;
 }
 
 .shop-card {
-  flex-basis: 25%;
+  flex-basis: 250px;
   height: 250px;
   display: flex;
   flex-direction: column;
