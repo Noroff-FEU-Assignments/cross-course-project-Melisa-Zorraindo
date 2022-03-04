@@ -150,6 +150,12 @@
     text-align: center;
   }
 
+  /* --------------- Shop --------------- */
+
+  .shop-container {
+    margin-bottom: 2rem;
+  }
+
   /* --------------- Women's jackets --------------- */
 
   .items-wrapper {
@@ -241,6 +247,18 @@
   }
 }
 
+@media only screen and (min-width: 724px) and (max-width: 949px) {
+  /* --------------- Shop --------------- */
+
+  .shop-container {
+    justify-content: center;
+  }
+
+  .shop-card {
+    flex-basis: 50%;
+  }
+}
+
 @media only screen and (min-width: 950px) {
   /* --------------- Home page --------------- */
 
@@ -295,6 +313,12 @@
     grid-template-columns: repeat(2, 1fr);
     /*     max-width: 1100px;
     margin: auto; */
+  }
+
+  /* --------------- Shop --------------- */
+
+  .shop-card {
+    flex-basis: 30%;
   }
 }
 
