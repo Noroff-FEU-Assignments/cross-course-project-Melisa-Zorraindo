@@ -1,15 +1,26 @@
 //import array from file
 import { jacketList } from "./modules/list-of-jackets.mjs";
 
-//select elements in the dom
+//fetch the query string to set heading accordingly
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const page = params.get("page");
+
+//select element in the dom
 let divContainer = document.querySelector(".items-wrapper");
 
 //function to create HTML
 function createHTML(jacketList) {
-  //set new page heading
-  divContainer.innerHTML = `<h1>Comes from a variable, think about it</h1>`;
+  //set appropriate heading
+  if (page === "womens") {
+    divContainer.innerHTML = `<h1>Our most fashionable designs for women</h1>`;
+  } else if (page === "mens") {
+    divContainer.innerHTML = `<h1>Our most comfortable designs for men</h1>`;
+  } else {
+    divContainer.innerHTML = `<h1>Our latest and most modern designs</h1>`;
+  }
 
-  //create rest f HTML
+  //create rest of HTML
   jacketList.forEach((jacket) => {
     divContainer.innerHTML += `<div class="items">
                                 <div>
