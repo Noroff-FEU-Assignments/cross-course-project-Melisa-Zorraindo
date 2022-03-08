@@ -17,6 +17,7 @@ export const jacketList = [
       "wind resistant",
       "Water resistant zippers",
     ],
+    sizes: ["xs", "s", "m", "l", "xl"],
     id: "000",
   },
 
@@ -36,6 +37,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "m", "xl"],
     id: "001",
   },
 
@@ -55,6 +57,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["s", "m", "l", "xl"],
     id: "002",
   },
 
@@ -74,6 +77,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "m", "l", "xl"],
     id: "003",
   },
 
@@ -94,6 +98,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "l", "xl"],
     id: "016",
   },
 
@@ -115,6 +120,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "l", "xl"],
     id: "004",
   },
 
@@ -136,6 +142,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["s", "m", "l", "xl"],
     id: "005",
   },
 
@@ -156,6 +163,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "m", "l", "xl"],
     id: "010",
   },
 
@@ -177,6 +185,7 @@ export const jacketList = [
       "wind resistant",
       "Water resistant zippers",
     ],
+    sizes: ["xs", "s", "m", "l", "xl"],
     id: "006",
   },
 
@@ -196,6 +205,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["s", "m", "l", "xl"],
     id: "007",
   },
 
@@ -216,6 +226,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["s", "m", "l", "xl"],
     id: "008",
   },
 
@@ -235,6 +246,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "m", "l", "xl"],
     id: "009",
   },
 
@@ -256,6 +268,7 @@ export const jacketList = [
       "wind resistant",
       "Water resistant zippers",
     ],
+    sizes: ["xs", "m", "xl"],
     id: "011",
   },
 
@@ -277,6 +290,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "l", "xl"],
     id: "013",
   },
 
@@ -290,6 +304,7 @@ export const jacketList = [
     sports: ["Hiking", "Trekking", "Rowing", "Rafting", "Fishing"],
     colours: ["Grey", "Gold", "Yellow", "Green"],
     specs: ["Lightweight", "wind resistant", "Water resistant zippers"],
+    sizes: ["xs", "m", "xl"],
     id: "014",
   },
 
@@ -303,6 +318,7 @@ export const jacketList = [
     sports: ["Hiking", "Trekking", "Rowing", "Rafting", "Fishing"],
     colours: ["Grey", "Gold", "Yellow", "Green"],
     specs: ["Lightweight", "wind resistant", "Water resistant zippers"],
+    sizes: ["xs", "s", "m", "l", "xl"],
     id: "015",
   },
 
@@ -322,6 +338,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "l", "xl"],
     id: "017",
   },
 
@@ -342,6 +359,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["s", "m", "l", "xl"],
     id: "018",
   },
 
@@ -355,6 +373,7 @@ export const jacketList = [
     sports: ["Hiking", "Trekking", "Rowing", "Rafting", "Fishing"],
     colours: ["Grey", "Gold", "Yellow", "Green"],
     specs: ["Lightweight", "wind resistant", "Water resistant zippers"],
+    sizes: ["xs", "m", "xl"],
     id: "012",
   },
 
@@ -376,6 +395,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "m", "l", "xl"],
     id: "019",
   },
 
@@ -397,6 +417,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "l", "xl"],
     id: "020",
   },
 
@@ -410,6 +431,7 @@ export const jacketList = [
     sports: ["Hiking", "Trekking", "Rowing", "Rafting", "Fishing"],
     colours: ["Grey", "Gold", "Yellow", "Green"],
     specs: ["Lightweight", "wind resistant", "Water resistant zippers"],
+    sizes: ["xs", "m", "xl"],
     id: "021",
   },
 
@@ -431,6 +453,7 @@ export const jacketList = [
       "Water resistant",
       "wind resistant",
     ],
+    sizes: ["xs", "s", "m", "l", "xl"],
     id: "022",
   },
 ];
