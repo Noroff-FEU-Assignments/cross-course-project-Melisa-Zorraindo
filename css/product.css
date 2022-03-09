@@ -1,0 +1,76 @@
+h2 {
+  margin: 2rem 0 1rem;
+}
+.product-info {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.product-image,
+.jacket-info {
+  flex-basis: 45%;
+  border: 1px solid red;
+}
+
+.jacket-image {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem;
+}
+
+.product-heading {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.product-heading h1,
+.product-heading p {
+  margin: 0;
+}
+
+.product-subheading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-subheading p {
+  font-size: 2.5rem;
+}
+
+.product-subheading a {
+  color: var(--terciary-colour);
+}
+
+.colour-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.colour-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.colour-border {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; this one for later */
+}
+
+.colour-border div {
+  height: 1rem;
+  width: 1rem;
+  border: 1px solid black;
+}
+.colour-box p {
+  margin: 0;
+}
