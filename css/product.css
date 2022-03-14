@@ -1,17 +1,19 @@
 h2 {
-  margin: 2rem 0 1rem;
+  margin: 2rem 1rem 1rem;
+  font-weight: var(--bold);
 }
 .product-info {
-  margin-top: 8rem;
+  margin-top: 3rem;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  flex-direction: column;
+  /*   justify-content: space-around;
+  align-items: flex-start; */
 }
 
 .product-image,
 .jacket-info {
   flex-basis: 45%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .jacket-image {
@@ -21,20 +23,31 @@ h2 {
 }
 
 .product-heading {
-  display: flex;
-  align-items: flex-end;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
+/* Removing previous styles */
 .product-heading h1,
 .product-heading p {
   margin: 0;
 }
 
+/* Adding new ones */
+.product-heading p {
+  margin-left: 1rem;
+}
+
+.product-heading h1 {
+  margin-left: 1rem;
+  font-weight: var(--bold);
+  font-size: 2.5rem;
+}
+
 .product-subheading {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .product-subheading p {
@@ -48,7 +61,8 @@ h2 {
 .colour-wrapper {
   display: flex;
   justify-content: flex-start;
-  gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .colour-box {
@@ -56,21 +70,58 @@ h2 {
   flex-direction: column;
 }
 
-.colour-border {
-  height: 1.5rem;
-  width: 1.5rem;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: red; this one for later */
-}
-
-.colour-border div {
-  height: 1rem;
-  width: 1rem;
-  border: 1px solid black;
-}
 .colour-box p {
   margin: 0;
+}
+
+.colour-box i {
+  font-size: 1.5rem;
+}
+
+.size-choices {
+  justify-content: flex-start;
+  margin-left: 1rem;
+}
+.size-choices button {
+  font: var(--copy);
+  padding: 0.5rem;
+}
+
+.call-to-action-div {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+
+.call-to-action-div-one {
+  text-align: center;
+}
+
+.cta-specific-product {
+  border: none;
+  width: 90%;
+}
+
+.cta-specific-product-one {
+}
+
+.item-description p {
+  margin-bottom: 0;
+}
+
+.user-reviews {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-left: 1rem;
+  flex-wrap: wrap;
+}
+
+.user-reviews h3 {
+  margin-bottom: 0.25rem;
+}
+
+.star-wrapper {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  color: var(--terciary-colour);
 }

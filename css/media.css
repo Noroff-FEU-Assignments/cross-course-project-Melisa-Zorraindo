@@ -10,7 +10,7 @@
   }
 }
 
-@media only screen and (min-width: 724px) {
+@media only screen and (min-width: 727px) {
   /* --------------- Header, Footer & Body --------------- */
   header {
     display: none;
@@ -156,7 +156,7 @@
     margin-bottom: 2rem;
   }
 
-  /* --------------- Women's jackets --------------- */
+  /* --------------- Sections' jackets --------------- */
 
   .items-wrapper {
     display: grid;
@@ -167,60 +167,78 @@
     grid-column: 1 / -1;
   }
 
-  .jacket-image {
+  /*  .jacket-image {
     max-width: 200px;
-  }
+  } */
 
   .items {
     max-width: 75%;
   }
 
-  /* --------------- Alaska --------------- */
+  /* --------------- Product specific page --------------- */
+
+  .product-info {
+    flex-direction: row;
+  }
 
   .jacket-info {
-    max-width: 500px;
-    margin: auto;
+    /* max-width: 500px; */
+    margin: 0 auto;
   }
 
   .item-description {
     max-width: 1100px;
     margin: auto;
   }
-  .product-wrapper {
-    display: flex;
-    margin-top: 2rem;
-  }
-  .product-specific-page-jacket-image {
-    max-width: 323px;
-  }
 
-  .product-wrapper-info {
-    margin-left: 50px;
+  .call-to-action-div {
     text-align: left;
   }
-  .product-wrapper-info .colours h2 {
+
+  .call-to-action-div-one {
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto;
+  }
+
+  /*   .cta-specific-product {
+    width: 50%;
+  } */
+  /*   .product-wrapper {
+    display: flex;
+    margin-top: 2rem;
+  } */
+  /*   .product-specific-page-jacket-image {
+    max-width: 323px;
+  }
+ */
+  /*   .product-wrapper-info {
+    margin-left: 50px;
+    text-align: left;
+  } */
+  /*   .product-wrapper-info .colours h2 {
     margin-top: 0px;
     margin-left: 0px;
     text-align: left;
-  }
-  .colour-wrapper {
+  } */
+  /*   .colour-wrapper {
     justify-content: start;
-  }
-  .product-wrapper-info .sizes h2 {
+  } */
+  /*   .product-wrapper-info .sizes h2 {
     margin-left: 0px;
     text-align: left;
-  }
-  .sizes .first-circle {
+  } */
+  /* .sizes .first-circle {
     padding-left: 0px;
-  }
-  .cta-container {
+  } */
+  /*   .cta-container {
     text-align: left;
     margin-top: 10px;
-  }
+  } */
 
-  .add-wishlist {
+  /*  .add-wishlist {
     justify-content: left;
-  }
+  } */
 
   /* --------------- Payment --------------- */
   .form-wrapper,
@@ -247,7 +265,7 @@
   }
 }
 
-@media only screen and (min-width: 724px) and (max-width: 949px) {
+@media only screen and (min-width: 728px) and (max-width: 949px) {
   /* --------------- Shop --------------- */
 
   .shop-container {
