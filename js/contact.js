@@ -9,32 +9,20 @@ const errorSubject = document.querySelector("#error-subject");
 const email = document.querySelector("#email");
 const errorEmail = document.querySelector("#error-email");
 
-const address = document.querySelector("#address");
-const errorAddress = document.querySelector("#error-address");
-
 const successMessage = document.querySelector(".success-message");
 const instructionsForm = document.querySelector(".instructions-para");
 
 function validateForm(event) {
   event.preventDefault();
 
-  if (checkLengths(firstName.value, 1)) {
+  if (
+    checkLengths(firstName.value, 1) ||
+    checkLengths(subject.value, 10) ||
+    !checkEmail(email.value)
+  ) {
     errorName.style.display = "block";
-    return false;
-  }
-
-  if (checkLengths(subject.value, 10)) {
     errorSubject.style.display = "block";
-    return false;
-  }
-
-  if (!checkEmail(email.value)) {
     errorEmail.style.display = "block";
-    return false;
-  }
-
-  if (checkLengths(address.value, 25)) {
-    errorAddress.style.display = "block";
     return false;
   }
 
@@ -44,7 +32,6 @@ function validateForm(event) {
     errorName.style.display = "none";
     errorSubject.style.display = "none";
     errorEmail.style.display = "none";
-    errorAddress.style.display = "none";
   }
   form.reset();
 }

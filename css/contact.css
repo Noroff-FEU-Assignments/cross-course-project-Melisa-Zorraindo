@@ -6,17 +6,18 @@
   margin-bottom: 3rem;
 }
 
-.instructions-para {
-  margin-bottom: 5rem;
-}
-
 form button {
   border: none;
 }
 
 .contact-form p {
-  margin: 0 0 1.5rem;
+  margin: 0 0;
 }
+
+.contact-form .instructions-para {
+  margin-bottom: 1.5rem;
+}
+
 .contact-field-wrapper {
   display: flex;
   flex-direction: column;
@@ -44,6 +45,7 @@ form button {
 
 .success-message {
   color: green;
+  font-weight: var(--bold);
   display: none;
 }
 
