@@ -110,10 +110,6 @@
     border: none;
   }
 
-  .second-navigation ul {
-    justify-content: flex-end;
-  }
-
   .second-navigation li div {
     flex-direction: row;
   }

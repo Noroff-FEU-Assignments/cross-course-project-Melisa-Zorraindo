@@ -45,7 +45,7 @@ nav ul li a {
 
 .second-navigation ul {
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .second-navigation li,
