@@ -1,13 +1,50 @@
-.get-in-touch a {
-  color: var(--primary-colour);
-}
-.get-in-touch i {
-  padding-right: 5px;
-  margin-top: 5px;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
 }
 
-.get-in-touch p {
-  margin-bottom: 0.5rem;
+.instructions-para {
+  margin-bottom: 5rem;
+}
+
+form button {
+  border: none;
+}
+
+.contact-form p {
+  margin: 0 0 1.5rem;
+}
+.contact-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  font-weight: var(--bold);
+}
+
+.contact-field-wrapper span {
+  color: red;
+}
+
+.contact-field {
+  height: 2rem;
+}
+
+#message {
+  height: 6rem;
+}
+
+.error-warning {
+  color: red;
+  margin-bottom: 0;
+  display: none;
+}
+
+.success-message {
+  color: green;
+  display: none;
 }
 
 .search-box {

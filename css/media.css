@@ -281,6 +281,9 @@
   }
   /* --------------- Contact --------------- */
 
+  .contact-form {
+    max-width: 600px;
+  }
   .store-search {
     display: flex;
   }
