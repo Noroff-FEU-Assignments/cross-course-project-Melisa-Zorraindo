@@ -155,6 +155,25 @@ function createSpecificProduct(listOfJackets) {
         specsLi.style.paddingLeft = "1rem";
         specsUl.append(specsLi);
       });
+
+      //create recommended sports
+      const newH2Sports = document.createElement("h2");
+      newH2Sports.innerText = "Recommended for";
+      descriptionContainer.append(newH2Sports);
+
+      const sportsUl = document.createElement("ul");
+      sportsUl.style.display = "block";
+      sportsUl.style.paddingLeft = "40px";
+      sportsUl.style.listStyle = "disc";
+      descriptionContainer.append(sportsUl);
+
+      jacket.sports.forEach((sport) => {
+        let sportsLi = document.createElement("li");
+        sportsLi.innerText = sport;
+        sportsLi.style.textAlign = "left";
+        sportsLi.style.paddingLeft = "1rem";
+        sportsUl.append(sportsLi);
+      });
     }
   });
 }
