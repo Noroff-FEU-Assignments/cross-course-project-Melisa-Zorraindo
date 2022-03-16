@@ -96,6 +96,35 @@
   }
 
   /* --------------- Navbars mobile & desktop --------------- */
+
+  .search-container {
+    display: inline-flex;
+    align-items: center;
+    height: 2rem;
+    padding: 0 1rem;
+    border: 1px solid grey;
+    border-radius: 2rem;
+  }
+
+  .search-container input {
+    border: none;
+  }
+
+  .second-navigation ul {
+    justify-content: flex-end;
+  }
+
+  .second-navigation li div {
+    flex-direction: row;
+  }
+
+  .hidden-desktop {
+    display: none;
+  }
+
+  .hidden-mobile {
+    display: block;
+  }
   .navbar-mobile-bottom {
     display: none;
   }
@@ -121,8 +150,7 @@
   }
   .logo {
     margin-top: 1rem;
-    margin-bottom: 2rem;
-    width: 120px;
+    width: 150px;
     padding-left: 50px;
   }
 

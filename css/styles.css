@@ -29,8 +29,8 @@ header {
   background-color: var(--white);
   /*border-bottom: 2px solid #26559180;*/
   /*position: fixed;*/
-  width: 100%;
-  z-index: 10; /*header disappears from homepage when the z-index is removed*/
+  /* width: 100%; */
+  /* z-index: 10; header disappears from homepage when the z-index is removed */
   text-align: center;
 }
 
@@ -39,8 +39,29 @@ nav ul li a {
 }
 
 .logo {
-  width: 90px;
-  margin-top: 5px;
+  width: 120px;
+  margin: 5px;
+}
+
+.second-navigation ul {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.second-navigation li,
+.second-navigation i {
+  color: var(--secondary-colour);
+}
+
+.second-navigation li a,
+.second-navigation li div {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.hidden-mobile {
+  display: none;
 }
 
 /* --------------- Headings, body, and paragraphs --------------- */
