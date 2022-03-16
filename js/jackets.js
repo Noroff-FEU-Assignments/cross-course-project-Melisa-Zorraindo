@@ -24,7 +24,7 @@ function createHTML(jacketList) {
   jacketList.forEach((jacket) => {
     divContainer.innerHTML += `<div class="items">
                                 <div>
-                                    <a href="../jackets/alaska.html?=id${jacket.id}"
+                                    <a href="../shop/jackets.html?id=${jacket.id}"
                                     ><img
                                         alt="${jacket.type}"
                                         class="jacket-image"
@@ -33,7 +33,7 @@ function createHTML(jacketList) {
                                 </div>
                                 <div class="jacket-info">
                                     <h2>
-                                    <a href="../jackets/alaska.html?=id${jacket.id}">${jacket.name}</a>
+                                    <a href="../shop/jackets.html?id=${jacket.id}">${jacket.name}</a>
                                     </h2>
                                     <p>${jacket.type}</p>
                                     <p>&dollar; ${jacket.price}</p>
@@ -42,7 +42,7 @@ function createHTML(jacketList) {
                                             <i class="fas fa-heart"></i>
                                         </div>
                                         <div>
-                                        <a href="../jackets/alaska.html?=id${jacket.id}" class="cta cta-small">Buy</a>
+                                        <a href="../shop/jackets.html?id=${jacket.id}" class="cta cta-small">Buy</a>
                                         </div>
                                     </div>
                                 </div>

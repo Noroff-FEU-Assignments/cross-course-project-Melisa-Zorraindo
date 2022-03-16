@@ -68,6 +68,7 @@ h2 {
 .colour-box {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .colour-box p {
@@ -99,9 +100,6 @@ h2 {
 .cta-specific-product {
   border: none;
   width: 90%;
-}
-
-.cta-specific-product-one {
 }
 
 .item-description p {

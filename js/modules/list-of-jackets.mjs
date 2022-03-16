@@ -2,6 +2,7 @@ export const jacketList = [
   {
     name: "Aconcagua",
     type: "Rain and windshield jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 259,
     image: "../images/jackets/aconcagua.jpg",
     description:
@@ -24,6 +25,7 @@ export const jacketList = [
   {
     name: "Alaska",
     type: "Gore-Tex insulated jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 399,
     image: "../images/jackets/alaska.jpg",
     description:
@@ -44,6 +46,7 @@ export const jacketList = [
   {
     name: "Aukland",
     type: "Extra light rain jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 349,
     image: "../images/jackets/aukland.jpg",
     description:
@@ -64,6 +67,7 @@ export const jacketList = [
   {
     name: "Baikal",
     type: "Extra light rain jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 399,
     image: "../images/jackets/baikal.jpg",
     description:
@@ -84,6 +88,7 @@ export const jacketList = [
   {
     name: "Chapala",
     type: "Extra lightweighted winter jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 399,
     image: "../images/jackets/chapala.jpg",
     description:
@@ -105,6 +110,7 @@ export const jacketList = [
   {
     name: "Daisen",
     type: "Parka",
+    stars: ["1", "2", "3", "4", "5"],
     price: 399,
     image: "../images/jackets/daisen.jpg",
     description:
@@ -127,6 +133,7 @@ export const jacketList = [
   {
     name: "Emei Shan",
     type: "Parka",
+    stars: ["1", "2", "3", "4", "5"],
     price: 549,
     image: "../images/jackets/emei-shan.jpg",
     description:
@@ -149,6 +156,7 @@ export const jacketList = [
   {
     name: "Erie",
     type: "Extra lightweighted winter jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 549,
     image: "../images/jackets/erie.jpg",
     description:
@@ -170,6 +178,7 @@ export const jacketList = [
   {
     name: "Everest",
     type: "Rain and windshield jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 399,
     image: "../images/jackets/everest.jpg",
     description:
@@ -192,6 +201,7 @@ export const jacketList = [
   {
     name: "Gaisberg",
     type: "Extra light rain jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 249,
     image: "../images/jackets/gaisberg.jpg",
     description:
@@ -212,6 +222,7 @@ export const jacketList = [
   {
     name: "Helsinki",
     type: "Extra lightweighted winter jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 449,
     image: "../images/jackets/helsinki.jpg",
     description:
@@ -233,6 +244,7 @@ export const jacketList = [
   {
     name: "Himalaya",
     type: "Gore-Tex insulated jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 379,
     image: "../images/jackets/himalaya.jpg",
     description:
@@ -253,6 +265,7 @@ export const jacketList = [
   {
     name: "Kauai",
     type: "Rain and wind shield jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 389,
     image: "../images/jackets/kauai.jpg",
     description:
@@ -275,6 +288,7 @@ export const jacketList = [
   {
     name: "Maui",
     type: "Insulated down coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 379,
     image: "../images/jackets/maui.jpg",
     description:
@@ -297,6 +311,7 @@ export const jacketList = [
   {
     name: "Mendoza",
     type: "Rain coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 249,
     image: "../images/jackets/mendoza.jpg",
     description:
@@ -311,6 +326,7 @@ export const jacketList = [
   {
     name: "Noshaq",
     type: "Rain coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 299,
     image: "../images/jackets/noshaq.jpg",
     description:
@@ -325,6 +341,7 @@ export const jacketList = [
   {
     name: "Rysy",
     type: "Gore-Tex insulated jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 459,
     image: "../images/jackets/rysy.jpg",
     description:
@@ -345,6 +362,7 @@ export const jacketList = [
   {
     name: "Salcantay",
     type: "Extra lightweighted winter jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 649,
     image: "../images/jackets/salcantay.jpg",
     description:
@@ -366,6 +384,7 @@ export const jacketList = [
   {
     name: "Sandersee",
     type: "Rain coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 279,
     image: "../images/jackets/sandersee.jpg",
     description:
@@ -380,6 +399,7 @@ export const jacketList = [
   {
     name: "Shengena",
     type: "Insulated down coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 349,
     image: "../images/jackets/shengena.jpg",
     description:
@@ -402,6 +422,7 @@ export const jacketList = [
   {
     name: "Tavan Bogd",
     type: "Insulated down coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 489,
     image: "../images/jackets/tavan-bogd.jpg",
     description:
@@ -424,6 +445,7 @@ export const jacketList = [
   {
     name: "Tutendo",
     type: "Rain coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 199,
     image: "../images/jackets/tutendo.jpg",
     description:
@@ -438,6 +460,7 @@ export const jacketList = [
   {
     name: "Vancouver",
     type: "Parka",
+    stars: ["1", "2", "3", "4", "5"],
     price: 759,
     image: "../images/jackets/vancouver.jpg",
     description:
