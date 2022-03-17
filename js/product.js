@@ -179,3 +179,30 @@ function createSpecificProduct(listOfJackets) {
 }
 
 createSpecificProduct(jacketList);
+
+//select modal popup elements in the dom
+const body = document.querySelector("body");
+const modalPopup = document.querySelector(".popup-box");
+const overlay = document.querySelector(".overlay");
+const closePopupButton = document.querySelector(".close-modal");
+const addToCartButton = document.querySelectorAll(".cta-specific-product");
+
+function openPopup() {
+  modalPopup.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  body.style.overflow = "hidden";
+}
+
+function closePopup() {
+  modalPopup.classList.add("hidden");
+  overlay.classList.add("hidden");
+  body.style.overflow = "auto";
+}
+
+for (let i = 0; i < addToCartButton.length; i++) {
+  addToCartButton[i].addEventListener("click", openPopup);
+}
+
+closePopupButton.addEventListener("click", closePopup);
+
+console.log(body);

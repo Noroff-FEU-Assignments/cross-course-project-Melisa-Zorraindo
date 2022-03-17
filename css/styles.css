@@ -167,6 +167,7 @@ p a {
   font-weight: var(--bold);
   text-decoration: none;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .cta:hover {
