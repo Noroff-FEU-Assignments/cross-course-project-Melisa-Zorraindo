@@ -88,6 +88,11 @@ h2 {
   padding: 0.5rem;
 }
 
+.size-button {
+  border: none;
+  text-transform: uppercase;
+}
+
 .call-to-action-div {
   margin: 2rem 1rem;
   text-align: center;

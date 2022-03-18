@@ -115,24 +115,11 @@ function createSpecificProduct(listOfJackets) {
       for (let i = 0; i < selectedColour.length; i++) {
         selectedColour[i].addEventListener("click", function () {
           for (let j = 0; j < selectedIcon.length; j++) {
+            //remove the class from all other icons
             selectedIcon[j].classList.remove("fas");
+            //add it to the one clicked on
             selectedIcon[i].classList.add("fas");
           }
-          // selectedIcon[i].classList.toggle("fas");
-
-          //if another element in array has the style applied, remove it
-          /*    if (selectedIcon[i - 1]) {
-            selectedIcon[i - 1].classList.remove("fas");
-          }
-          if (selectedIcon[i - 2]) {
-            selectedIcon[i - 2].classList.remove("fas");
-          }
-          if (selectedIcon[i + 1]) {
-            selectedIcon[i + 1].classList.remove("fas");
-          }
-          if (selectedIcon[i + 2]) {
-            selectedIcon[i + 2].classList.remove("fas");
-          } */
         });
       }
 
@@ -147,12 +134,32 @@ function createSpecificProduct(listOfJackets) {
 
       jacket.sizes.forEach((size) => {
         let sizesLi = document.createElement("li");
+        sizesLi.classList.add("sizes-box");
         sizesUl.append(sizesLi);
 
         const sizeButton = document.createElement("button");
+        sizeButton.classList.add("size-button");
         sizeButton.innerText = size;
         sizesLi.append(sizeButton);
       });
+
+      //chose size function
+      const selectedSize = document.querySelectorAll(".sizes-box");
+      const selectedButton = document.querySelectorAll(".size-button");
+
+      //run through the buttons array and listen for a click to change button style
+      for (let i = 0; i < selectedSize.length; i++) {
+        selectedSize[i].addEventListener("click", function () {
+          for (let j = 0; j < selectedButton.length; j++) {
+            //remove the class from all other buttons
+            selectedButton[j].style.backgroundColor = "#e9e9ed";
+            selectedButton[j].style.color = "black";
+            //add it to the one clicked on
+            selectedButton[i].style.backgroundColor = "#265591";
+            selectedButton[i].style.color = "white";
+          }
+        });
+      }
 
       //create call to action
       const ctaDiv = document.createElement("div");
