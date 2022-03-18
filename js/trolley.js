@@ -13,7 +13,7 @@ jacketList.forEach((jacket) => {
   if (jacket.id === id) {
     //create outer container
     const newCardContainer = document.createElement("div");
-    newCardContainer.classList.add("items");
+    newCardContainer.classList.add("purchase-items");
     shoppingBasketContainer.append(newCardContainer);
 
     //create card container
@@ -36,7 +36,7 @@ jacketList.forEach((jacket) => {
 
     //create brief
     const newCardBriefDiv = document.createElement("div");
-    newCardBriefDiv.classList.add("jacket-info");
+    newCardBriefDiv.classList.add("jacket-summary");
     newCardContainer.append(newCardBriefDiv);
 
     const newCardHeading = document.createElement("h2");
@@ -60,7 +60,7 @@ jacketList.forEach((jacket) => {
 
     const deleteIcon = document.createElement("i");
     deleteIcon.style.cursor = "pointer";
-    deleteIcon.classList.add("fas", "fa-trash");
+    deleteIcon.classList.add("fas", "fa-trash-alt");
     newCardHandleProduct.append(deleteIcon);
 
     const updateNumber = document.createElement("div");
@@ -74,8 +74,10 @@ jacketList.forEach((jacket) => {
 
     const numberInput = document.createElement("input");
     numberInput.setAttribute("type", numberInput);
+    numberInput.setAttribute("placeholder", 1);
     numberInput.style.borderColor = "black";
     numberInput.style.width = "1rem";
+    numberInput.style.textAlign = "center";
     updateNumber.append(numberInput);
 
     const plusIcon = document.createElement("i");
@@ -83,5 +85,76 @@ jacketList.forEach((jacket) => {
     plusIcon.style.marginLeft = "0";
     plusIcon.classList.add("fas", "fa-plus-square");
     updateNumber.append(plusIcon);
+
+    //create summary card
+    const summaryDiv = document.createElement("div");
+    summaryDiv.classList.add("summary-wrapper");
+    shoppingBasketContainer.append(summaryDiv);
+
+    const summaryHeading = document.createElement("h2");
+    summaryHeading.innerText = "Summary";
+    summaryHeading.style.fontWeight = "bold";
+    summaryHeading.style.marginBottom = "1.5rem";
+    summaryDiv.append(summaryHeading);
+
+    const subtotal = document.createElement("div");
+    summaryDiv.append(subtotal);
+
+    const subtotalDivOne = document.createElement("div");
+    subtotalDivOne.classList.add("summary-info");
+    subtotal.append(subtotalDivOne);
+
+    const subtotalPara = document.createElement("p");
+    subtotalPara.innerText = "Subtotal";
+    subtotalPara.style.marginBottom = "0.5rem";
+    subtotalDivOne.append(subtotalPara);
+
+    const subtotalSum = document.createElement("p");
+    subtotalSum.innerText = `$ ${jacket.price}`;
+    subtotalSum.style.marginBottom = "0.5rem";
+    subtotalDivOne.append(subtotalSum);
+
+    const subtotalDivTwo = document.createElement("div");
+    subtotalDivTwo.classList.add("summary-info");
+    subtotal.append(subtotalDivTwo);
+
+    const shippingPara = document.createElement("p");
+    shippingPara.innerText = "Shipping cost";
+    shippingPara.style.marginBottom = "0.5rem";
+    subtotalDivTwo.append(shippingPara);
+
+    const shippingSum = document.createElement("p");
+    shippingSum.innerText = "Free";
+    shippingSum.style.marginBottom = "0.5rem";
+    subtotalDivTwo.append(shippingSum);
+
+    const totalDiv = document.createElement("div");
+    totalDiv.classList.add("summary-info");
+    subtotal.append(totalDiv);
+
+    const totalPara = document.createElement("p");
+    totalPara.innerText = "Total";
+    totalPara.style.fontWeight = "bold";
+    totalDiv.append(totalPara);
+
+    const totalSum = document.createElement("p");
+    totalSum.innerText = `$ ${jacket.price}`;
+    totalSum.style.fontWeight = "bold";
+    totalDiv.append(totalSum);
+
+    const ctaDiv = document.createElement("div");
+    summaryDiv.append(ctaDiv);
+
+    const ctaPrimary = document.createElement("a");
+    ctaPrimary.setAttribute("href", "../payment.html");
+    ctaPrimary.classList.add("cta");
+    ctaPrimary.innerText = "Check out";
+    ctaDiv.append(ctaPrimary);
+
+    const ctaSecondary = document.createElement("a");
+    ctaSecondary.setAttribute("href", "../shop.html");
+    ctaSecondary.classList.add("cta", "cta-secondary");
+    ctaSecondary.innerText = "Continue shopping";
+    ctaDiv.append(ctaSecondary);
   }
 });

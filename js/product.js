@@ -212,3 +212,4 @@ for (let i = 0; i < addToCartButton.length; i++) {
 }
 
 closePopupButton.addEventListener("click", closePopup);
+overlay.addEventListener("click", closePopup);

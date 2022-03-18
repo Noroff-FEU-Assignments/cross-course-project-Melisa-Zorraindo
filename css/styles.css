@@ -46,7 +46,8 @@ nav ul li a {
 .second-navigation ul {
   width: 100%;
   justify-content: flex-end;
-  background-color: #26559110;
+  border-top: 1px solid #26559180;
+  border-bottom: 1px solid #26559180;
 }
 
 /* .second-navigation li,
@@ -122,8 +123,6 @@ address {
   margin-top: 2rem;
   margin-left: 1rem;
   flex-wrap: wrap;
-  border-top: 1px solid #26559180;
-  border-bottom: 1px solid #26559180;
 }
 
 .breadcrumbs a,

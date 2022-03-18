@@ -7,15 +7,20 @@ p {
   margin-bottom: 0.75rem;
 }
 
-.items {
+.basket-div {
+  display: flex;
+  flex-direction: column;
+}
+.purchase-items {
   margin: 1rem 1rem 2.5rem;
   display: flex;
   border: 1px solid grey;
   padding: 1rem;
-  width: fit-content;
+  width: 80%;
+  height: fit-content;
 }
 
-.items i {
+.purchase-items i {
   margin-left: 1rem;
 }
 
@@ -24,10 +29,10 @@ p {
   max-height: 150px;
 }
 
-/* .jacket-info {
-  width: 200px;
-  margin-left: 1rem;
-} */
+.jacket-summary {
+  width: 50%;
+  margin: 0 auto;
+}
 
 .icons-box {
   display: flex;
@@ -38,4 +43,34 @@ p {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+}
+
+.summary-wrapper {
+  margin: 1rem 1rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  padding: 1rem;
+  width: 80%;
+}
+
+.summary-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta {
+  border: none;
+  width: auto;
+  box-shadow: none;
+  margin-top: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+.cta-secondary {
+  margin-top: 0.5rem;
+  color: var(--primary-colour);
+  background-color: var(--white);
+  border: 1px solid var(--primary-colour);
 }

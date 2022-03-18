@@ -253,6 +253,19 @@
     justify-content: left;
   } */
 
+  /* --------------- Shopping cart --------------- */
+
+  .basket-div {
+    flex-direction: row;
+  }
+  .purchase-items {
+    width: 35%;
+  }
+
+  .summary-wrapper {
+    width: 65%;
+  }
+
   /* --------------- Payment --------------- */
   .form-wrapper,
   .payment-section {
