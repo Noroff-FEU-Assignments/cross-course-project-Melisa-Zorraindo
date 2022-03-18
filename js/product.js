@@ -103,9 +103,27 @@ function createSpecificProduct(listOfJackets) {
         coloursLi.append(colourIcon);
 
         let colourName = document.createElement("p");
+        colourName.classList.add("colourNameP");
         colourName.innerText = colour;
         coloursLi.append(colourName);
       });
+
+      //select colours function
+      const selectedColour = document.querySelectorAll(".colour-box");
+      const selectedIcon = document.querySelectorAll(".fa-square");
+      const selectedColourName = document.querySelectorAll(".colourNameP");
+
+      //run through the array and listen for a click to change styles
+      for (let i = 0; i < selectedColour.length; i++) {
+        selectedColour[i].addEventListener("click", function () {
+          selectedIcon[i].classList.toggle("fas");
+          if (selectedColourName[i].style.textDecoration === "underline") {
+            selectedColourName[i].style.textDecoration = "none";
+          } else {
+            selectedColourName[i].style.textDecoration = "underline";
+          }
+        });
+      }
 
       //create sizes
       const newH2Sizes = document.createElement("h2");
