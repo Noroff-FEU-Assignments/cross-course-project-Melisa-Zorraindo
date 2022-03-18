@@ -110,17 +110,6 @@
     border: none;
   }
 
-  .second-navigation li div {
-    flex-direction: row;
-  }
-
-  .hidden-desktop {
-    display: none;
-  }
-
-  .hidden-mobile {
-    display: block;
-  }
   .navbar-mobile-bottom {
     display: none;
   }

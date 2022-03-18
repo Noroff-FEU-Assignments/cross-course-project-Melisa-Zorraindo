@@ -60,23 +60,18 @@
     <main>
       <nav class="second-navigation">
         <ul>
-          <li class="hidden-desktop">
-            <div>
+          <li>
+            <a href="#">
               <i class="fas fa-search"></i>
-              Search
-            </div>
-          </li>
-          <li class="hidden-mobile">
-            <div class="search-container">
-              <input type="text" placeholder="Search" />
-              <i class="fas fa-search"></i>
-            </div>
+            </a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-shopping-cart"></i>Trolley</a>
+            <a class="active" href="/purchases/trolley.html"
+              ><i class="fas fa-shopping-basket"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-user"></i>Hello, JohnDoe</a>
+            <a href="#"><i class="fas fa-user"></i></a>
           </li>
         </ul>
       </nav>
@@ -136,12 +131,14 @@
       </div>
 
       <div class="popup-box hidden">
+
         <button class="close-modal">&times;</button>
         <h2>Your item has been added to the cart</h2>
-        <div class="payment-box">
+
+        <!-- <div class="payment-box">
           <div class="payment-wrapper">
             <p>Sub-total</p>
-            <p class="currency">&dollar; 399</p>
+            <p class="currency"></p>
           </div>
           <div class="payment-wrapper">
             <p>Shipping</p>
@@ -150,9 +147,10 @@
           <div class="payment-wrapper total">
             <p>Total</p>
             <p>&dollar; 399</p>
-          </div>
+            href="/purchases/trolley.html"
+          </div> -->
           <div class="cta-container-pop">
-            <a class="cta cta-pop-up" href="../payment.html">Check out</a>
+            <a class="cta cta-pop-up" >Go to cart</a>
             <a class="cta cta-secondary" href="../shop.html"
               ><span>Continue shopping</span></a
             >

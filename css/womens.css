@@ -44,10 +44,6 @@
   margin-bottom: 0;
 }
 
-.fa-heart {
-  opacity: 0.4;
-  cursor: pointer;
-}
 #fav-toggle-zero,
 #fav-toggle-one,
 #fav-toggle-two,
@@ -69,6 +65,11 @@
 
 .interactions .cta-small {
   color: var(--white);
+}
+
+.interactions i {
+  cursor: pointer;
+  color: red;
 }
 
 /*.jacket-name {

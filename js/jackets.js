@@ -39,7 +39,7 @@ function createHTML(jacketList) {
                                     <p>&dollar; ${jacket.price}</p>
                                     <div class="interactions">
                                         <div>
-                                            <i class="fas fa-heart"></i>
+                                            <i class="far fa-heart"></i>
                                         </div>
                                         <div>
                                         <a href="../shop/jackets.html?id=${jacket.id}" class="cta cta-small">Buy</a>

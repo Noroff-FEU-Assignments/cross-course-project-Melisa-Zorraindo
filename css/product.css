@@ -144,7 +144,7 @@ h2 {
 .popup-box {
   max-width: 300px;
   border: 1px solid var(--primary-colour);
-  min-height: 320px;
+  min-height: 250px;
   background-color: var(--white);
   position: fixed;
   top: 50%;
@@ -162,6 +162,7 @@ h2 {
 }
 .popup-box h2 {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .cta-container-pop {

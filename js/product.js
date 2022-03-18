@@ -10,6 +10,7 @@ const id = params.get("id");
 const breadcrumbsCurrent = document.querySelector(".breadcrumbs-current");
 const productContainer = document.querySelector(".product-info");
 const descriptionContainer = document.querySelector(".item-description");
+const goToCartButton = document.querySelector(".cta-pop-up");
 
 //function to create HTML
 function createSpecificProduct(listOfJackets) {
@@ -18,6 +19,12 @@ function createSpecificProduct(listOfJackets) {
     if (jacket.id === id) {
       breadcrumbsCurrent.innerText = jacket.name;
       breadcrumbsCurrent.style.textTransform = "lowercase";
+
+      //store jacket id to display in basket page
+      goToCartButton.setAttribute(
+        "href",
+        `/purchases/trolley.html?id=${jacket.id}`
+      );
 
       //create image container
       const imageContainer = document.createElement("div");
@@ -187,6 +194,7 @@ const overlay = document.querySelector(".overlay");
 const closePopupButton = document.querySelector(".close-modal");
 const addToCartButton = document.querySelectorAll(".cta-specific-product");
 
+//open close modal popup
 function openPopup() {
   modalPopup.classList.remove("hidden");
   overlay.classList.remove("hidden");
@@ -204,5 +212,3 @@ for (let i = 0; i < addToCartButton.length; i++) {
 }
 
 closePopupButton.addEventListener("click", closePopup);
-
-console.log(body);
