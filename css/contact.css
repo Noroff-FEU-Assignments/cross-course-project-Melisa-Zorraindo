@@ -49,6 +49,14 @@ form button {
   display: none;
 }
 
+address a {
+  margin-left: 1rem;
+  font-weight: var(--bold);
+}
+
+.fa-phone-alt {
+  margin-bottom: 1.5rem;
+}
 .search-box {
   margin: 10px;
   max-width: 400px;
