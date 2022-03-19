@@ -292,6 +292,22 @@
   .store-search-info {
     margin-left: 20px;
   }
+
+  /* --------------- About --------------- */
+
+  .flex-div {
+    flex-direction: row;
+    margin-left: 1rem;
+  }
+
+  .flex-div-two {
+    flex-direction: row-reverse;
+  }
+
+  .image {
+    max-height: 300px;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (min-width: 728px) and (max-width: 949px) {
@@ -369,6 +385,15 @@
   }
 }
 
+@media only screen and (min-width: 1100px) {
+  /* --------------- About --------------- */
+
+  .flex-div-three {
+    flex-direction: row;
+    margin-left: 1rem;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   /* --------------- Header --------------- */
   /* 
@@ -416,4 +441,11 @@
   /* .form-wrapper-small {
     min-width: 250px;
   } */
+
+  /* --------------- About --------------- */
+
+  .flex-div-three {
+    flex-direction: row;
+    /* margin-left: 1rem; */
+  }
 }

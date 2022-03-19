@@ -1,9 +1,29 @@
 h2 {
   margin-bottom: 1.25rem;
+  font: 1.5rem "Lobster Two", cursive;
 }
 
-@media only screen and (min-width: 1280px) {
-  main {
-    margin-left: 50px;
-  }
+.flex-div {
+  display: flex;
+  flex-direction: column;
+
+  /* margin-bottom: 2rem; */
+}
+
+.flex-div-two {
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.flex-div-three {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  max-width: 90%;
+  /* max-height: 300px; */
+  border: 0.45rem solid var(--secondary-colour);
+  margin: auto;
+  margin-bottom: 1rem;
 }
