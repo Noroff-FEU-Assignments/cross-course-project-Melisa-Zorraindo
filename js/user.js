@@ -82,18 +82,33 @@ function toggleLikes() {
   this.classList.remove("fas");
   this.classList.add("far");
 
+  //target item is
   const id = this.dataset.id;
 
+  //find the item that matches the id
   const itemToRemove = favs.find((item) => {
     return item.id === id;
   });
 
   // console.log(itemToRemove);
-
+  //delete the item that matches the id
   deleteItems(itemToRemove);
+
+  //filter items that dont match the id
+  const itemsToKeep = favs.filter((item) => {
+    return item.id !== id;
+  });
+
+  //make new array with items to keep
+  saveLikes(itemsToKeep);
 }
 
 //remove item from local storage
 function deleteItems(itemClicked) {
   localStorage.removeItem("favourites", JSON.stringify(itemClicked));
+}
+
+//save item clicked to local storage
+function saveLikes(chosenItem) {
+  localStorage.setItem("newFavourites", JSON.stringify(chosenItem));
 }
