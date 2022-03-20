@@ -1,5 +1,9 @@
-//import array from file
+//import utilities
 import { jacketList } from "./modules/list-of-jackets.mjs";
+import { addFavs } from "./functions/favourites.js";
+
+//call imported function
+const favs = addFavs();
 
 //fetch the query string to set heading accordingly
 const queryString = document.location.search;
@@ -22,6 +26,17 @@ function createHTML(jacketList) {
 
   //create rest of HTML
   jacketList.forEach((jacket) => {
+    //check if item is already stored
+    const isJacketStored = favs.find((fav) => {
+      return parseInt(fav.id) === jacket.id;
+    });
+
+    //if item is stored change styles in jackets page
+    let heartClass = "far";
+    if (isJacketStored) {
+      heartClass = "fas";
+    }
+
     divContainer.innerHTML += `<div class="items">
                                 <div>
                                     <a href="../shop/jackets.html?id=${jacket.id}"
@@ -39,7 +54,7 @@ function createHTML(jacketList) {
                                     <p>&dollar; ${jacket.price}</p>
                                     <div class="interactions">
                                         <div>
-                                            <i class="far fa-heart"></i>
+                                            <i class="${heartClass} fa-heart" data-id="${jacket.id}" data-name="${jacket.name}" data-type="${jacket.type}" data-image="${jacket.image}" data-price="&dollar; ${jacket.price}"></i>
                                         </div>
                                         <div>
                                         <a href="../shop/jackets.html?id=${jacket.id}" class="cta cta-small">Buy</a>
@@ -48,6 +63,55 @@ function createHTML(jacketList) {
                                 </div>
                                </div>`;
   });
+
+  //select buttons in the DOM
+  const likeButton = document.querySelectorAll(".fa-heart");
+
+  likeButton.forEach((heart) => {
+    heart.addEventListener("click", toggleLikes);
+  });
+
+  //have hearts change styles when clicked
+  function toggleLikes() {
+    this.classList.toggle("fas");
+
+    //store info to be displayed in favourites page
+    const id = this.dataset.id;
+    const name = this.dataset.name;
+    const type = this.dataset.type;
+    const image = this.dataset.image;
+    const price = this.dataset.price;
+
+    const itemsLiked = addFavs();
+
+    //check if product is already stored
+    const isJacketLiked = itemsLiked.find((item) => {
+      return item.id === id;
+    });
+
+    //save if isn't, remove if it is
+    if (!isJacketLiked) {
+      const product = {
+        id: id,
+        name: name,
+        type: type,
+        image: image,
+        price: price,
+      };
+      itemsLiked.push(product);
+      storeLikes(itemsLiked);
+    } else {
+      const newItemsLiked = itemsLiked.filter((item) => {
+        return item.id !== id;
+      });
+      storeLikes(newItemsLiked);
+    }
+  }
+
+  //save item clicked to local storage
+  function storeLikes(chosenItem) {
+    localStorage.setItem("favourites", JSON.stringify(chosenItem));
+  }
 }
 
 createHTML(jacketList);

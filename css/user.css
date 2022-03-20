@@ -1,0 +1,37 @@
+.favs-para {
+  margin-left: 1rem;
+  display: inline;
+}
+
+.no-display {
+  display: none;
+}
+
+.items {
+  width: fit-content;
+}
+
+.product-heading {
+  margin-left: 1rem;
+}
+
+.jacket-image {
+  width: 110px;
+  max-height: 150px;
+}
+
+h3 {
+  font: var(--headings-h2);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.product-heading i {
+  margin-top: 1rem;
+  margin-left: 0;
+  color: red;
+  cursor: pointer;
+}
