@@ -1,18 +1,27 @@
 //import utilities
 import { addFavs } from "./functions/favourites.js";
 
-//call imported function
-const favs = addFavs();
-
 //select elements in the DOM
 const favsDiv = document.querySelector(".items-wrapper");
 
+//call imported function
+const favs = addFavs();
+
+//create HTML in case there are no favs
+if (favs.length === 0) {
+  const favsPara = document.createElement("p");
+  favsPara.innerText = "There are no favourites at the moment. ";
+  favsPara.classList.add("favs-para");
+  favsDiv.append(favsPara);
+
+  const linkToShop = document.createElement("a");
+  linkToShop.innerText = "Have a look at one of our collections";
+  linkToShop.setAttribute("href", "/shop.html");
+  favsPara.append(linkToShop);
+}
+
 //create HTML
 favs.forEach((fav) => {
-  //clear existing HTML
-  const noFavs = document.querySelector(".favs-para");
-  noFavs.classList.toggle("no-display");
-
   //create item card
   const jacketCard = document.createElement("div");
   jacketCard.classList.add("items");
