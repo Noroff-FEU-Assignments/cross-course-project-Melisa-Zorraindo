@@ -66,5 +66,34 @@ favs.forEach((fav) => {
   //create fav icon
   const likeHeart = document.createElement("i");
   likeHeart.classList.add("fas", "fa-heart");
+  likeHeart.dataset.id = fav.id;
   headingDiv.append(likeHeart);
 });
+
+//select buttons in the DOM
+const likeButton = document.querySelectorAll(".fa-heart");
+
+likeButton.forEach((heart) => {
+  heart.addEventListener("click", toggleLikes);
+});
+
+//have hearts change styles when clicked
+function toggleLikes() {
+  this.classList.remove("fas");
+  this.classList.add("far");
+
+  const id = this.dataset.id;
+
+  const itemToRemove = favs.find((item) => {
+    return item.id === id;
+  });
+
+  // console.log(itemToRemove);
+
+  deleteItems(itemToRemove);
+}
+
+//remove item from local storage
+function deleteItems(itemClicked) {
+  localStorage.removeItem("favourites", JSON.stringify(itemClicked));
+}
