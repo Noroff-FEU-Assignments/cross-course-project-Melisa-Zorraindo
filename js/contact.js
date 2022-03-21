@@ -76,10 +76,7 @@ function checkEmail(email) {
   return regExMatches;
 }
 
-//import functions
-import { openPopup } from "./functions/popups.js";
-import { closePopup } from "./functions/popups.js";
-/* //open close modal popup
+//open close modal popup
 function openPopup() {
   modalPopup.classList.remove("hidden");
   overlay.classList.remove("hidden");
@@ -91,7 +88,7 @@ function closePopup() {
   modalPopup.classList.add("hidden");
   overlay.classList.add("hidden");
   body.style.overflow = "auto";
-} */
+}
 
 closePopupButton.addEventListener("click", closePopup);
 overlay.addEventListener("click", closePopup);
