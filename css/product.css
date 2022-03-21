@@ -187,12 +187,13 @@ h2 {
   background-color: var(--white);
   color: var(--primary-colour);
   box-shadow: none;
+  border: 1px solid var(--primary-colour);
 }
 
 .cta-secondary:hover {
   border: 1px solid var(--primary-colour);
 }
-#pop-up-cta {
+/* #pop-up-cta {
   display: none;
 }
 #pop-up-cta:checked + .popup-box {
@@ -213,7 +214,7 @@ h2 {
   100% {
     opacity: 1;
   }
-}
+} */
 
 .payment-wrapper {
   max-width: 300px;
