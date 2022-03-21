@@ -11,13 +11,18 @@ p {
   display: flex;
   flex-direction: column;
 }
+
+.itemsToBuyDiv {
+  background-color: #c3d6ef;
+}
+
 .purchase-items {
   margin: 1rem 1rem 2.5rem;
   display: flex;
-  border: 1px solid grey;
   padding: 1rem;
   width: 80%;
   height: fit-content;
+  background-color: var(--white);
 }
 
 .purchase-items i {
@@ -51,7 +56,11 @@ p {
   flex-direction: column;
   border: 1px solid grey;
   padding: 1rem;
-  width: 80%;
+  /* width: 80%; */
+  width: 55%;
+  position: sticky;
+  top: 3rem;
+  height: fit-content;
 }
 
 .summary-info {

@@ -257,14 +257,15 @@
 
   .basket-div {
     flex-direction: row;
+    justify-content: space-between;
   }
-  .purchase-items {
+  /*   .purchase-items {
     width: 35%;
   }
 
   .summary-wrapper {
     width: 65%;
-  }
+  } */
 
   /* --------------- Payment --------------- */
   .form-wrapper,

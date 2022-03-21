@@ -1,5 +1,6 @@
 //import array from file
 import { jacketList } from "./modules/list-of-jackets.mjs";
+import { fetchProductsInCart } from "./functions/addToCartFunction.js";
 
 //query string to display correct jacket
 const queryString = document.location.search;
@@ -10,7 +11,6 @@ const id = params.get("id");
 const breadcrumbsCurrent = document.querySelector(".breadcrumbs-current");
 const productContainer = document.querySelector(".product-info");
 const descriptionContainer = document.querySelector(".item-description");
-const goToCartButton = document.querySelector(".cta-pop-up");
 
 //function to create HTML
 function createSpecificProduct(listOfJackets) {
@@ -19,12 +19,6 @@ function createSpecificProduct(listOfJackets) {
     if (jacket.id === id) {
       breadcrumbsCurrent.innerText = jacket.name;
       breadcrumbsCurrent.style.textTransform = "lowercase";
-
-      //store jacket id to display in basket page
-      goToCartButton.setAttribute(
-        "href",
-        `/purchases/trolley.html?id=${jacket.id}`
-      );
 
       //create image container
       const imageContainer = document.createElement("div");
@@ -169,6 +163,11 @@ function createSpecificProduct(listOfJackets) {
       const ctaButton = document.createElement("button");
       ctaButton.classList.add("cta", "cta-specific-product");
       ctaButton.innerText = "Add to cart";
+      ctaButton.dataset.id = jacket.id;
+      ctaButton.dataset.image = jacket.image;
+      ctaButton.dataset.name = jacket.name;
+      ctaButton.dataset.type = jacket.type;
+      ctaButton.dataset.price = jacket.price;
       ctaDiv.append(ctaButton);
 
       //create product description
@@ -243,9 +242,51 @@ function closePopup() {
   body.style.overflow = "auto";
 }
 
-for (let i = 0; i < addToCartButton.length; i++) {
+/* for (let i = 0; i < addToCartButton.length; i++) {
   addToCartButton[i].addEventListener("click", openPopup);
 }
 
 closePopupButton.addEventListener("click", closePopup);
-overlay.addEventListener("click", closePopup);
+overlay.addEventListener("click", closePopup); */
+
+//select elements for trolley page
+const cartBtn = document.querySelector(".cta-specific-product");
+
+cartBtn.addEventListener("click", addToCart);
+
+function addToCart() {
+  const id = this.dataset.id;
+  const image = this.dataset.image;
+  const name = this.dataset.name;
+  const type = this.dataset.type;
+  const price = this.dataset.price;
+
+  const productsInCart = fetchProductsInCart();
+
+  const productStored = productsInCart.find(function (item) {
+    return item.id === id;
+  });
+
+  if (!productStored) {
+    const product = {
+      id: id,
+      image: image,
+      name: name,
+      type: type,
+      price: price,
+    };
+
+    productsInCart.push(product);
+
+    saveProduct(productsInCart);
+  } /*  else {
+    //this part is removing the product if it's already stored
+    const newItemToPurchase = currentFavs.filter((fav) => fav.id !== id);
+    saveProduct(newItemToPurchase);
+  } */
+}
+
+//function to store in local storage
+function saveProduct(itemToPurchase) {
+  localStorage.setItem("cart", JSON.stringify(itemToPurchase));
+}
