@@ -1,3 +1,4 @@
+//select elements in the form
 const form = document.querySelector(".contact-form");
 const submitButton = document.querySelector(".cta");
 submitButton.disabled = true;
@@ -14,6 +15,12 @@ const errorEmail = document.querySelector("#error-email");
 
 const successMessage = document.querySelector(".success-message");
 const instructionsForm = document.querySelector(".instructions-para");
+
+//select modal popup elements in the dom
+const body = document.querySelector("body");
+const modalPopup = document.querySelector(".popup-box");
+const overlay = document.querySelector(".overlay");
+const closePopupButton = document.querySelector(".close-modal");
 
 function validateForm() {
   if (checkLengths(firstName.value, 1)) {
@@ -49,8 +56,9 @@ email.addEventListener("keyup", validateForm);
 
 function submitForm(event) {
   event.preventDefault();
-  successMessage.style.display = "block";
-  instructionsForm.style.display = "none";
+  submitButton.disabled = true;
+  submitButton.classList.add("disabled");
+  openPopup();
   form.reset();
 }
 
@@ -67,3 +75,23 @@ function checkEmail(email) {
   const regExMatches = regEx.test(email);
   return regExMatches;
 }
+
+//import functions
+import { openPopup } from "./functions/popups.js";
+import { closePopup } from "./functions/popups.js";
+/* //open close modal popup
+function openPopup() {
+  modalPopup.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  body.style.overflow = "hidden";
+}
+
+//close modal popup
+function closePopup() {
+  modalPopup.classList.add("hidden");
+  overlay.classList.add("hidden");
+  body.style.overflow = "auto";
+} */
+
+closePopupButton.addEventListener("click", closePopup);
+overlay.addEventListener("click", closePopup);
