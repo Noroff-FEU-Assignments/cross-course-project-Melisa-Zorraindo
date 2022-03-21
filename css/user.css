@@ -1,5 +1,6 @@
 .favs-para {
   margin-left: 1rem;
+  grid-column: 1 / -1;
 }
 
 .items {
