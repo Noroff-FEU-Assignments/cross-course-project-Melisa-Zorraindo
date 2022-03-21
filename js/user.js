@@ -79,23 +79,43 @@ likeButton.forEach((heart) => {
 
 //have hearts change styles when clicked
 function toggleLikes() {
-  this.classList.remove("fas");
-  this.classList.add("far");
+  this.classList.toggle("far");
+  this.classList.toggle("fas");
 
-  //target item is
+  //store info to be displayed in favourites page
   const id = this.dataset.id;
+  const name = this.dataset.name;
+  const type = this.dataset.type;
+  const image = this.dataset.image;
+  const price = this.dataset.price;
 
-  //find the item that matches the id
-  const itemToRemove = favs.find((item) => {
+  const itemsLiked = addFavs();
+
+  //check if product is already stored
+  const isJacketLiked = itemsLiked.find((item) => {
     return item.id === id;
   });
 
-  // console.log(itemToRemove);
-  //delete the item that matches the id
-  deleteItems(itemToRemove);
+  //save if isn't, remove if it is
+  if (!isJacketLiked) {
+    const product = {
+      id: id,
+      name: name,
+      type: type,
+      image: image,
+      price: price,
+    };
+    itemsLiked.push(product);
+    storeLikes(itemsLiked);
+  } else {
+    const newItemsLiked = itemsLiked.filter((item) => {
+      return item.id !== id;
+    });
+    storeLikes(newItemsLiked);
+  }
 }
 
-//remove item from local storage
-function deleteItems(itemClicked) {
-  localStorage.removeItem("favourites", JSON.stringify(itemClicked));
+//save item clicked to local storage
+function storeLikes(chosenItem) {
+  localStorage.setItem("favourites", JSON.stringify(chosenItem));
 }

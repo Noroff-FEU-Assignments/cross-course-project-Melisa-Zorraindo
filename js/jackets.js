@@ -73,6 +73,7 @@ function createHTML(jacketList) {
 
   //have hearts change styles when clicked
   function toggleLikes() {
+    this.classList.toggle("far");
     this.classList.toggle("fas");
 
     //store info to be displayed in favourites page
