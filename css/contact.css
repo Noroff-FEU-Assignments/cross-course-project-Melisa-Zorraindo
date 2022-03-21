@@ -10,6 +10,15 @@ form button {
   border: none;
 }
 
+.disabled {
+  background-color: #61666c;
+  cursor: default;
+}
+
+.disabled:hover {
+  border-radius: 50px;
+}
+
 .contact-form p {
   margin: 0 0;
 }
@@ -31,10 +40,6 @@ form button {
 
 .contact-field {
   height: 2rem;
-}
-
-#message {
-  height: 6rem;
 }
 
 .error-warning {
