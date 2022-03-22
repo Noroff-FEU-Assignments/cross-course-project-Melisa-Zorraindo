@@ -195,26 +195,31 @@ for (let j = 0; j < numberOfJackets.length; j++) {
 }
 
 //set total and subtotal amounts
+const totalValueJacket = document.querySelectorAll(".item-price");
 const subtotalAmount = document.querySelector(".subtotal-sum");
 const totalAmount = document.querySelector(".total-sum");
 
+function updatePrices() {
+  let finalPrice = 0;
+  for (let l = 0; l < totalValueJacket.length; l++) {
+    let price = parseInt(totalValueJacket[l].innerText.replace("$", " "));
+    finalPrice += price;
+    subtotalAmount.innerText = "$" + finalPrice;
+    totalAmount.innerText = "$" + finalPrice;
+  }
+}
+updatePrices();
+
 //update jacket price when placeholder changes values
 //update total price
-const totalValueJacket = document.querySelectorAll(".item-price");
-let finalPrice = 0;
-
 for (let k = 0; k < totalValueJacket.length; k++) {
   let priceValue = parseInt(totalValueJacket[k].innerText.replace("$", " "));
   let jacketQuantity = document.querySelectorAll("input");
-
-  finalPrice += priceValue;
-
-  subtotalAmount.innerText = "$" + finalPrice;
-  totalAmount.innerText = "$" + finalPrice;
 
   jacketQuantity[k].addEventListener("change", function () {
     let quantity = jacketQuantity[k].value;
     let totalJacketPrice = priceValue * quantity;
     totalValueJacket[k].innerText = "$ " + totalJacketPrice;
+    updatePrices();
   });
 }
