@@ -136,9 +136,10 @@ if (itemsToBuy.length === 0) {
     newCardBriefDiv.append(newCardSubheading);
 
     const newCardPrice = document.createElement("p");
+    newCardPrice.classList.add("item-price");
     newCardPrice.style.fontStyle = "italic";
     newCardPrice.style.fontWeight = "bold";
-    newCardPrice.innerText = `$ ${jacket.price}`;
+    newCardPrice.innerText = "$ " + jacket.price;
     newCardBriefDiv.append(newCardPrice);
 
     //create icons to add or remove product
@@ -190,3 +191,23 @@ for (let j = 0; j < numberOfJackets.length; j++) {
     }
   });
 }
+
+//update jacket price when placeholder changes values
+const totalValueJacket = document.querySelectorAll(".item-price");
+
+for (let k = 0; k < totalValueJacket.length; k++) {
+  let priceValue = parseInt(totalValueJacket[k].innerText.replace("$", " "));
+  let jacketQuantity = document.querySelectorAll("input");
+
+  jacketQuantity[k].addEventListener("change", function () {
+    let quantity = jacketQuantity[k].value;
+    let totalJacketPrice = priceValue * quantity;
+    totalValueJacket[k].innerText = "$ " + totalJacketPrice;
+  });
+}
+
+/* quantity.addEventListener("change", function () {
+      let finalJacketPrice = priceValue * quantity;
+      value.innerText = finalJacketPrice;
+    }); */
+// }
