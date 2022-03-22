@@ -24,7 +24,7 @@ if (itemsToBuy.length === 0) {
   emptyTrolley.append(linkToShop);
 } else {
   const itemsToBuyDiv = document.createElement("div");
-  itemsToBuyDiv.classList.add("itemsToBuyDiv");
+  itemsToBuyDiv.classList.add("items-to-buy");
   shoppingBasketContainer.append(itemsToBuyDiv);
 
   //create summary card

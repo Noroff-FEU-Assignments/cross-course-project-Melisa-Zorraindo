@@ -12,7 +12,7 @@ p {
   flex-direction: column;
 }
 
-.itemsToBuyDiv {
+.items-to-buy {
   background-color: #c3d6ef;
   display: flex;
   flex-wrap: wrap;
