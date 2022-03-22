@@ -7,15 +7,15 @@ const itemsToBuy = fetchProductsInCart();
 //select elements in the DOM
 const shoppingBasketContainer = document.querySelector(".basket-div");
 
-//create HTML in case there are no favs
+//create HTML in case items in cart = 0
 if (itemsToBuy.length === 0) {
   const emptyTrolley = document.createElement("div");
   shoppingBasketContainer.append(emptyTrolley);
 
-  const favsPara = document.createElement("p");
-  favsPara.innerText = "Your shopping cart is currently empty ";
-  favsPara.classList.add("favs-para");
-  emptyTrolley.append(favsPara);
+  const cartPara = document.createElement("p");
+  cartPara.innerText = "Your shopping cart is currently empty ";
+  cartPara.classList.add("favs-para");
+  emptyTrolley.append(cartPara);
 
   const linkToShop = document.createElement("a");
   linkToShop.innerText = "Start shopping";
@@ -155,23 +155,38 @@ if (itemsToBuy.length === 0) {
     updateNumber.classList.add("update-number-wrapper");
     newCardHandleProduct.append(updateNumber);
 
-    const minusIcon = document.createElement("i");
-    minusIcon.style.cursor = "pointer";
-    minusIcon.classList.add("fas", "fa-minus-square");
-    updateNumber.append(minusIcon);
-
     const numberInput = document.createElement("input");
-    numberInput.setAttribute("type", numberInput);
+    numberInput.setAttribute("type", "number");
     numberInput.setAttribute("placeholder", 1);
-    numberInput.style.borderColor = "black";
-    numberInput.style.width = "1rem";
-    numberInput.style.textAlign = "center";
+    numberInput.style.width = "1.8rem";
     updateNumber.append(numberInput);
+  });
+}
 
-    const plusIcon = document.createElement("i");
-    plusIcon.style.cursor = "pointer";
-    plusIcon.style.marginLeft = "0";
-    plusIcon.classList.add("fas", "fa-plus-square");
-    updateNumber.append(plusIcon);
+//remove items from the list using the bin icon
+const binIcon = document.querySelectorAll(".fa-trash-alt");
+
+binIcon.forEach((icon) => {
+  icon.addEventListener("click", deleteItem);
+});
+
+function deleteItem() {
+  const jacketToRemoveCard = document.querySelectorAll(".purchase-items");
+  for (let i = 0; i < jacketToRemoveCard.length; i++) {
+    let jacketToRemove = jacketToRemoveCard[i];
+    jacketToRemove.addEventListener("click", function () {
+      jacketToRemove.remove();
+    });
+  }
+}
+
+//prevent placeholder to take values under one
+const numberOfJackets = document.querySelectorAll("input");
+for (let j = 0; j < numberOfJackets.length; j++) {
+  let productNumber = numberOfJackets[j];
+  productNumber.addEventListener("change", function () {
+    if (productNumber.value < 1) {
+      productNumber.value = 1;
+    }
   });
 }
