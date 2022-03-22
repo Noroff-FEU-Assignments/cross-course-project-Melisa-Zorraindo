@@ -51,7 +51,8 @@ if (itemsToBuy.length === 0) {
   subtotalDivOne.append(subtotalPara);
 
   const subtotalSum = document.createElement("p");
-  subtotalSum.innerText = "$ 500";
+  subtotalSum.classList.add("subtotal-sum");
+  subtotalSum.innerText = "";
   subtotalSum.style.marginBottom = "0.5rem";
   subtotalDivOne.append(subtotalSum);
 
@@ -79,7 +80,8 @@ if (itemsToBuy.length === 0) {
   totalDiv.append(totalPara);
 
   const totalSum = document.createElement("p");
-  totalSum.innerText = "$ 500";
+  totalSum.classList.add("total-sum");
+  totalSum.innerText = "";
   totalSum.style.fontWeight = "bold";
   totalDiv.append(totalSum);
 
@@ -192,12 +194,23 @@ for (let j = 0; j < numberOfJackets.length; j++) {
   });
 }
 
+//set total and subtotal amounts
+const subtotalAmount = document.querySelector(".subtotal-sum");
+const totalAmount = document.querySelector(".total-sum");
+
 //update jacket price when placeholder changes values
+//update total price
 const totalValueJacket = document.querySelectorAll(".item-price");
+let finalPrice = 0;
 
 for (let k = 0; k < totalValueJacket.length; k++) {
   let priceValue = parseInt(totalValueJacket[k].innerText.replace("$", " "));
   let jacketQuantity = document.querySelectorAll("input");
+
+  finalPrice += priceValue;
+
+  subtotalAmount.innerText = "$" + finalPrice;
+  totalAmount.innerText = "$" + finalPrice;
 
   jacketQuantity[k].addEventListener("change", function () {
     let quantity = jacketQuantity[k].value;
@@ -205,9 +218,3 @@ for (let k = 0; k < totalValueJacket.length; k++) {
     totalValueJacket[k].innerText = "$ " + totalJacketPrice;
   });
 }
-
-/* quantity.addEventListener("change", function () {
-      let finalJacketPrice = priceValue * quantity;
-      value.innerText = finalJacketPrice;
-    }); */
-// }
