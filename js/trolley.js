@@ -165,8 +165,25 @@ if (itemsToBuy.length === 0) {
     updateNumber.append(numberInput);
   });
 }
+//set total and subtotal amounts
+const totalValueJacket = document.querySelectorAll(".item-price");
+const subtotalAmount = document.querySelector(".subtotal-sum");
+const totalAmount = document.querySelector(".total-sum");
+
+//set total and subtotal amounts programmatically
+function updatePrices() {
+  let finalPrice = 0;
+  for (let l = 0; l < totalValueJacket.length; l++) {
+    let price = parseInt(totalValueJacket[l].innerText.replace("$", " "));
+    finalPrice += price;
+    subtotalAmount.innerText = "$" + finalPrice;
+    totalAmount.innerText = "$" + finalPrice;
+  }
+}
+updatePrices();
 
 //remove items from the list using the bin icon
+//and update price when item removed
 const binIcon = document.querySelectorAll(".fa-trash-alt");
 
 binIcon.forEach((icon) => {
@@ -175,12 +192,26 @@ binIcon.forEach((icon) => {
 
 function deleteItem() {
   const jacketToRemoveCard = document.querySelectorAll(".purchase-items");
+
   for (let i = 0; i < jacketToRemoveCard.length; i++) {
     let jacketToRemove = jacketToRemoveCard[i];
+
     jacketToRemove.addEventListener("click", function () {
       jacketToRemove.remove();
+      //
+      const newItemsToBuy = itemsToBuy.filter((item) => {
+        return item !== itemsToBuy[i];
+      });
+      saveProduct(newItemsToBuy);
+      location.reload();
     });
   }
+}
+
+//function to store in local storage
+//this function repeats itself in product.js line 289, see refactoring
+function saveProduct(itemToPurchase) {
+  localStorage.setItem("cart", JSON.stringify(itemToPurchase));
 }
 
 //prevent placeholder to take values under one
@@ -193,22 +224,6 @@ for (let j = 0; j < numberOfJackets.length; j++) {
     }
   });
 }
-
-//set total and subtotal amounts
-const totalValueJacket = document.querySelectorAll(".item-price");
-const subtotalAmount = document.querySelector(".subtotal-sum");
-const totalAmount = document.querySelector(".total-sum");
-
-function updatePrices() {
-  let finalPrice = 0;
-  for (let l = 0; l < totalValueJacket.length; l++) {
-    let price = parseInt(totalValueJacket[l].innerText.replace("$", " "));
-    finalPrice += price;
-    subtotalAmount.innerText = "$" + finalPrice;
-    totalAmount.innerText = "$" + finalPrice;
-  }
-}
-updatePrices();
 
 //update jacket price when placeholder changes values
 //update total price
