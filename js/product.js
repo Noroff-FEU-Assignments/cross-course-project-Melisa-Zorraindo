@@ -58,6 +58,10 @@ function createSpecificProduct(listOfJackets) {
 
       //create reviews
       const starsLink = document.createElement("a");
+      starsLink.setAttribute(
+        "href",
+        `../shop/jackets.html?id=${jacket.id}#reviews`
+      );
       newSubheading.append(starsLink);
 
       //create stars
