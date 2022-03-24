@@ -2,6 +2,7 @@ export const jacketList = [
   {
     name: "Aconcagua",
     type: "Rain and windshield jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 259,
     image: "../images/jackets/aconcagua.jpg",
     description:
@@ -14,7 +15,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
       "Water resistant zippers",
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
@@ -24,6 +25,7 @@ export const jacketList = [
   {
     name: "Alaska",
     type: "Gore-Tex insulated jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 399,
     image: "../images/jackets/alaska.jpg",
     description:
@@ -35,7 +37,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "m", "xl"],
     id: "001",
@@ -44,6 +46,7 @@ export const jacketList = [
   {
     name: "Aukland",
     type: "Extra light rain jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 349,
     image: "../images/jackets/aukland.jpg",
     description:
@@ -55,7 +58,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["s", "m", "l", "xl"],
     id: "002",
@@ -64,6 +67,7 @@ export const jacketList = [
   {
     name: "Baikal",
     type: "Extra light rain jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 399,
     image: "../images/jackets/baikal.jpg",
     description:
@@ -75,7 +79,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "003",
@@ -84,6 +88,7 @@ export const jacketList = [
   {
     name: "Chapala",
     type: "Extra lightweighted winter jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 399,
     image: "../images/jackets/chapala.jpg",
     description:
@@ -96,7 +101,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "l", "xl"],
     id: "016",
@@ -105,12 +110,13 @@ export const jacketList = [
   {
     name: "Daisen",
     type: "Parka",
+    stars: ["1", "2", "3", "4", "5"],
     price: 399,
     image: "../images/jackets/daisen.jpg",
     description:
       "Warm and lightweighted parka especially built for light outdoor activities like hiking and trekking. It has a smart and elegant desing with fleece on the inside and keep-dry technology. Hidden pockets inside and two side pockets outside. Water and wind resistant for increased protection.",
     sports: ["Hiking", "Trekking"],
-    colours: ["Light blue", "Pink", "Black"],
+    colours: ["Blue", "Pink", "Black"],
     specs: [
       "Hidden pockets",
       "Invisible zippers",
@@ -118,7 +124,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "l", "xl"],
     id: "004",
@@ -127,12 +133,13 @@ export const jacketList = [
   {
     name: "Emei Shan",
     type: "Parka",
+    stars: ["1", "2", "3", "4", "5"],
     price: 549,
     image: "../images/jackets/emei-shan.jpg",
     description:
       "Warm and lightweighted parka especially built for light outdoor activities like hiking and trekking. It has a smart and elegant desing with fleece on the inside and keep-dry technology. Hidden pockets inside and two side pockets outside. Water and wind resistant for increased protection.",
     sports: ["Hiking", "Trekking"],
-    colours: ["Light blue", "Pink", "Black"],
+    colours: ["Blue", "Pink", "Black"],
     specs: [
       "Hidden pockets",
       "Invisible zippers",
@@ -140,7 +147,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["s", "m", "l", "xl"],
     id: "005",
@@ -149,6 +156,7 @@ export const jacketList = [
   {
     name: "Erie",
     type: "Extra lightweighted winter jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 549,
     image: "../images/jackets/erie.jpg",
     description:
@@ -161,7 +169,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "010",
@@ -170,6 +178,7 @@ export const jacketList = [
   {
     name: "Everest",
     type: "Rain and windshield jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 399,
     image: "../images/jackets/everest.jpg",
     description:
@@ -182,7 +191,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
       "Water resistant zippers",
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
@@ -192,6 +201,7 @@ export const jacketList = [
   {
     name: "Gaisberg",
     type: "Extra light rain jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 249,
     image: "../images/jackets/gaisberg.jpg",
     description:
@@ -203,7 +213,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["s", "m", "l", "xl"],
     id: "007",
@@ -212,6 +222,7 @@ export const jacketList = [
   {
     name: "Helsinki",
     type: "Extra lightweighted winter jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 449,
     image: "../images/jackets/helsinki.jpg",
     description:
@@ -224,7 +235,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["s", "m", "l", "xl"],
     id: "008",
@@ -233,6 +244,7 @@ export const jacketList = [
   {
     name: "Himalaya",
     type: "Gore-Tex insulated jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 379,
     image: "../images/jackets/himalaya.jpg",
     description:
@@ -244,7 +256,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "009",
@@ -253,6 +265,7 @@ export const jacketList = [
   {
     name: "Kauai",
     type: "Rain and wind shield jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 389,
     image: "../images/jackets/kauai.jpg",
     description:
@@ -265,7 +278,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
       "Water resistant zippers",
     ],
     sizes: ["xs", "m", "xl"],
@@ -275,6 +288,7 @@ export const jacketList = [
   {
     name: "Maui",
     type: "Insulated down coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 379,
     image: "../images/jackets/maui.jpg",
     description:
@@ -288,7 +302,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "l", "xl"],
     id: "013",
@@ -297,13 +311,14 @@ export const jacketList = [
   {
     name: "Mendoza",
     type: "Rain coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 249,
     image: "../images/jackets/mendoza.jpg",
     description:
       "Warm and lightweight raincoat especially built for water sports like rafting and rowing. It has a modern and elegant design that combines our keep-dry technology with the comfort of ultra lightweighted tyvek. Wind resistant for increased protection. Water resistant zippers.",
     sports: ["Hiking", "Trekking", "Rowing", "Rafting", "Fishing"],
     colours: ["Grey", "Gold", "Yellow", "Green"],
-    specs: ["Lightweight", "wind resistant", "Water resistant zippers"],
+    specs: ["Lightweight", "Wind resistant", "Water resistant zippers"],
     sizes: ["xs", "m", "xl"],
     id: "014",
   },
@@ -311,13 +326,14 @@ export const jacketList = [
   {
     name: "Noshaq",
     type: "Rain coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 299,
     image: "../images/jackets/noshaq.jpg",
     description:
       "Warm and lightweight raincoat especially built for water sports like rafting and rowing. It has a modern and elegant design that combines our keep-dry technology with the comfort of ultra lightweighted tyvek. Wind resistant for increased protection. Water resistant zippers.",
     sports: ["Hiking", "Trekking", "Rowing", "Rafting", "Fishing"],
     colours: ["Grey", "Gold", "Yellow", "Green"],
-    specs: ["Lightweight", "wind resistant", "Water resistant zippers"],
+    specs: ["Lightweight", "Wind resistant", "Water resistant zippers"],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "015",
   },
@@ -325,6 +341,7 @@ export const jacketList = [
   {
     name: "Rysy",
     type: "Gore-Tex insulated jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 459,
     image: "../images/jackets/rysy.jpg",
     description:
@@ -336,7 +353,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "l", "xl"],
     id: "017",
@@ -345,6 +362,7 @@ export const jacketList = [
   {
     name: "Salcantay",
     type: "Extra lightweighted winter jacket",
+    stars: ["1", "2", "3", "4", "5"],
     price: 649,
     image: "../images/jackets/salcantay.jpg",
     description:
@@ -357,7 +375,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["s", "m", "l", "xl"],
     id: "018",
@@ -366,13 +384,14 @@ export const jacketList = [
   {
     name: "Sandersee",
     type: "Rain coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 279,
     image: "../images/jackets/sandersee.jpg",
     description:
       "Warm and lightweight raincoat especially built for water sports like rafting and rowing. It has a modern and elegant design that combines our keep-dry technology with the comfort of ultra lightweighted tyvek. Wind resistant for increased protection. Water resistant zippers.",
     sports: ["Hiking", "Trekking", "Rowing", "Rafting", "Fishing"],
     colours: ["Grey", "Gold", "Yellow", "Green"],
-    specs: ["Lightweight", "wind resistant", "Water resistant zippers"],
+    specs: ["Lightweight", "Wind resistant", "Water resistant zippers"],
     sizes: ["xs", "m", "xl"],
     id: "012",
   },
@@ -380,6 +399,7 @@ export const jacketList = [
   {
     name: "Shengena",
     type: "Insulated down coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 349,
     image: "../images/jackets/shengena.jpg",
     description:
@@ -393,7 +413,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "019",
@@ -402,6 +422,7 @@ export const jacketList = [
   {
     name: "Tavan Bogd",
     type: "Insulated down coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 489,
     image: "../images/jackets/tavan-bogd.jpg",
     description:
@@ -415,7 +436,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "l", "xl"],
     id: "020",
@@ -424,13 +445,14 @@ export const jacketList = [
   {
     name: "Tutendo",
     type: "Rain coat",
+    stars: ["1", "2", "3", "4", "5"],
     price: 199,
     image: "../images/jackets/tutendo.jpg",
     description:
       "Warm and lightweight raincoat especially built for water sports like rafting and rowing. It has a modern and elegant design that combines our keep-dry technology with the comfort of ultra lightweighted tyvek. Wind resistant for increased protection. Water resistant zippers.",
     sports: ["Hiking", "Trekking", "Rowing", "Rafting", "Fishing"],
     colours: ["Grey", "Gold", "Yellow", "Green"],
-    specs: ["Lightweight", "wind resistant", "Water resistant zippers"],
+    specs: ["Lightweight", "Wind resistant", "Water resistant zippers"],
     sizes: ["xs", "m", "xl"],
     id: "021",
   },
@@ -438,12 +460,13 @@ export const jacketList = [
   {
     name: "Vancouver",
     type: "Parka",
+    stars: ["1", "2", "3", "4", "5"],
     price: 759,
     image: "../images/jackets/vancouver.jpg",
     description:
       "Warm and lightweighted parka especially built for light outdoor activities like hiking and trekking. It has a smart and elegant desing with fleece on the inside and keep-dry technology. Hidden pockets inside and two side pockets outside. Water and wind resistant for increased protection.",
     sports: ["Hiking", "Trekking"],
-    colours: ["Light blue", "Pink", "Black"],
+    colours: ["Blue", "Pink", "Black"],
     specs: [
       "Hidden pockets",
       "Invisible zippers",
@@ -451,7 +474,7 @@ export const jacketList = [
       "Lightweight",
       "Velcro cuff fasteners",
       "Water resistant",
-      "wind resistant",
+      "Wind resistant",
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "022",

@@ -1,15 +1,61 @@
-.get-in-touch a {
-  color: var(--primary-colour);
-}
-.get-in-touch i {
-  padding-right: 5px;
-  margin-top: 5px;
-}
-
-.get-in-touch p {
-  margin-bottom: 0.5rem;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
 }
 
+form button {
+  border: none;
+}
+
+.disabled {
+  background-color: #61666c;
+  cursor: default;
+}
+
+.disabled:hover {
+  border-radius: 50px;
+}
+
+.contact-form p {
+  margin: 0 0;
+}
+
+.contact-form .instructions-para {
+  margin-bottom: 1.5rem;
+}
+
+.contact-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  font-weight: var(--bold);
+}
+
+.contact-field-wrapper span {
+  color: red;
+}
+
+.contact-field {
+  height: 2rem;
+}
+
+.error-warning {
+  color: red;
+  margin-bottom: 0;
+  display: none;
+}
+
+address a {
+  margin-left: 1rem;
+  font-weight: var(--bold);
+}
+
+.fa-phone-alt {
+  margin-bottom: 1.5rem;
+}
 .search-box {
   margin: 10px;
   max-width: 400px;
@@ -51,6 +97,54 @@ dt {
 
 dl {
   margin-right: 1rem;
+}
+
+/* ---------- Modal popup ---------- */
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(0.15rem);
+  z-index: 5;
+}
+
+.popup-box {
+  max-width: 300px;
+  border: 1px solid var(--primary-colour);
+  min-height: fit-content;
+  background-color: var(--white);
+  position: fixed;
+  top: 50%;
+  left: 18%;
+  z-index: 10;
+  transform: translate(-15%, -50%);
+}
+
+.close-modal {
+  float: right;
+  background-color: transparent;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+}
+
+.popup-box p {
+  font: var(--headings-h2);
+  margin: 2.5rem 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feedback-form {
+  font-weight: var(--bold);
 }
 
 @media only screen and (min-width: 1280px) {

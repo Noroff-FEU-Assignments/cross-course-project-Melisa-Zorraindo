@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;600&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,900;1,200&display=swap"
       rel="stylesheet"
     />
     <link href="/css/styles.css" rel="stylesheet" />
@@ -56,6 +56,25 @@
       </nav>
     </header>
     <main>
+      <nav class="second-navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+          <li>
+            <a class="active" href="/purchases/trolley.html"
+              ><i class="fas fa-shopping-basket"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/user.html" class="user"
+              ><i class="fas fa-user"></i>MarySmith83</a
+            >
+          </li>
+        </ul>
+      </nav>
       <div class="breadcrumbs">
         <a class="breadcrumbs-previous" href="../index.html">home</a>
         <i class="fas fa-caret-right"></i>
@@ -72,64 +91,36 @@
 
       <section class="payment-section">
         <h1>Payment</h1>
-        <h2>Order summary</h2>
-        <p>Alaska</p>
-        <p>Gore-Tex insulated jacket</p>
-        <div class="product-image">
-          <img
-            alt="Gore-Tex insulated orange jacket"
-            class="jacket-image product-specific-page-jacket-image"
-            src="/images/jackets/alaska.jpg"
-          />
-        </div>
-        <div class="specs-wrapper">
-          <div class="specs-container">
-            <p>Colour</p>
-            <i class="fas fa-circle orange"></i>
-          </div>
-          <div class="specs-container">
-            <p>Size</p>
-            <p>m</p>
-          </div>
-        </div>
-      </section>
-      <section class="payment-section">
-        <h2>Payment summary</h2>
-        <div class="payment-wrapper">
-          <p>Sub-total</p>
-          <p>&dollar; 399</p>
-        </div>
-        <div class="payment-wrapper">
-          <p>Shipping</p>
-          <p>Free</p>
-        </div>
-        <p class="estimated-shipping">estimated in three to five days</p>
-        <div class="payment-wrapper total">
-          <p>Total</p>
-          <p>&dollar; 399</p>
-        </div>
-      </section>
+        
+      
       <section class="payment-section">
         <h2>Contact information</h2>
         <form class="form-wrapper" method="post">
-          <label for="name">full name</label>
+          <label for="name">Full name<span>*</span> </label>
           <input type="text" name="fullname" id="name" />
-          <label for="email">e mail</label>
+          <label for="email">Email</label>
           <input type="email" name="email" id="email" />
-          <label for="address">address</label>
+          <label for="address">Address</label>
           <input type="text" name="address" id="address" />
           <div class="form-wrapper-flex">
             <div class="form-wrapper-small">
-              <label for="city">city</label>
+              <label for="city">City</label>
               <input type="text" name="city" id="city" />
             </div>
             <div class="form-wrapper-small">
-              <label for="postcode">post code</label>
+              <label for="postcode">Post code</label>
               <input type="text" name="postcode" id="postcode" />
             </div>
           </div>
-          <label for="country">country</label>
-          <input type="text" name="country" id="country" />
+          <label for="country">Country</label>
+          <select type="select" name="country" id="country">
+            <option value="">--Please choose an option--</option>
+            <option value="arg">Argentina</option>
+            <option value="nor">Norway</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+          </select>
+          <!-- <input type="text" name="country" id="country" /> -->
           <div>
             <input
               type="checkbox"
@@ -174,18 +165,19 @@
             maxlength="3"
           />
         </form>
-        <div class="cta-check-out">
-          <label for="pop-up-cta" class="cta">Check out</label>
-          <input type="checkbox" id="pop-up-cta" />
-          <div class="popup-box">
-            <h2>Thank you for your purchase!</h2>
-            <p>
-              We've sent you an email with an order confirmation and details of
-              your order. If you don't find it, please check your spam folder.
-            </p>
-            <p>Your order # is: 45225</p>
-          </div>
+        <div class="cta-checkout">
+          <button class="cta">Check out</button>
         </div>
+        <div class="popup-box hidden">
+          <button class="close-modal">&times;</button>
+          <p class="feedback-form">Thank you for your purchase</p>
+          <p>
+            We've sent you an email with an order confirmation and details of
+            your order. If you don't find it, please check your spam folder.
+          </p>
+          <p>Your order # is: 45225</p>
+        </div>
+        <div class="overlay hidden"></div>
       </section>
     </main>
     <nav class="navbar-mobile-bottom">
@@ -214,10 +206,14 @@
         <address>
           <ul>
             <li>
-              <a href="mailto:info@rainydays.com"> <i class="fas fa-envelope"></i>info@rainydays.com</a>
+              <a href="mailto:info@rainydays.com">
+                <i class="fas fa-envelope"></i>info@rainydays.com</a
+              >
             </li>
             <li>
-              <a href="tel:+0125688896"> <i class="fas fa-phone-alt"></i>+01 256 88 896</a>
+              <a href="tel:+0125688896">
+                <i class="fas fa-phone-alt"></i>+01 256 88 896</a
+              >
             </li>
             <li>
               <a href="/contact.html">
@@ -226,7 +222,7 @@
             </li>
           </ul>
         </address>
-        <p><a href="/contact.html">faq</a></p>
+        <p><a href="/contact.html#faq">faq</a></p>
       </section>
       <section class="footer-info">
         <p class="about-footer"><a href="/about.html">about us</a></p>
@@ -236,17 +232,24 @@
         <div>
           <ul class="social-media-icons">
             <li>
-              <a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/"> <i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/">
+                <i class="fab fa-instagram"></i
+              ></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/"> <i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/">
+                <i class="fab fa-twitter"></i
+              ></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/"> <i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/">
+                <i class="fab fa-facebook-square"></i
+              ></a>
             </li>
           </ul>
         </div>
       </section>
     </footer>
+    <script src="/js/payment.js"></script>
   </body>
 </html>

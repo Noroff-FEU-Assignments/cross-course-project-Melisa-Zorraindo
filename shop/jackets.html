@@ -3,12 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Unique and durable jackets for your outdoor adventures"
-    />
+    <meta name="description" content="Gore-Tex insulated jacket" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainy Days | Shop</title>
+    <title>Rainy Days | Jackets</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,10 +13,9 @@
       rel="stylesheet"
     />
     <link href="/css/styles.css" rel="stylesheet" />
-    <link href="/css/index.css" rel="stylesheet" />
-    <link href="/css/shop.css" rel="stylesheet" />
+    <link href="/css/product.css" rel="stylesheet" />
     <link href="/css/media.css" rel="stylesheet" />
-    <link rel="icon" href="/images/favicon.png" />
+    <link rel="icon" href="../images/favicon.png" />
     <script
       src="https://kit.fontawesome.com/9aef28119c.js"
       crossorigin="anonymous"
@@ -44,7 +40,7 @@
   <body>
     <header>
       <div class="navigation-menu">
-        <a href="/index.html"
+        <a href="../index.html"
           ><img
             alt="Rainy days logo"
             src="/images/RainyDays_Logo.png"
@@ -53,9 +49,11 @@
       </div>
       <nav class="navigation-menu-links">
         <ul class="links">
-          <li class="margin"><a href="/shop.html" class="active">Shop</a></li>
-          <li class="margin"><a href="/about.html">About us</a></li>
-          <li class="margin"><a href="/contact.html">Contact us</a></li>
+          <li class="margin">
+            <a class="active" href="../shop.html"> shop</a>
+          </li>
+          <li class="margin"><a href="../about.html"> about us</a></li>
+          <li class="margin"><a href="../contact.html">contact us</a></li>
         </ul>
       </nav>
     </header>
@@ -68,7 +66,7 @@
             </a>
           </li>
           <li>
-            <a class="active" href="/purchases/trolley.html"
+            <a href="/purchases/trolley.html"
               ><i class="fas fa-shopping-basket"></i
             ></a>
           </li>
@@ -80,43 +78,90 @@
         </ul>
       </nav>
       <div class="breadcrumbs">
-        <a class="breadcrumbs-previous" href="/index.html">home</a>
+        <a class="breadcrumbs-previous" href="../index.html">home</a>
         <i class="fas fa-caret-right"></i>
-        <p class="breadcrumbs-current">shop</p>
+        <a class="breadcrumbs-previous" href="../shop.html">shop</a>
+        <i class="fas fa-caret-right"></i>
+        <a class="breadcrumbs-previous" href="../shop/womens.html"
+          >women's jackets</a
+        >
+        <i class="fas fa-caret-right"></i>
+        <p class="breadcrumbs-current"></p>
       </div>
-      <h1>Browse through all our collections</h1>
-      <div class="shop-container">
-        <div class="shop-card shop-collection">
-          <h2>New collection</h2>
-          <a href="/shop/new-collection.html?page=new-collection" class="cta"
-            >View</a
-          >
-        </div>
-        <div class="shop-card shop-women">
-          <h2>Women's</h2>
-          <a href="/shop/womens.html?page=womens" class="cta">View</a>
-        </div>
-        <div class="shop-card shop-men">
-          <h2>Men's</h2>
-          <a href="/shop/mens.html?page=mens" class="cta">View</a>
+      <div class="product-info"></div>
+      <!-- <div class="product-wrapper-info"> -->
+        <section class="item-description"></section>
+        <section class="item-description" id="reviews">
+          <h2>Reviews</h2>
+          <div class="user-reviews">
+            <h3>Rachel Grey</h3>
+            <div>
+              <small><i class="fas fa-user-check"></i></small>
+              <small>Verified user</small>
+            </div>
+          </div>
+          <div class="star-wrapper">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            I love the design so much I bought it in three different colours.
+            Highly recommend it for hiking and trekking. You'll never get wet!
+          </p>
+          <div class="user-reviews">
+            <h3>Monica Teller</h3>
+            <div>
+              <small><i class="fas fa-user-check"></i></small>
+              <small>Verified user</small>
+            </div>
+          </div>
+          <div class="star-wrapper">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>Five stars. This jacket is stunning!</p>
+        </section>
+        <div class="call-to-action-div call-to-action-div-one">
+          <!-- <button class="cta cta-specific-product">Add to cart</button> -->
         </div>
       </div>
+
+      <div class="popup-box hidden">
+        <button class="close-modal">&times;</button>
+        <h2>Your item has been added to the cart</h2>
+          <div class="cta-container-pop">
+            <a class="cta cta-pop-up" href="../purchases/trolley.html">Go to cart</a>
+            <a class="cta cta-secondary" href="../shop.html"
+              ><span>Continue shopping</span></a
+            >
+          </div>
+      </div>
+
+      <div class="overlay hidden"></div>
     </main>
     <nav class="navbar-mobile-bottom">
       <ul>
         <li>
-          <a href="index.html"> <i class="fas fa-home"></i>Home</a>
+          <a href="../index.html"> <i class="fas fa-home"></i>Home</a>
         </li>
         <li>
-          <a href="/shop.html" class="active">
+          <a class="active" href="../womens.html">
             <i class="fab fa-shopify"></i>Shop</a
           >
         </li>
         <li>
-          <a href="/about.html"> <i class="fas fa-info-circle"></i>About us</a>
+          <a href="../about.html">
+            <i class="fas fa-info-circle"></i>About us</a
+          >
         </li>
         <li>
-          <a href="/contact.html">
+          <a href="../contact.html">
             <i class="fas fa-comment-alt"></i>Contact us</a
           >
         </li>
@@ -124,7 +169,7 @@
     </nav>
     <footer>
       <section class="footer-info contact">
-        <p><a href="/contact.html">contact us</a></p>
+        <p><a href="contact.html">contact us</a></p>
         <address>
           <ul>
             <li>
@@ -138,7 +183,7 @@
               >
             </li>
             <li>
-              <a href="/contact.html">
+              <a href="contact.html">
                 <i class="fas fa-map-marker-alt"></i>Find a store</a
               >
             </li>
@@ -147,7 +192,7 @@
         <p><a href="/contact.html#faq">faq</a></p>
       </section>
       <section class="footer-info">
-        <p class="about-footer"><a href="/about.html">about us</a></p>
+        <p class="about-footer"><a href="about.html">about us</a></p>
       </section>
       <section class="footer-info">
         <p class="social-media">social media</p>
@@ -172,5 +217,6 @@
         </div>
       </section>
     </footer>
+    <script src="../js/product.js" type="module"></script>
   </body>
 </html>

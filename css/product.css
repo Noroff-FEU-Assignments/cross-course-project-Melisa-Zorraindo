@@ -1,0 +1,217 @@
+h2 {
+  margin: 2rem 1rem 1rem;
+  font-weight: var(--bold);
+}
+.product-info {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  /*   justify-content: space-around;
+  align-items: flex-start; */
+}
+
+.product-image,
+.jacket-info {
+  flex-basis: 45%;
+  /* border: 1px solid red; */
+}
+
+.jacket-image {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem;
+}
+
+.product-heading {
+  margin-bottom: 1rem;
+}
+
+/* Removing previous styles */
+.product-heading h1,
+.product-heading p {
+  margin: 0;
+}
+
+/* Adding new ones */
+.product-heading p {
+  margin-left: 1rem;
+}
+
+.product-heading h1 {
+  margin-left: 1rem;
+  font-weight: var(--bold);
+  font-size: 2.5rem;
+}
+
+.product-subheading {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.product-subheading p {
+  font-size: 2.5rem;
+}
+
+.product-subheading a {
+  color: var(--terciary-colour);
+}
+
+.colour-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.colour-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.colour-box p {
+  margin: 0;
+}
+
+.colour-box i {
+  font-size: 1.5rem;
+}
+
+.size-choices {
+  justify-content: flex-start;
+  margin-left: 1rem;
+}
+.size-choices button {
+  font: var(--copy);
+  padding: 0.5rem;
+}
+
+.size-button {
+  border: 1px solid var(--primary-colour);
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+}
+
+.call-to-action-div {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+
+.call-to-action-div-one {
+  text-align: center;
+}
+
+.cta-specific-product {
+  border: none;
+  width: 90%;
+}
+
+.item-description p {
+  margin-bottom: 0;
+}
+
+.user-reviews {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-left: 1rem;
+  flex-wrap: wrap;
+}
+
+.user-reviews h3 {
+  margin-bottom: 0.25rem;
+}
+
+.star-wrapper {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  color: var(--terciary-colour);
+}
+
+/* ---------- Modal popup ---------- */
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(0.15rem);
+  z-index: 5;
+}
+
+.popup-box {
+  max-width: 300px;
+  border: 1px solid var(--primary-colour);
+  min-height: 250px;
+  background-color: var(--white);
+  position: fixed;
+  top: 50%;
+  left: 18%;
+  z-index: 10;
+  transform: translate(-15%, -50%);
+}
+
+.close-modal {
+  float: right;
+  background-color: transparent;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+}
+.popup-box h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cta-container-pop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.cta-container-pop a {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: var(--white);
+}
+
+.cta-container-pop a.cta-secondary {
+  background-color: var(--white);
+  color: var(--primary-colour);
+  box-shadow: none;
+  border: 1px solid var(--primary-colour);
+}
+
+.cta-secondary:hover {
+  border: 1px solid var(--primary-colour);
+}
+
+.payment-wrapper {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-wrapper p {
+  margin: 0 1rem;
+}
+
+.total {
+  font-weight: var(--bold);
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 1280px) {
+  main {
+    margin-left: 50px;
+  }
+}

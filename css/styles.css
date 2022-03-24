@@ -1,7 +1,7 @@
 /* --------------- Document level adjustments --------------- */
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   scroll-behavior: smooth;
 }
 :root {
@@ -12,15 +12,15 @@ html {
   --white: #fff;
 
   /* --------------- Fonts mobile --------------- */
-  --headings-h1: 1.625rem "Quicksand", sans-serif;
-  --headings-h2: 1.375rem "Quicksand", sans-serif;
-  --headings-h3: 1.125rem "Raleway", sans-serif;
-  --headings-h4: 1.125rem "Raleway", sans-serif;
-  --copy: 1rem "Raleway", sans-serif;
-  --cta: 1.25rem "Quicksand", sans-serif;
-  --cta-small: 1rem "Quicksand", sans-serif;
+  --headings-h1: 1.625rem "Dosis", sans-serif;
+  --headings-h2: 1.375rem "Dosis", sans-serif;
+  --headings-h3: 1.125rem "Source Sans Pro", sans-serif;
+  --headings-h4: 1.125rem "Source Sans Pro", sans-serif;
+  --copy: 1rem "Source Sans Pro", sans-serif;
+  --cta: 1.25rem "Dosis", sans-serif;
+  --cta-small: 1rem "Dosis", sans-serif;
   --bold: 600;
-  --semi-bold: 500;
+  /* --semi-bold: 500; */
 }
 
 /* --------------- Header & Logo --------------- */
@@ -29,8 +29,8 @@ header {
   background-color: var(--white);
   /*border-bottom: 2px solid #26559180;*/
   /*position: fixed;*/
-  width: 100%;
-  z-index: 10; /*header disappears from homepage when the z-index is removed*/
+  /* width: 100%; */
+  /* z-index: 10; header disappears from homepage when the z-index is removed */
   text-align: center;
 }
 
@@ -39,8 +39,8 @@ nav ul li a {
 }
 
 .logo {
-  width: 90px;
-  margin-top: 5px;
+  width: 120px;
+  margin: 5px;
 }
 
 /* --------------- Headings, body, and paragraphs --------------- */
@@ -100,8 +100,6 @@ address {
   margin-top: 2rem;
   margin-left: 1rem;
   flex-wrap: wrap;
-  border-top: 1px solid #26559180;
-  border-bottom: 1px solid #26559180;
 }
 
 .breadcrumbs a,
@@ -146,6 +144,7 @@ p a {
   font-weight: var(--bold);
   text-decoration: none;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .cta:hover {
@@ -172,6 +171,31 @@ ul {
 li {
   padding: 10px;
   text-align: center;
+}
+
+/* --------------- Second navigation --------------- */
+
+.second-navigation ul {
+  width: 100%;
+  justify-content: flex-end;
+  border-top: 1px solid #26559180;
+  border-bottom: 1px solid #26559180;
+}
+
+.second-navigation li a,
+.second-navigation li div {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: left;
+}
+
+.user {
+  font-size: 0.85rem;
+}
+
+.fa-user {
+  font-size: 1rem;
 }
 
 /* --------------- Navbar mobile bottom --------------- */

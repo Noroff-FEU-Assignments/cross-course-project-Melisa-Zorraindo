@@ -8,7 +8,7 @@
       content="Unique and durable jackets for your outdoor adventures"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainy Days | Shop</title>
+    <title>Rainy Days | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,8 +16,8 @@
       rel="stylesheet"
     />
     <link href="/css/styles.css" rel="stylesheet" />
-    <link href="/css/index.css" rel="stylesheet" />
-    <link href="/css/shop.css" rel="stylesheet" />
+    <link href="/css/womens.css" rel="stylesheet" />
+    <link href="/css/user.css" rel="stylesheet" />
     <link href="/css/media.css" rel="stylesheet" />
     <link rel="icon" href="/images/favicon.png" />
     <script
@@ -53,7 +53,7 @@
       </div>
       <nav class="navigation-menu-links">
         <ul class="links">
-          <li class="margin"><a href="/shop.html" class="active">Shop</a></li>
+          <li class="margin"><a href="/shop.html">Shop</a></li>
           <li class="margin"><a href="/about.html">About us</a></li>
           <li class="margin"><a href="/contact.html">Contact us</a></li>
         </ul>
@@ -68,49 +68,35 @@
             </a>
           </li>
           <li>
-            <a class="active" href="/purchases/trolley.html"
+            <a href="/purchases/trolley.html"
               ><i class="fas fa-shopping-basket"></i
             ></a>
           </li>
           <li>
-            <a href="/user.html" class="user"
+            <a href="/user.html" class="user active"
               ><i class="fas fa-user"></i>MarySmith83</a
             >
           </li>
         </ul>
       </nav>
       <div class="breadcrumbs">
-        <a class="breadcrumbs-previous" href="/index.html">home</a>
+        <a class="breadcrumbs-previous" href="../index.html">home</a>
         <i class="fas fa-caret-right"></i>
-        <p class="breadcrumbs-current">shop</p>
+        <p class="breadcrumbs-current">profile</p>
       </div>
-      <h1>Browse through all our collections</h1>
-      <div class="shop-container">
-        <div class="shop-card shop-collection">
-          <h2>New collection</h2>
-          <a href="/shop/new-collection.html?page=new-collection" class="cta"
-            >View</a
-          >
-        </div>
-        <div class="shop-card shop-women">
-          <h2>Women's</h2>
-          <a href="/shop/womens.html?page=womens" class="cta">View</a>
-        </div>
-        <div class="shop-card shop-men">
-          <h2>Men's</h2>
-          <a href="/shop/mens.html?page=mens" class="cta">View</a>
-        </div>
-      </div>
+      <h1>Welcome back, MarySmith83</h1>
+      <h2>Your favourites</h2>
+      <div class="items-wrapper"></div>
     </main>
     <nav class="navbar-mobile-bottom">
       <ul>
         <li>
-          <a href="index.html"> <i class="fas fa-home"></i>Home</a>
+          <a href="/index.html" class="active">
+            <i class="fas fa-home"></i>Home</a
+          >
         </li>
         <li>
-          <a href="/shop.html" class="active">
-            <i class="fab fa-shopify"></i>Shop</a
-          >
+          <a href="/shop.html"> <i class="fab fa-shopify"></i>Shop</a>
         </li>
         <li>
           <a href="/about.html"> <i class="fas fa-info-circle"></i>About us</a>
@@ -133,7 +119,7 @@
               >
             </li>
             <li>
-              <a href="tel:+0125688896">
+              <a href="tel:0125688896">
                 <i class="fas fa-phone-alt"></i>+01 256 88 896</a
               >
             </li>
@@ -172,5 +158,6 @@
         </div>
       </section>
     </footer>
+    <script src="/js/user.js" type="module"></script>
   </body>
 </html>
