@@ -220,6 +220,19 @@ function createSpecificProduct(listOfJackets) {
         sportsLi.style.paddingLeft = "1rem";
         sportsUl.append(sportsLi);
       });
+      //append second cta at the bottom of the page
+      const ctaSupportButtonDiv = document.querySelector(
+        ".call-to-action-div-one"
+      );
+      const ctaSupportButton = document.createElement("button");
+      ctaSupportButton.classList.add("cta", "cta-specific-product");
+      ctaSupportButton.innerText = "Add to cart";
+      ctaSupportButton.dataset.id = jacket.id;
+      ctaSupportButton.dataset.image = jacket.image;
+      ctaSupportButton.dataset.name = jacket.name;
+      ctaSupportButton.dataset.type = jacket.type;
+      ctaSupportButton.dataset.price = jacket.price;
+      ctaSupportButtonDiv.append(ctaSupportButton);
     }
   });
 }
@@ -246,17 +259,19 @@ function closePopup() {
   body.style.overflow = "auto";
 }
 
-/* for (let i = 0; i < addToCartButton.length; i++) {
+for (let i = 0; i < addToCartButton.length; i++) {
   addToCartButton[i].addEventListener("click", openPopup);
 }
 
 closePopupButton.addEventListener("click", closePopup);
-overlay.addEventListener("click", closePopup); */
+overlay.addEventListener("click", closePopup);
 
 //select elements for trolley page
-const cartBtn = document.querySelector(".cta-specific-product");
+const cartBtn = document.querySelectorAll(".cta-specific-product");
 
-cartBtn.addEventListener("click", addToCart);
+for (let j = 0; j < cartBtn.length; j++) {
+  cartBtn[j].addEventListener("click", addToCart);
+}
 
 function addToCart() {
   const id = this.dataset.id;
