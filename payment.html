@@ -193,18 +193,19 @@
             maxlength="3"
           />
         </form>
-        <div class="cta-check-out">
-          <label for="pop-up-cta" class="cta">Check out</label>
-          <input type="checkbox" id="pop-up-cta" />
-          <div class="popup-box">
-            <h2>Thank you for your purchase!</h2>
-            <p>
-              We've sent you an email with an order confirmation and details of
-              your order. If you don't find it, please check your spam folder.
-            </p>
-            <p>Your order # is: 45225</p>
-          </div>
+        <div class="cta-checkout">
+          <button class="cta">Check out</button>
         </div>
+        <div class="popup-box hidden">
+          <button class="close-modal">&times;</button>
+          <p class="feedback-form">Thank you for your purchase</p>
+          <p>
+            We've sent you an email with an order confirmation and details of
+            your order. If you don't find it, please check your spam folder.
+          </p>
+          <p>Your order # is: 45225</p>
+        </div>
+        <div class="overlay hidden"></div>
       </section>
     </main>
     <nav class="navbar-mobile-bottom">
@@ -277,5 +278,6 @@
         </div>
       </section>
     </footer>
+    <script src="/js/payment.js"></script>
   </body>
 </html>

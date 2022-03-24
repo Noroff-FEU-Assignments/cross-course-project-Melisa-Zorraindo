@@ -194,28 +194,6 @@ h2 {
 .cta-secondary:hover {
   border: 1px solid var(--primary-colour);
 }
-/* #pop-up-cta {
-  display: none;
-}
-#pop-up-cta:checked + .popup-box {
-  display: block;
-  animation-name: feedback-success;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes feedback-success {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
 
 .payment-wrapper {
   max-width: 300px;
@@ -226,27 +204,11 @@ h2 {
 .payment-wrapper p {
   margin: 0 1rem;
 }
-/* .payment-wrapper p:nth-of-type(1) {
-  font-style: normal;
-} */
-
-/* .payment-wrapper p:nth-of-type(2) {
-  color: var(--secondary-colour);
-  font-weight: 400;
-} */
-
-/* .payment-box p:first-of-type {
-  font-style: normal;
-} */
 
 .total {
   font-weight: var(--bold);
   margin: 1rem 0;
 }
-
-/* .total p:last-of-type {
-  font-weight: var(--bold);
-} */
 
 @media only screen and (min-width: 1280px) {
   main {
