@@ -91,64 +91,36 @@
 
       <section class="payment-section">
         <h1>Payment</h1>
-        <h2>Order summary</h2>
-        <p>Alaska</p>
-        <p>Gore-Tex insulated jacket</p>
-        <div class="product-image">
-          <img
-            alt="Gore-Tex insulated orange jacket"
-            class="jacket-image product-specific-page-jacket-image"
-            src="/images/jackets/alaska.jpg"
-          />
-        </div>
-        <div class="specs-wrapper">
-          <div class="specs-container">
-            <p>Colour</p>
-            <i class="fas fa-circle orange"></i>
-          </div>
-          <div class="specs-container">
-            <p>Size</p>
-            <p>m</p>
-          </div>
-        </div>
-      </section>
-      <section class="payment-section">
-        <h2>Payment summary</h2>
-        <div class="payment-wrapper">
-          <p>Sub-total</p>
-          <p>&dollar; 399</p>
-        </div>
-        <div class="payment-wrapper">
-          <p>Shipping</p>
-          <p>Free</p>
-        </div>
-        <p class="estimated-shipping">estimated in three to five days</p>
-        <div class="payment-wrapper total">
-          <p>Total</p>
-          <p>&dollar; 399</p>
-        </div>
-      </section>
+        
+      
       <section class="payment-section">
         <h2>Contact information</h2>
         <form class="form-wrapper" method="post">
-          <label for="name">full name</label>
+          <label for="name">Full name<span>*</span> </label>
           <input type="text" name="fullname" id="name" />
-          <label for="email">e mail</label>
+          <label for="email">Email</label>
           <input type="email" name="email" id="email" />
-          <label for="address">address</label>
+          <label for="address">Address</label>
           <input type="text" name="address" id="address" />
           <div class="form-wrapper-flex">
             <div class="form-wrapper-small">
-              <label for="city">city</label>
+              <label for="city">City</label>
               <input type="text" name="city" id="city" />
             </div>
             <div class="form-wrapper-small">
-              <label for="postcode">post code</label>
+              <label for="postcode">Post code</label>
               <input type="text" name="postcode" id="postcode" />
             </div>
           </div>
-          <label for="country">country</label>
-          <input type="text" name="country" id="country" />
+          <label for="country">Country</label>
+          <select type="select" name="country" id="country">
+            <option value="">--Please choose an option--</option>
+            <option value="arg">Argentina</option>
+            <option value="nor">Norway</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+          </select>
+          <!-- <input type="text" name="country" id="country" /> -->
           <div>
             <input
               type="checkbox"
