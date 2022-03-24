@@ -89,8 +89,9 @@ h2 {
 }
 
 .size-button {
-  border: none;
+  border: 1px solid var(--primary-colour);
   text-transform: uppercase;
+  border-radius: 0.3rem;
 }
 
 .call-to-action-div {

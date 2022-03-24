@@ -213,6 +213,7 @@ function deleteItem() {
 function saveProduct(itemToPurchase) {
   localStorage.setItem("cart", JSON.stringify(itemToPurchase));
 }
+//function ends here
 
 //prevent placeholder to take values under one
 const numberOfJackets = document.querySelectorAll("input");
