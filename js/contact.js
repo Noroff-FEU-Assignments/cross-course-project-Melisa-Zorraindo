@@ -5,19 +5,9 @@ submitButton.disabled = true;
 submitButton.classList.add("disabled");
 
 const firstName = document.querySelector("#name");
-const errorName = document.querySelector("#error-name");
-
 const subject = document.querySelector("#subject");
-const errorSubject = document.querySelector("#error-subject");
-
 const email = document.querySelector("#email");
-const errorEmail = document.querySelector("#error-email");
-
 const customerMessage = document.querySelector("#message");
-const errorCustomerMessage = document.querySelector("#error-customer-message");
-
-const successMessage = document.querySelector(".success-message");
-const instructionsForm = document.querySelector(".instructions-para");
 
 //select modal popup elements in the dom
 const body = document.querySelector("body");
@@ -26,6 +16,36 @@ const overlay = document.querySelector(".overlay");
 const closePopupButton = document.querySelector(".close-modal");
 
 function validateForm() {
+  if (
+    checkLengths(firstName.value, 1) &&
+    checkLengths(subject.value, 1) &&
+    checkEmail(email.value) &&
+    checkLengths(customerMessage.value, 20)
+  ) {
+    submitButton.disabled = false;
+    submitButton.classList.remove("disabled");
+  } /* else {
+    submitButton.disabled = true;
+    submitButton.classList.add("disabled");
+  } */
+}
+
+firstName.addEventListener("keyup", validateForm);
+subject.addEventListener("keyup", validateForm);
+email.addEventListener("keyup", validateForm);
+customerMessage.addEventListener("keyup", validateForm);
+
+function submitForm(event) {
+  event.preventDefault();
+  openPopup();
+  submitButton.disabled = true;
+  submitButton.classList.add("disabled");
+  form.reset();
+}
+
+form.addEventListener("submit", submitForm);
+
+/* function validateForm() {
   if (checkLengths(firstName.value, 1)) {
     errorName.style.display = "block";
     return false;
@@ -73,11 +93,13 @@ function submitForm(event) {
   form.reset();
 }
 
-form.addEventListener("submit", submitForm);
+form.addEventListener("submit", submitForm); */
 
 function checkLengths(val, len) {
-  if (val.trim().length < len) {
+  if (val.trim().length >= len) {
     return true;
+  } else {
+    return false;
   }
 }
 
