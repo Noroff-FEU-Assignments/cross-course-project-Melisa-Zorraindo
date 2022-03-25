@@ -165,7 +165,7 @@ if (itemsToBuy.length === 0) {
     updateNumber.append(numberInput);
   });
 }
-//set total and subtotal amounts
+//select elements in the DOM
 const totalValueJacket = document.querySelectorAll(".item-price");
 const subtotalAmount = document.querySelector(".subtotal-sum");
 const totalAmount = document.querySelector(".total-sum");
@@ -186,9 +186,36 @@ updatePrices();
 //and update price when item removed
 const binIcon = document.querySelectorAll(".fa-trash-alt");
 
+//select modal popup elements in the dom
+const body = document.querySelector("body");
+const modalPopup = document.querySelector(".popup-box");
+const overlay = document.querySelector(".overlay");
+const closePopupButton = document.querySelector(".close-modal");
+const confirmRemoval = document.querySelector(".cta-confirm-action");
+const abortRemoval = document.querySelector(".cta-abort-removal");
+
+//open close modal popup
+function openPopup() {
+  modalPopup.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  body.style.overflow = "hidden";
+}
+
+//close modal popup
+function closePopup() {
+  modalPopup.classList.add("hidden");
+  overlay.classList.add("hidden");
+  body.style.overflow = "auto";
+}
+
+closePopupButton.addEventListener("click", closePopup);
+overlay.addEventListener("click", closePopup);
+
 binIcon.forEach((icon) => {
   icon.addEventListener("click", deleteItem);
 });
+
+// confirmRemoval.addEventListener("click", deleteItem);
 
 function deleteItem() {
   const jacketToRemoveCard = document.querySelectorAll(".purchase-items");
@@ -197,13 +224,21 @@ function deleteItem() {
     let jacketToRemove = jacketToRemoveCard[i];
 
     jacketToRemove.addEventListener("click", function () {
-      jacketToRemove.remove();
-      //
-      const newItemsToBuy = itemsToBuy.filter((item) => {
-        return item !== itemsToBuy[i];
+      openPopup();
+
+      //if no is clicked
+      abortRemoval.addEventListener("click", closePopup);
+
+      //if yes is clicked
+      confirmRemoval.addEventListener("click", function () {
+        jacketToRemove.remove();
+        //
+        const newItemsToBuy = itemsToBuy.filter((item) => {
+          return item !== itemsToBuy[i];
+        });
+        saveProduct(newItemsToBuy);
+        location.reload();
       });
-      saveProduct(newItemsToBuy);
-      location.reload();
     });
   }
 }
