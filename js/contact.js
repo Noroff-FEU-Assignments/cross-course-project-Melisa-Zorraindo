@@ -13,6 +13,9 @@ const errorSubject = document.querySelector("#error-subject");
 const email = document.querySelector("#email");
 const errorEmail = document.querySelector("#error-email");
 
+const customerMessage = document.querySelector("#message");
+const errorCustomerMessage = document.querySelector("#error-customer-message");
+
 const successMessage = document.querySelector(".success-message");
 const instructionsForm = document.querySelector(".instructions-para");
 
@@ -30,7 +33,7 @@ function validateForm() {
     errorName.style.display = "none";
   }
 
-  if (checkLengths(subject.value, 5)) {
+  if (checkLengths(subject.value, 1)) {
     errorSubject.style.display = "block";
     return false;
   } else {
@@ -44,6 +47,13 @@ function validateForm() {
     errorEmail.style.display = "none";
   }
 
+  if (checkLengths(customerMessage.value, 20)) {
+    errorCustomerMessage.style.display = "block";
+    return false;
+  } else {
+    errorCustomerMessage.style.display = "none";
+  }
+
   if (checkLengths && checkEmail) {
     submitButton.disabled = false;
     submitButton.classList.remove("disabled");
@@ -53,6 +63,7 @@ function validateForm() {
 firstName.addEventListener("keyup", validateForm);
 subject.addEventListener("keyup", validateForm);
 email.addEventListener("keyup", validateForm);
+customerMessage.addEventListener("keyup", validateForm);
 
 function submitForm(event) {
   event.preventDefault();

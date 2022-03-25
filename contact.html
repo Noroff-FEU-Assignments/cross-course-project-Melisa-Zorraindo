@@ -86,7 +86,6 @@
         <h1>Contact us</h1>
         <h2>Have you got any questions?</h2>
         <form class="contact-form">
-          <p class="success-message">Your form was submitted correctly</p>
           <p class="instructions-para">
             Check our
             <a class="links-in-text" href="#faq">FAQ</a>
@@ -112,7 +111,7 @@
               placeholder="Type the subject here"
             />
             <p class="error-warning" id="error-subject">
-              Must be at least 5 characters long
+              This field is required
             </p>
           </div>
           <div class="contact-field-wrapper">
@@ -125,6 +124,18 @@
             />
             <p class="error-warning" id="error-email">
               Please enter a valid email address
+            </p>
+          </div>
+          <div class="contact-field-wrapper">
+            <label for="message">Message<span>*</span></label>
+            <textarea
+              class="contact-field textfield"
+              type="text"
+              id="message"
+              placeholder="Please type your message here"
+            ></textarea>
+            <p class="error-warning" id="error-customer-message">
+              Message must have at least 20 characters
             </p>
           </div>
           <button class="cta" type="submit">Send</button>
