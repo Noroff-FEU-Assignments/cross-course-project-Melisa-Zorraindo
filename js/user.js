@@ -123,6 +123,7 @@ function toggleLikes() {
       return item.id !== id;
     });
     storeLikes(newItemsLiked);
+    location.reload();
   }
 }
 
