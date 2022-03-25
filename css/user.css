@@ -31,3 +31,12 @@ p {
   color: red;
   cursor: pointer;
 }
+
+/* .interactions {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.interactions .cta-small {
+  border: none;
+}

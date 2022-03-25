@@ -10,7 +10,7 @@ const favs = addFavs();
 //create HTML in case there are no favs
 if (favs.length === 0) {
   const favsPara = document.createElement("p");
-  favsPara.innerText = "There are no favourites at the moment. ";
+  favsPara.innerText = "There are no saved jackets at the moment. ";
   favsPara.classList.add("favs-para");
   favsDiv.append(favsPara);
 
@@ -63,11 +63,22 @@ favs.forEach((fav) => {
   newPrice.innerText = fav.price;
   headingDiv.append(newPrice);
 
+  //create interactions div
+  const interDiv = document.createElement("div");
+  interDiv.classList.add("interactions");
+  headingDiv.append(interDiv);
+
   //create fav icon
   const likeHeart = document.createElement("i");
   likeHeart.classList.add("fas", "fa-heart");
   likeHeart.dataset.id = fav.id;
-  headingDiv.append(likeHeart);
+  interDiv.append(likeHeart);
+
+  //create cta
+  const ctaWishlist = document.createElement("button");
+  ctaWishlist.classList.add("cta", "cta-small");
+  ctaWishlist.innerText = "Buy";
+  interDiv.append(ctaWishlist);
 });
 
 //select buttons in the DOM
