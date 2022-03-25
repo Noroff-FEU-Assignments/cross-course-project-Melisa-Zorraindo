@@ -49,7 +49,7 @@
       </div>
       <nav class="navigation-menu-links">
         <ul class="links">
-          <li class="margin"><a class="active" href="/shop.html"> shop</a></li>
+          <li class="margin"><a href="/shop.html"> shop</a></li>
           <li class="margin"><a href="/about.html"> about us</a></li>
           <li class="margin"><a href="/contact.html">contact us</a></li>
         </ul>
@@ -64,7 +64,7 @@
             </a>
           </li>
           <li>
-            <a class="active" href="/purchases/trolley.html"
+            <a href="/purchases/trolley.html"
               ><i class="fas fa-shopping-basket"></i
             ></a>
           </li>
@@ -89,30 +89,30 @@
         <p class="breadcrumbs-current">check out</p>
       </div>
 
+      <!-- <section class="payment-section"> -->
+
       <section class="payment-section">
-        <h1>Payment</h1>
-        
-      
-      <section class="payment-section">
-        <h2>Contact information</h2>
+        <!-- <h2>Contact information</h2> -->
         <form class="form-wrapper" method="post">
+          <h1>Payment</h1>
+          <h2>Contact information</h2>
           <label for="name">Full name<span>*</span> </label>
           <input type="text" name="fullname" id="name" />
-          <label for="email">Email</label>
+          <label for="email">Email<span>*</span></label>
           <input type="email" name="email" id="email" />
-          <label for="address">Address</label>
+          <label for="address">Address<span>*</span></label>
           <input type="text" name="address" id="address" />
           <div class="form-wrapper-flex">
             <div class="form-wrapper-small">
-              <label for="city">City</label>
+              <label for="city">City<span>*</span></label>
               <input type="text" name="city" id="city" />
             </div>
             <div class="form-wrapper-small">
-              <label for="postcode">Post code</label>
+              <label for="postcode">Post code<span>*</span></label>
               <input type="text" name="postcode" id="postcode" />
             </div>
           </div>
-          <label for="country">Country</label>
+          <label for="country">Country<span>*</span></label>
           <select type="select" name="country" id="country">
             <option value="">--Please choose an option--</option>
             <option value="arg">Argentina</option>
@@ -121,33 +121,34 @@
             <option value="uk">United Kingdom</option>
           </select>
           <!-- <input type="text" name="country" id="country" /> -->
-          <div>
+          <!--  <div>
             <input
               type="checkbox"
               name="billing-address"
               id="billing-address"
             /><label for="billing-address">This is my billing address</label>
-          </div>
+          </div> -->
         </form>
       </section>
       <section class="payment-section">
-        <h2>Payment information</h2>
-        <p>Choose payment method below</p>
+        <!-- <h2>Payment information</h2> -->
+        <!-- <p>Choose payment method below</p>
         <div class="payment-method">
           <i class="far fa-credit-card"></i>
           <i class="fab fa-cc-paypal"></i>
-        </div>
+        </div> -->
         <form class="form-wrapper" method="post">
-          <label for="cardholder-name">cardholder's name</label>
+          <h2>Payment information</h2>
+          <label for="cardholder-name">Cardholder's name<span>*</span></label>
           <input type="text" name="cardholder-name" id="cardholder-name" />
-          <div class="card-wrapper">
-            <div class="card-wrapper-field">
-              <label for="card-number">card number</label>
-              <input type="text" name="card-number" id="card-number" />
-            </div>
-            <i class="fab fa-cc-visa"></i>
-          </div>
-          <label for="expiry-date">expiry date</label>
+          <!-- <div class="card-wrapper"> -->
+          <!-- <div class="card-wrapper-field"> -->
+          <label for="card-number">Card number<span>*</span></label>
+          <input type="text" name="card-number" id="card-number" />
+          <!-- </div> -->
+          <!-- <i class="fab fa-cc-visa"></i> -->
+          <!-- </div> -->
+          <label for="expiry-date">Expiry date<span>*</span></label>
           <input
             type="text"
             name="expiry-date"
@@ -156,7 +157,7 @@
             class="form-wrapper-small"
             maxlength="9"
           />
-          <label for="cvv">cvv</label>
+          <label for="cvv">CVV<span>*</span></label>
           <input
             type="text"
             name="cvv"
@@ -186,9 +187,7 @@
           <a href="/index.html"> <i class="fas fa-home"></i>Home</a>
         </li>
         <li>
-          <a class="active" href="/shop.html">
-            <i class="fab fa-shopify"></i>Shop</a
-          >
+          <a href="/shop.html"> <i class="fab fa-shopify"></i>Shop</a>
         </li>
         <li>
           <a href="/about.html"> <i class="fas fa-info-circle"></i>About us</a>

@@ -1,89 +1,27 @@
-.payment-section h2 {
+h1,
+h2 {
+  margin: 2.5rem 0;
+}
+
+input {
+  min-height: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.payment-section p {
-  margin: 0 1rem;
-}
-
-.jacket-image {
-  max-width: 110px;
-  max-height: 150px;
-  margin: 2rem 1rem 0;
-}
-
-.product-image {
-  text-align: center;
-}
-
-.specs-wrapper {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  margin-top: 0.5rem;
-}
-
-.specs-container {
-  display: flex;
-  align-items: center;
-}
-
-.specs-container p:nth-of-type(2) {
-  background-color: var(--primary-colour);
-  color: var(--white);
-  border-radius: 0.25rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-.orange {
-  color: #fea037;
-}
-
-.payment-wrapper {
-  max-width: 300px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.payment-wrapper p:nth-of-type(1) {
-  font-style: normal;
-}
-
-.payment-wrapper p:nth-of-type(2) {
-  color: var(--secondary-colour);
-  font-weight: 400;
-}
-
-.payment-box p:first-of-type {
-  font-style: normal;
-}
-.estimated-shipping {
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  border-bottom: 1px solid var(--primary-colour);
-}
-
-.total,
-.total p:last-of-type {
-  font-weight: var(--bold);
-}
-
-input,
 select {
-  min-height: 20px;
-  margin-bottom: 7px;
-}
-
-select {
+  height: 1.7rem;
+  margin-bottom: 1rem;
   background-color: var(--white);
 }
+
+span {
+  color: red;
+}
 .form-wrapper {
-  max-width: 90%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  font-size: 0.9rem;
-  font-weight: var(--bold);
 }
 
 .form-wrapper-flex {
@@ -95,11 +33,11 @@ select {
   flex-direction: column;
   max-width: 50%;
 }
-#billing-address {
-  min-width: 20px;
-}
+/* #billing-address {
+  width: 1.2rem;
+} */
 
-.payment-method {
+/* .payment-method {
   margin: 1rem;
   font-size: 2rem;
 }
@@ -118,17 +56,18 @@ select {
 .fa-cc-visa {
   font-size: 2rem;
   padding-left: 1rem;
-}
+} */
 
 .cta-checkout {
-  max-width: 600px;
-  margin: 2rem 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
 }
 
 .cta {
   border: none;
   display: block;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* ---------- Modal popup ---------- */
