@@ -11,12 +11,16 @@ const id = params.get("id");
 const breadcrumbsCurrent = document.querySelector(".breadcrumbs-current");
 const productContainer = document.querySelector(".product-info");
 const descriptionContainer = document.querySelector(".item-description");
+const pageTitle = document.querySelector("title");
 
 //function to create HTML
 function createSpecificProduct(listOfJackets) {
-  //update breadcrumbs
   listOfJackets.forEach((jacket) => {
     if (jacket.id === id) {
+      //update title
+      pageTitle.innerText = `Rainy Days | ${jacket.name} - ${jacket.type}`;
+
+      //update breadcrumbs
       breadcrumbsCurrent.innerText = jacket.name;
       breadcrumbsCurrent.style.textTransform = "lowercase";
 
