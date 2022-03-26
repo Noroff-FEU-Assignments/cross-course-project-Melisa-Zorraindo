@@ -1,5 +1,8 @@
 //import utilities
 import { addFavs } from "./functions/favourites.js";
+import { fetchProductsInCart } from "./functions/addToCartFunction.js";
+
+const itemsToBuy = fetchProductsInCart();
 
 //select elements in the DOM
 const favsDiv = document.querySelector(".items-wrapper");
@@ -131,3 +134,18 @@ function toggleLikes() {
 function storeLikes(chosenItem) {
   localStorage.setItem("favourites", JSON.stringify(chosenItem));
 }
+
+//update number of items in trolley
+const numberItemsInTrolley = document.querySelector(
+  ".second-navigation a span"
+);
+
+function updateNumberOfItemsInTrolley() {
+  let itemQuantity = 0;
+  for (let m = 0; m < itemsToBuy.length; m++) {
+    itemQuantity = m + 1;
+  }
+  numberItemsInTrolley.innerText = itemQuantity;
+}
+
+updateNumberOfItemsInTrolley();

@@ -288,6 +288,5 @@ for (let k = 0; k < totalValueJacket.length; k++) {
     let totalJacketPrice = priceValue * quantity;
     totalValueJacket[k].innerText = "$ " + totalJacketPrice;
     updatePrices();
-    updateNumberOfItemsInTrolley();
   });
 }
