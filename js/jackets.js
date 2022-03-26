@@ -1,6 +1,7 @@
 //import utilities
 import { jacketList } from "./modules/list-of-jackets.mjs";
 import { addFavs } from "./functions/favourites.js";
+import { fetchProductsInCart } from "./functions/addToCartFunction.js";
 
 //call imported function
 const favs = addFavs();
@@ -116,3 +117,19 @@ function createHTML(jacketList) {
 }
 
 createHTML(jacketList);
+
+//update number of items in trolley
+const itemsToBuy = fetchProductsInCart();
+const numberItemsInTrolley = document.querySelector(
+  ".second-navigation a span"
+);
+
+function updateNumberOfItemsInTrolley() {
+  let itemQuantity = 0;
+  for (let m = 0; m < itemsToBuy.length; m++) {
+    itemQuantity = m + 1;
+  }
+  numberItemsInTrolley.innerText = itemQuantity;
+}
+
+updateNumberOfItemsInTrolley();

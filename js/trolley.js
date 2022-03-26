@@ -1,5 +1,4 @@
 //import array from file
-// import { jacketList } from "./modules/list-of-jackets.mjs";
 import { fetchProductsInCart } from "./functions/addToCartFunction.js";
 
 const itemsToBuy = fetchProductsInCart();
