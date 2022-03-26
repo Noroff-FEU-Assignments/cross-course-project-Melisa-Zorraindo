@@ -166,6 +166,7 @@ if (itemsToBuy.length === 0) {
   });
 }
 //select elements in the DOM
+
 const totalValueJacket = document.querySelectorAll(".item-price");
 const subtotalAmount = document.querySelector(".subtotal-sum");
 const totalAmount = document.querySelector(".total-sum");
