@@ -8,14 +8,12 @@ input {
   margin-bottom: 1rem;
 }
 
-select {
-  height: 1.7rem;
-  margin-bottom: 1rem;
-  background-color: var(--white);
-}
-
 span {
   color: red;
+}
+
+.form-instructions {
+  margin-bottom: 1rem;
 }
 .form-wrapper {
   max-width: 500px;
@@ -31,32 +29,7 @@ span {
 .form-wrapper-small {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
 }
-/* #billing-address {
-  width: 1.2rem;
-} */
-
-/* .payment-method {
-  margin: 1rem;
-  font-size: 2rem;
-}
-
-.card-wrapper {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card-wrapper-field {
-  display: grid;
-}
-
-.fa-cc-visa {
-  font-size: 2rem;
-  padding-left: 1rem;
-} */
 
 .cta-checkout {
   max-width: 500px;
@@ -70,6 +43,14 @@ span {
   margin: 0 auto;
 }
 
+.disabled {
+  background-color: #61666c;
+  cursor: default;
+}
+
+.disabled:hover {
+  border-radius: 50px;
+}
 /* ---------- Modal popup ---------- */
 
 .hidden {

@@ -6,9 +6,6 @@ const body = document.querySelector("body");
 const modalPopup = document.querySelector(".popup-box");
 const overlay = document.querySelector(".overlay");
 const closePopupButton = document.querySelector(".close-modal");
-const checkoutBtn = document.querySelector(".cta");
-
-checkoutBtn.addEventListener("click", openPopup);
 
 //open close modal popup
 function openPopup() {
@@ -42,3 +39,65 @@ function updateNumberOfItemsInTrolley() {
 }
 
 updateNumberOfItemsInTrolley();
+
+//form
+const form = document.querySelector(".form-wrapper");
+const submitButton = document.querySelector(".cta");
+console.log(submitButton);
+submitButton.disabled = true;
+submitButton.classList.add("disabled");
+
+const fullName = document.querySelector("#name");
+const email = document.querySelector("#email");
+const address = document.querySelector("#address");
+const city = document.querySelector("#city");
+const postcode = document.querySelector("#postcode");
+const country = document.querySelector("#country");
+
+function validateForm() {
+  if (
+    checkLengths(fullName.value, 1) &&
+    checkEmail(email.value) &&
+    checkLengths(address.value, 1) &&
+    checkLengths(city.value, 1) &&
+    checkLengths(postcode.value, 1) &&
+    checkLengths(country, 1)
+  ) {
+    submitButton.disabled = false;
+    submitButton.classList.remove("disabled");
+  } /* else {
+    submitButton.disabled = true;
+    submitButton.classList.add("disabled");
+  } */
+}
+
+fullName.addEventListener("keyup", validateForm);
+email.addEventListener("keyup", validateForm);
+address.addEventListener("keyup", validateForm);
+city.addEventListener("keyup", validateForm);
+postcode.addEventListener("keyup", validateForm);
+country.addEventListener("keyup", validateForm);
+
+function submitForm(event) {
+  event.preventDefault();
+  openPopup();
+  submitButton.disabled = true;
+  submitButton.classList.add("disabled");
+  form.reset();
+}
+
+form.addEventListener("submit", submitForm);
+
+function checkLengths(val, len) {
+  if (val.trim().length >= len) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function checkEmail(email) {
+  const regEx = /\S+@\S+\.\S+/;
+  const regExMatches = regEx.test(email);
+  return regExMatches;
+}

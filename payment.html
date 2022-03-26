@@ -92,6 +92,9 @@
         <form class="form-wrapper" method="post">
           <h1>Payment</h1>
           <h2>Contact information</h2>
+          <div class="form-instructions">
+            Required fields are marked with a red asterisk
+          </div>
           <label for="name">Full name<span>*</span> </label>
           <input type="text" name="fullname" id="name" />
           <label for="email">Email<span>*</span></label>
@@ -109,13 +112,7 @@
             </div>
           </div>
           <label for="country">Country<span>*</span></label>
-          <select>
-            <option value="">--Please choose an option--</option>
-            <option value="arg">Argentina</option>
-            <option value="nor">Norway</option>
-            <option value="us">United States</option>
-            <option value="uk">United Kingdom</option>
-          </select>
+          <input type="text" name="country" id="country" />
           <!-- <input type="text" name="country" id="country" /> -->
           <!--  <div>
             <input
@@ -135,32 +132,41 @@
         </div> -->
         <form class="form-wrapper" method="post">
           <h2>Payment information</h2>
+          <div class="form-instructions">
+            Required fields are marked with a red asterisk
+          </div>
           <label for="cardholder-name">Cardholder's name<span>*</span></label>
           <input type="text" name="cardholder-name" id="cardholder-name" />
           <!-- <div class="card-wrapper"> -->
           <!-- <div class="card-wrapper-field"> -->
           <label for="card-number">Card number<span>*</span></label>
-          <input type="text" name="card-number" id="card-number" />
+          <input type="text" name="card-number" id="card-number" length="16" />
           <!-- </div> -->
           <!-- <i class="fab fa-cc-visa"></i> -->
           <!-- </div> -->
-          <label for="expiry-date">Expiry date<span>*</span></label>
-          <input
-            type="text"
-            name="expiry-date"
-            id="expiry-date"
-            placeholder="mm / yyyy"
-            class="form-wrapper-small"
-            maxlength="9"
-          />
-          <label for="cvv">CVV<span>*</span></label>
-          <input
-            type="text"
-            name="cvv"
-            id="cvv"
-            class="form-wrapper-small"
-            maxlength="3"
-          />
+          <div class="form-wrapper-flex">
+            <div class="form-wrapper-small">
+              <label for="expiry-date">Expiry date<span>*</span></label>
+              <input
+                type="text"
+                name="expiry-date"
+                id="expiry-date"
+                placeholder="mm / yyyy"
+                class="form-wrapper-small"
+                length="9"
+              />
+            </div>
+            <div class="form-wrapper-small">
+              <label for="cvv">CVV<span>*</span></label>
+              <input
+                type="text"
+                name="cvv"
+                id="cvv"
+                class="form-wrapper-small"
+                length="3"
+              />
+            </div>
+          </div>
         </form>
         <div class="cta-checkout">
           <button class="cta">Check out</button>
