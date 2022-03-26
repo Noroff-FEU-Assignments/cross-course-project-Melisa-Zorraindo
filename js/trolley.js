@@ -166,7 +166,6 @@ if (itemsToBuy.length === 0) {
   });
 }
 //select elements in the DOM
-
 const totalValueJacket = document.querySelectorAll(".item-price");
 const subtotalAmount = document.querySelector(".subtotal-sum");
 const totalAmount = document.querySelector(".total-sum");
@@ -212,11 +211,25 @@ function closePopup() {
 closePopupButton.addEventListener("click", closePopup);
 overlay.addEventListener("click", closePopup);
 
+//update number of items in trolley
+const numberItemsInTrolley = document.querySelector(
+  ".second-navigation a span"
+);
+
+function updateNumberOfItemsInTrolley() {
+  let itemQuantity = 0;
+  for (let m = 0; m < itemsToBuy.length; m++) {
+    itemQuantity = m + 1;
+  }
+  numberItemsInTrolley.innerText = itemQuantity;
+}
+
+updateNumberOfItemsInTrolley();
+
+//remove items from trolley
 binIcon.forEach((icon) => {
   icon.addEventListener("click", deleteItem);
 });
-
-// confirmRemoval.addEventListener("click", deleteItem);
 
 function deleteItem() {
   const jacketToRemoveCard = document.querySelectorAll(".purchase-items");
@@ -239,6 +252,7 @@ function deleteItem() {
         });
         saveProduct(newItemsToBuy);
         location.reload();
+        updateNumberOfItemsInTrolley();
       });
     });
   }
@@ -255,6 +269,7 @@ function saveProduct(itemToPurchase) {
 const numberOfJackets = document.querySelectorAll("input");
 for (let j = 0; j < numberOfJackets.length; j++) {
   let productNumber = numberOfJackets[j];
+
   productNumber.addEventListener("change", function () {
     if (productNumber.value < 1) {
       productNumber.value = 1;
@@ -273,5 +288,6 @@ for (let k = 0; k < totalValueJacket.length; k++) {
     let totalJacketPrice = priceValue * quantity;
     totalValueJacket[k].innerText = "$ " + totalJacketPrice;
     updatePrices();
+    updateNumberOfItemsInTrolley();
   });
 }
