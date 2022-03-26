@@ -121,7 +121,7 @@
               id="billing-address"
             /><label for="billing-address">This is my billing address</label>
           </div> -->
-        </form>
+        <!-- </form> -->
       </section>
       <section class="payment-section">
         <!-- <h2>Payment information</h2> -->
@@ -130,7 +130,7 @@
           <i class="far fa-credit-card"></i>
           <i class="fab fa-cc-paypal"></i>
         </div> -->
-        <form class="form-wrapper" method="post">
+        <div class="form-wrapper">
           <h2>Payment information</h2>
           <div class="form-instructions">
             Required fields are marked with a red asterisk
@@ -140,7 +140,7 @@
           <!-- <div class="card-wrapper"> -->
           <!-- <div class="card-wrapper-field"> -->
           <label for="card-number">Card number<span>*</span></label>
-          <input type="text" name="card-number" id="card-number" length="16" />
+          <input type="text" name="card-number" id="card-number" />
           <!-- </div> -->
           <!-- <i class="fab fa-cc-visa"></i> -->
           <!-- </div> -->
@@ -153,7 +153,6 @@
                 id="expiry-date"
                 placeholder="mm / yyyy"
                 class="form-wrapper-small"
-                length="9"
               />
             </div>
             <div class="form-wrapper-small">
@@ -163,10 +162,10 @@
                 name="cvv"
                 id="cvv"
                 class="form-wrapper-small"
-                length="3"
               />
             </div>
           </div>
+        </div>
         </form>
         <div class="cta-checkout">
           <button class="cta">Check out</button>

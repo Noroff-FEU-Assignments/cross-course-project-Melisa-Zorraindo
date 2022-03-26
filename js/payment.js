@@ -53,6 +53,10 @@ const address = document.querySelector("#address");
 const city = document.querySelector("#city");
 const postcode = document.querySelector("#postcode");
 const country = document.querySelector("#country");
+const cardholderName = document.querySelector("#cardholder-name");
+const cardNumber = document.querySelector("#card-number");
+const expiryDate = document.querySelector("#expiry-date");
+const cvv = document.querySelector("#cvv");
 
 function validateForm() {
   if (
@@ -61,7 +65,11 @@ function validateForm() {
     checkLengths(address.value, 1) &&
     checkLengths(city.value, 1) &&
     checkLengths(postcode.value, 1) &&
-    checkLengths(country, 1)
+    checkLengths(country.value, 1) &&
+    checkLengths(cardholderName.value, 1) &&
+    checkLengths(cardNumber.value, 19) &&
+    checkLengths(expiryDate.value, 9) &&
+    checkLengths(cvv.value, 3)
   ) {
     submitButton.disabled = false;
     submitButton.classList.remove("disabled");
@@ -77,6 +85,10 @@ address.addEventListener("keyup", validateForm);
 city.addEventListener("keyup", validateForm);
 postcode.addEventListener("keyup", validateForm);
 country.addEventListener("keyup", validateForm);
+cardholderName.addEventListener("keyup", validateForm);
+cardNumber.addEventListener("keyup", validateForm);
+expiryDate.addEventListener("keyup", validateForm);
+cvv.addEventListener("keyup", validateForm);
 
 function submitForm(event) {
   event.preventDefault();
@@ -86,7 +98,7 @@ function submitForm(event) {
   form.reset();
 }
 
-form.addEventListener("submit", submitForm);
+submitButton.addEventListener("click", submitForm);
 
 function checkLengths(val, len) {
   if (val.trim().length >= len) {
