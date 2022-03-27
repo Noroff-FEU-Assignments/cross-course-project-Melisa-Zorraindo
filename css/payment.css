@@ -8,12 +8,14 @@ form {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 fieldset {
   margin: 1rem;
 }
 
 legend {
   font: var(--headings-h2);
+  font-weight: var(--bold);
   margin: 0.5rem 0;
 }
 
