@@ -1,29 +1,44 @@
-h1,
-h2 {
+h1 {
   margin: 2.5rem 0;
+  flex: 0 0 70%;
 }
 
-h2 {
-  font-weight: var(--bold);
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+fieldset {
+  margin: 1rem;
+}
+
+legend {
+  font: var(--headings-h2);
+  margin: 0.5rem 0;
 }
 
 input {
   min-height: 1.2rem;
   margin-bottom: 1rem;
+  display: block;
+  width: 100%;
+}
+
+.form__input:invalid {
+  border: 1px solid red;
+}
+
+.form__input:valid {
+  border: 1px solid green;
 }
 
 span {
   color: red;
+  font-weight: var(--bold);
 }
 
 .form-instructions {
-  margin-bottom: 1rem;
-}
-.form-wrapper {
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-wrapper-flex {
@@ -33,27 +48,19 @@ span {
 .form-wrapper-small {
   display: flex;
   flex-direction: column;
+  flex: 0 0 45%;
 }
 
 .cta-checkout {
-  max-width: 500px;
+  flex: 0 0 100%;
   margin: 2rem auto;
 }
 
 .cta {
   border: none;
   display: block;
-  width: 90%;
   margin: 0 auto;
-}
-
-.disabled {
-  background-color: #61666c;
-  cursor: default;
-}
-
-.disabled:hover {
-  border-radius: 50px;
+  width: 50%;
 }
 /* ---------- Modal popup ---------- */
 

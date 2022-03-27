@@ -1,29 +1,6 @@
 //import array from file
 import { fetchProductsInCart } from "./functions/addToCartFunction.js";
 
-//select modal popup elements in the dom
-const body = document.querySelector("body");
-const modalPopup = document.querySelector(".popup-box");
-const overlay = document.querySelector(".overlay");
-const closePopupButton = document.querySelector(".close-modal");
-
-//open close modal popup
-function openPopup() {
-  modalPopup.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-  body.style.overflow = "hidden";
-}
-
-//close modal popup
-function closePopup() {
-  modalPopup.classList.add("hidden");
-  overlay.classList.add("hidden");
-  body.style.overflow = "auto";
-}
-
-closePopupButton.addEventListener("click", closePopup);
-overlay.addEventListener("click", closePopup);
-
 //update number of items in trolley
 const itemsToBuy = fetchProductsInCart();
 const numberItemsInTrolley = document.querySelector(
@@ -40,76 +17,36 @@ function updateNumberOfItemsInTrolley() {
 
 updateNumberOfItemsInTrolley();
 
-//form
+//select modal popup elements in the dom
+const body = document.querySelector("body");
+const modalPopup = document.querySelector(".popup-box");
+const overlay = document.querySelector(".overlay");
+const closePopupButton = document.querySelector(".close-modal");
+
 const form = document.querySelector(".form-wrapper");
-const submitButton = document.querySelector(".cta");
-console.log(submitButton);
-submitButton.disabled = true;
-submitButton.classList.add("disabled");
 
-const fullName = document.querySelector("#name");
-const email = document.querySelector("#email");
-const address = document.querySelector("#address");
-const city = document.querySelector("#city");
-const postcode = document.querySelector("#postcode");
-const country = document.querySelector("#country");
-const cardholderName = document.querySelector("#cardholder-name");
-const cardNumber = document.querySelector("#card-number");
-const expiryDate = document.querySelector("#expiry-date");
-const cvv = document.querySelector("#cvv");
-
-function validateForm() {
-  if (
-    checkLengths(fullName.value, 1) &&
-    checkEmail(email.value) &&
-    checkLengths(address.value, 1) &&
-    checkLengths(city.value, 1) &&
-    checkLengths(postcode.value, 1) &&
-    checkLengths(country.value, 1) &&
-    checkLengths(cardholderName.value, 1) &&
-    checkLengths(cardNumber.value, 16) &&
-    checkLengths(expiryDate.value, 6) &&
-    checkLengths(cvv.value, 3)
-  ) {
-    submitButton.disabled = false;
-    submitButton.classList.remove("disabled");
-  } /* else {
-    submitButton.disabled = true;
-    submitButton.classList.add("disabled");
-  } */
+//open close modal popup
+function openPopup() {
+  modalPopup.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  body.style.overflow = "hidden";
 }
 
-fullName.addEventListener("keyup", validateForm);
-email.addEventListener("keyup", validateForm);
-address.addEventListener("keyup", validateForm);
-city.addEventListener("keyup", validateForm);
-postcode.addEventListener("keyup", validateForm);
-country.addEventListener("keyup", validateForm);
-cardholderName.addEventListener("keyup", validateForm);
-cardNumber.addEventListener("keyup", validateForm);
-expiryDate.addEventListener("keyup", validateForm);
-cvv.addEventListener("keyup", validateForm);
+//close modal popup
+function closePopup() {
+  modalPopup.classList.add("hidden");
+  overlay.classList.add("hidden");
+  body.style.overflow = "auto";
+}
 
+//submit form
 function submitForm(event) {
   event.preventDefault();
   openPopup();
-  submitButton.disabled = true;
-  submitButton.classList.add("disabled");
   form.reset();
 }
 
-submitButton.addEventListener("click", submitForm);
+closePopupButton.addEventListener("click", closePopup);
+overlay.addEventListener("click", closePopup);
 
-function checkLengths(val, len) {
-  if (val.trim().length >= len) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function checkEmail(email) {
-  const regEx = /\S+@\S+\.\S+/;
-  const regExMatches = regEx.test(email);
-  return regExMatches;
-}
+form.addEventListener("submit", submitForm);
