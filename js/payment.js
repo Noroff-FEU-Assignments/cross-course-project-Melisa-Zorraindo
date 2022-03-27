@@ -37,13 +37,15 @@ function closePopup() {
   modalPopup.classList.add("hidden");
   overlay.classList.add("hidden");
   body.style.overflow = "auto";
+  location.reload();
 }
 
-//submit form
+//submit form and clean shopping trolley
 function submitForm(event) {
   event.preventDefault();
   openPopup();
-  form.reset();
+  localStorage.removeItem("cart");
+  // form.reset();
 }
 
 closePopupButton.addEventListener("click", closePopup);
