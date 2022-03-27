@@ -67,8 +67,8 @@ function validateForm() {
     checkLengths(postcode.value, 1) &&
     checkLengths(country.value, 1) &&
     checkLengths(cardholderName.value, 1) &&
-    checkLengths(cardNumber.value, 19) &&
-    checkLengths(expiryDate.value, 9) &&
+    checkLengths(cardNumber.value, 16) &&
+    checkLengths(expiryDate.value, 6) &&
     checkLengths(cvv.value, 3)
   ) {
     submitButton.disabled = false;
