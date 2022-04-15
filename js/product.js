@@ -1,5 +1,5 @@
 //import array from file
-import { jacketList } from "./modules/list-of-jackets.mjs";
+import { jacketList } from "./modules/list-of-jackets.js";
 import { fetchProductsInCart } from "./functions/addToCartFunction.js";
 
 //query string to display correct jacket

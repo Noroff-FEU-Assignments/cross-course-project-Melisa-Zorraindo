@@ -1,5 +1,5 @@
 //import utilities
-import { jacketList } from "./modules/list-of-jackets.mjs";
+import { jacketList } from "./modules/list-of-jackets.js";
 import { addFavs } from "./functions/favourites.js";
 import { fetchProductsInCart } from "./functions/addToCartFunction.js";
 
