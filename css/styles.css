@@ -3,6 +3,7 @@
 html {
   font-size: 18px;
   scroll-behavior: smooth;
+  font-family: "Dosis", sans-serif;
 }
 :root {
   /* --------------- Colour palette --------------- */
@@ -11,16 +12,15 @@ html {
   --terciary-colour: #037327;
   --white: #fff;
 
-  /* --------------- Fonts mobile --------------- */
-  --headings-h1: 1.625rem "Dosis", sans-serif;
-  --headings-h2: 1.375rem "Dosis", sans-serif;
-  --headings-h3: 1.125rem "Source Sans Pro", sans-serif;
-  --headings-h4: 1.125rem "Source Sans Pro", sans-serif;
-  --copy: 1rem "Source Sans Pro", sans-serif;
-  --cta: 1.25rem "Dosis", sans-serif;
-  --cta-small: 1rem "Dosis", sans-serif;
+  /* --------------- Font sizes --------------- */
+  --headings-h1: 1.625rem;
+  --headings-h2: 1.375rem;
+  --headings-h3: 1.125rem;
+  --headings-h4: 1.125rem;
+  --copy: 1rem;
+  --cta: 1.25rem;
+  --cta-small: 1rem;
   --bold: 600;
-  /* --semi-bold: 500; */
 }
 
 /* --------------- Header & Logo --------------- */
@@ -48,7 +48,7 @@ nav ul li a {
 h1,
 h2 {
   text-align: left;
-  font: var(--headings-h1);
+  font-size: var(--headings-h1);
   /*margin: 5px 10px;*/
   font-weight: var(--bold);
   color: var(--secondary-colour);
@@ -56,21 +56,21 @@ h2 {
 }
 
 h2 {
-  font: var(--headings-h2);
+  font-size: var(--headings-h2);
 }
 
 h3 {
-  font: var(--headings-h3);
+  font-size: var(--headings-h3);
 }
 
 h4 {
-  font: var(--headings-h4);
+  font-size: var(--headings-h4);
 }
 
 body {
   min-height: 100vh;
   margin: 0px;
-  font: var(--copy);
+  font-size: var(--copy);
   text-align: left;
   color: var(--secondary-colour);
   max-width: 1100px;
@@ -136,7 +136,7 @@ p a {
   padding: 5px 35px;
   border-radius: 50px;
   color: var(--white);
-  font: var(--cta);
+  font-size: var(--cta);
   font-weight: var(--bold);
   text-decoration: none;
   transition: all 0.5s;
@@ -151,7 +151,7 @@ p a {
 .cta-small {
   box-shadow: none;
   padding: 5px 20px;
-  font: var(--cta-small);
+  font-size: var(--cta-small);
 }
 
 /* --------------- Navbar Global --------------- */
