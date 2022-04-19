@@ -9,7 +9,6 @@
 
 .items i {
   font-size: 1.375rem;
-  margin-left: 1rem;
 }
 
 .jacket-image {
@@ -23,7 +22,7 @@
 }
 
 .jacket-info h2 {
-  margin: 0 1rem;
+  margin: 0;
 }
 
 .jacket-info a {
@@ -32,26 +31,26 @@
   font-weight: 500;
 }
 
-.jacket-info p:first-of-type {
+.jacket-info div:first-of-type {
   font-style: italic;
   margin-bottom: 0.5rem;
 }
 
-.jacket-info p:last-of-type {
+.jacket-info div:nth-of-type(2) {
   font-weight: var(--bold);
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
-.interactions {
+.jacket-info div:last-of-type {
   display: flex;
   justify-content: space-between;
 }
 
-.interactions .cta-small {
+.jacket-info div:last-of-type .cta-small {
   color: var(--white);
 }
 
-.interactions i {
+.jacket-info div:last-of-type i {
   cursor: pointer;
   color: red;
 }

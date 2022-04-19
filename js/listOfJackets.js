@@ -1,5 +1,4 @@
 //import utilities
-import { jacketList } from "./modules/list-of-jackets.js";
 import { addFavs } from "./functions/favourites.js";
 import { fetchProductsInCart } from "./functions/addToCartFunction.js";
 
@@ -14,8 +13,23 @@ const page = params.get("page");
 //select element in the dom
 let divContainer = document.querySelector(".items-wrapper");
 
-//function to create HTML
-function createHTML(jacketList) {
+//set api variable
+const url = "https://rainy-days.melisazor.com/wp-json/wc/store/products";
+
+//make call
+async function fetchJackets() {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    createHTML(data);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+fetchJackets();
+
+function createHTML(data) {
   //set appropriate heading
   if (page === "womens") {
     divContainer.innerHTML = `<h1>Our most fashionable designs for women</h1>`;
@@ -25,8 +39,7 @@ function createHTML(jacketList) {
     divContainer.innerHTML = `<h1>Our latest and most modern designs</h1>`;
   }
 
-  //create rest of HTML
-  jacketList.forEach((jacket) => {
+  data.forEach((jacket) => {
     //check if item is already stored
     const isJacketStored = favs.find((fav) => {
       return parseInt(fav.id) === jacket.id;
@@ -37,37 +50,40 @@ function createHTML(jacketList) {
     if (isJacketStored) {
       heartClass = "fas";
     }
-
     divContainer.innerHTML += `<div class="items">
-                                <div>
-                                    <a href="../shop/jackets.html?id=${jacket.id}"
-                                    ><img
-                                        alt="${jacket.type}"
-                                        class="jacket-image"
-                                        src="${jacket.image}"
-                                    /></a>
-                                </div>
-                                <div class="jacket-info">
-                                    <h2>
-                                    <a href="../shop/jackets.html?id=${jacket.id}">${jacket.name}</a>
-                                    </h2>
-                                    <p>${jacket.type}</p>
-                                    <p>&dollar; ${jacket.price}</p>
-                                    <div class="interactions">
-                                        <div>
-                                            <i class="${heartClass} fa-heart" data-id="${jacket.id}" data-name="${jacket.name}" data-type="${jacket.type}" data-image="${jacket.image}" data-price="&dollar; ${jacket.price}"></i>
-                                        </div>
-                                        <div>
-                                        <a href="../shop/jackets.html?id=${jacket.id}" class="cta cta-small">Buy</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               </div>`;
+      <div>
+          <a href="../shop/jackets.html?id=${jacket.id}"
+          ><img
+              alt="${jacket.short_description}"
+              class="jacket-image"
+              src="${jacket.images[0].src}"
+          /></a>
+      </div>
+      <div class="jacket-info">
+          <h2>
+          <a href="../shop/jackets.html?id=${jacket.id}">${jacket.name}</a>
+          </h2>
+          <div>${jacket.short_description}</div>
+          <div>&dollar;${jacket.prices.price}</div>
+          <div>
+            <div>
+                 <i class="${heartClass} fa-heart"
+                 data-id="${jacket.id}"
+                 data-name="${jacket.name}"
+                 data-type="${jacket.short_description}"
+                 data-image="${jacket.images[0].src}"
+                 data-price="&dollar;${jacket.prices.price}"></i>
+            </div>
+          <div>
+          <a href="../shop/jackets.html?id=${jacket.id}" class="cta cta-small">Buy</a>
+              </div>
+          </div>
+      </div>
+     </div>`;
   });
 
   //select buttons in the DOM
   const likeButton = document.querySelectorAll(".fa-heart");
-  console.log(likeButton);
 
   likeButton.forEach((heart) => {
     heart.addEventListener("click", toggleLikes);
@@ -116,8 +132,6 @@ function createHTML(jacketList) {
     localStorage.setItem("favourites", JSON.stringify(chosenItem));
   }
 }
-
-createHTML(jacketList);
 
 //update number of items in trolley
 const itemsToBuy = fetchProductsInCart();

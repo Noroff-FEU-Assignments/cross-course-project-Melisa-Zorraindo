@@ -1,5 +1,5 @@
 //import array from file
-import { fetchProductsInCart } from "./functions/addToCartFunction.js";
+import { fetchProductsInCart } from "./addToCartFunction.js";
 
 //update number of items in trolley
 const itemsToBuy = fetchProductsInCart();
