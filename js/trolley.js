@@ -133,7 +133,11 @@ if (itemsToBuy.length === 0) {
     newCardBriefDiv.append(newCardHeading);
 
     const newCardSubheading = document.createElement("p");
-    newCardSubheading.innerText = jacket.type;
+    newCardSubheading.innerText = jacket.type
+      .replace("<div>", " ")
+      .replace("<div>", " ")
+      .replace("</div>", " ")
+      .replace("</div>", " ");
     newCardBriefDiv.append(newCardSubheading);
 
     const newCardPrice = document.createElement("p");

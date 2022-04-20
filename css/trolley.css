@@ -7,6 +7,10 @@ p {
   margin-bottom: 0.75rem;
 }
 
+br {
+  display: none;
+}
+
 .basket-div {
   display: flex;
   flex-direction: column;
