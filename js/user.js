@@ -90,7 +90,6 @@ favs.forEach((fav) => {
   ctaWishlist.dataset.name = fav.name;
   ctaWishlist.dataset.type = fav.type;
   ctaWishlist.dataset.price = fav.price.replace("$", " ");
-  console.dir(ctaWishlist);
   interDiv.append(ctaWishlist);
 });
 

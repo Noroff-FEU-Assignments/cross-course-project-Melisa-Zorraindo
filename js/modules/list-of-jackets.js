@@ -1,5 +1,5 @@
 export const jacketList = [
-  {
+  /*  {
     name: "Aconcagua",
     type: "Rain and windshield jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -20,9 +20,9 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "000",
-  },
+  }, */
 
-  {
+  /*   {
     name: "Alaska",
     type: "Gore-Tex insulated jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -41,9 +41,9 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "m", "xl"],
     id: "001",
-  },
+  }, */
 
-  {
+  /*   {
     name: "Aukland",
     type: "Extra light rain jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -62,9 +62,9 @@ export const jacketList = [
     ],
     sizes: ["s", "m", "l", "xl"],
     id: "002",
-  },
+  }, */
 
-  {
+  /*   {
     name: "Baikal",
     type: "Extra light rain jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -83,9 +83,9 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "003",
-  },
+  }, */
 
-  {
+  /*   {
     name: "Chapala",
     type: "Extra lightweighted winter jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -105,9 +105,9 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "l", "xl"],
     id: "016",
-  },
+  }, */
 
-  {
+  /*   {
     name: "Daisen",
     type: "Parka",
     stars: ["1", "2", "3", "4", "5"],
@@ -128,7 +128,7 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "l", "xl"],
     id: "004",
-  },
+  }, */
 
   {
     name: "Emei Shan",
@@ -153,7 +153,7 @@ export const jacketList = [
     id: "005",
   },
 
-  {
+  /*   {
     name: "Erie",
     type: "Extra lightweighted winter jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -161,7 +161,7 @@ export const jacketList = [
     image: "../images/jackets/erie.jpg",
     description:
       "Extra lightweight jacket especially built for light outdoor activities with a modern and stylish design. It offers plenty of storage space with hidden side pockets and two regular side pockets. Wind and water resistant for increased protection. Invisible zippers and velcro cuff fasteners.",
-    sports: ["Hiking"],
+    sports: ["Hiking", "Treking"],
     colours: ["Yellow", "Green", "Black", "Red"],
     specs: [
       "Hidden pockets",
@@ -173,13 +173,13 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "010",
-  },
+  }, */
 
-  {
+  /*  {
     name: "Everest",
     type: "Rain and windshield jacket",
     stars: ["1", "2", "3", "4", "5"],
-    price: 399,
+    price: 229,
     image: "../images/jackets/everest.jpg",
     description:
       "Warm and lightweight jacket especially built for rafting and water sports with a modern and stylish design. It offers a lot of storage space with hidden side pockets and two regular side pockets. Water resistant zippers",
@@ -196,9 +196,9 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "006",
-  },
+  }, */
 
-  {
+  /* {
     name: "Gaisberg",
     type: "Extra light rain jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -217,9 +217,9 @@ export const jacketList = [
     ],
     sizes: ["s", "m", "l", "xl"],
     id: "007",
-  },
+  }, */
 
-  {
+  /*   {
     name: "Helsinki",
     type: "Extra lightweighted winter jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -239,9 +239,9 @@ export const jacketList = [
     ],
     sizes: ["s", "m", "l", "xl"],
     id: "008",
-  },
+  }, */
 
-  {
+  /*   {
     name: "Himalaya",
     type: "Gore-Tex insulated jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -260,9 +260,9 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "009",
-  },
+  }, */
 
-  {
+  /*   {
     name: "Kauai",
     type: "Rain and wind shield jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -283,7 +283,7 @@ export const jacketList = [
     ],
     sizes: ["xs", "m", "xl"],
     id: "011",
-  },
+  }, */
 
   {
     name: "Maui",
@@ -308,7 +308,7 @@ export const jacketList = [
     id: "013",
   },
 
-  {
+  /*   {
     name: "Mendoza",
     type: "Rain coat",
     stars: ["1", "2", "3", "4", "5"],
@@ -321,7 +321,7 @@ export const jacketList = [
     specs: ["Lightweight", "Wind resistant", "Water resistant zippers"],
     sizes: ["xs", "m", "xl"],
     id: "014",
-  },
+  }, */
 
   {
     name: "Noshaq",
@@ -338,7 +338,7 @@ export const jacketList = [
     id: "015",
   },
 
-  {
+  /*   {
     name: "Rysy",
     type: "Gore-Tex insulated jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -357,7 +357,7 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "l", "xl"],
     id: "017",
-  },
+  }, */
 
   {
     name: "Salcantay",
@@ -396,7 +396,7 @@ export const jacketList = [
     id: "012",
   },
 
-  {
+  /*   {
     name: "Shengena",
     type: "Insulated down coat",
     stars: ["1", "2", "3", "4", "5"],
@@ -417,7 +417,7 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "019",
-  },
+  }, */
 
   {
     name: "Tavan Bogd",
@@ -442,7 +442,7 @@ export const jacketList = [
     id: "020",
   },
 
-  {
+  /*   {
     name: "Tutendo",
     type: "Rain coat",
     stars: ["1", "2", "3", "4", "5"],
@@ -455,9 +455,9 @@ export const jacketList = [
     specs: ["Lightweight", "Wind resistant", "Water resistant zippers"],
     sizes: ["xs", "m", "xl"],
     id: "021",
-  },
+  }, */
 
-  {
+  /*   {
     name: "Vancouver",
     type: "Parka",
     stars: ["1", "2", "3", "4", "5"],
@@ -478,5 +478,5 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "022",
-  },
+  }, */
 ];

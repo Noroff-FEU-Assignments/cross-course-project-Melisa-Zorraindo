@@ -14,7 +14,8 @@ const page = params.get("page");
 let divContainer = document.querySelector(".items-wrapper");
 
 //set api variable
-const url = "https://rainy-days.melisazor.com/wp-json/wc/store/products";
+const url =
+  "https://rainy-days.melisazor.com/wp-json/wc/store/products?per_page=25";
 
 //make call
 async function fetchJackets() {
