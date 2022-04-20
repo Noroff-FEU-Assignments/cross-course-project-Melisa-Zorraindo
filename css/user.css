@@ -9,6 +9,7 @@
 
 .product-heading {
   margin-left: 1rem;
+  flex-direction: column;
 }
 
 .jacket-image {
@@ -17,7 +18,8 @@
 }
 
 h3 {
-  font: var(--headings-h2);
+  /* font: var(--headings-h2); */
+  font-style: normal;
   margin: 0;
 }
 
@@ -25,13 +27,25 @@ p {
   margin: 0;
 }
 
+br {
+  display: none;
+}
+
+.product-heading p:last-of-type {
+  font-style: normal;
+  font-weight: var(--bold);
+  margin-top: 0.75rem;
+}
 .product-heading i {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 0;
   color: red;
   cursor: pointer;
 }
 
+.interactions {
+  align-items: baseline;
+}
 .interactions .cta-small {
   border: none;
 }

@@ -58,7 +58,11 @@ favs.forEach((fav) => {
   headingDiv.append(newHeading);
 
   const newType = document.createElement("p");
-  newType.innerText = fav.type;
+  newType.innerText = fav.type
+    .replace("<div>", " ")
+    .replace("<div>", " ")
+    .replace("</div>", " ")
+    .replace("</div>", " ");
   headingDiv.append(newType);
 
   //create price
