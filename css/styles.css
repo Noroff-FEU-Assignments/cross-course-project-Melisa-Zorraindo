@@ -18,7 +18,8 @@ html {
   --headings-h3: 1.125rem;
   --headings-h4: 1.125rem;
   --copy: 1rem;
-  --cta: 1.25rem;
+  --cta-font: "Dosis", sans-serif;
+  --cta-size: 1.25rem;
   --cta-small: 1rem;
   --bold: 600;
 }
@@ -136,7 +137,8 @@ p a {
   padding: 5px 35px;
   border-radius: 50px;
   color: var(--white);
-  font-size: var(--cta);
+  font-family: var(--cta-font);
+  font-size: var(--cta-size);
   font-weight: var(--bold);
   text-decoration: none;
   transition: all 0.5s;

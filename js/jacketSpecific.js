@@ -29,7 +29,13 @@ fetchSpecificJacket();
 
 function createHTML(jacket) {
   //update title
-  pageTitle.innerText = `Rainy Days | ${jacket.name} - ${jacket.images[0].alt}`;
+  pageTitle.innerText = `Rainy Days | ${
+    jacket.name
+  } - ${jacket.short_description
+    .replace("<div>", " ")
+    .replace("<div>", " ")
+    .replace("</div>", " ")
+    .replace("</div>", " ")}`;
 
   //update breadcrumbs
   breadcrumbsCurrent.innerText = jacket.name;
@@ -62,7 +68,199 @@ function createHTML(jacket) {
   newHeading.innerText = jacket.name;
   headingDiv.append(newHeading);
 
-  const newType = document.createElement("p");
-  newType.innerText = jacket.short_description;
+  const newType = document.createElement("div");
+  newType.innerText = jacket.short_description
+    .replace("<div>", " ")
+    .replace("<div>", " ")
+    .replace("</div>", " ")
+    .replace("</div>", " ");
   headingDiv.append(newType);
+
+  //create rating and price container
+  const newSubheading = document.createElement("div");
+  newSubheading.classList.add("product-subheading");
+  productInfo.append(newSubheading);
+
+  //create rating
+  const starsLink = document.createElement("a");
+  starsLink.setAttribute(
+    "href",
+    `../shop/jackets.html?id=${jacket.id}#reviews`
+  );
+  newSubheading.append(starsLink);
+
+  //create stars
+  const starsUl = document.createElement("ul");
+  starsLink.append(starsUl);
+  for (let i = 0; i < 5; i++) {
+    let starsLi = document.createElement("li");
+    starsLi.style.padding = "0.2rem";
+    starsUl.append(starsLi);
+    const stars = document.createElement("i");
+    stars.classList.add("fas", "fa-star");
+    starsLi.append(stars);
+  }
+
+  //create price
+  const newPrice = document.createElement("p");
+  newPrice.innerText = `$ ${jacket.prices.price}`;
+  newSubheading.append(newPrice);
+
+  //create colours
+  const newH2Colours = document.createElement("h2");
+  newH2Colours.innerText = "Colours";
+  productInfo.append(newH2Colours);
+
+  const coloursUl = document.createElement("ul");
+  coloursUl.classList.add("colour-wrapper");
+  productInfo.append(coloursUl);
+
+  for (let i = 0; i < jacket.attributes[1].terms.length; i++) {
+    let coloursLi = document.createElement("li");
+    coloursLi.classList.add("colour-box");
+    coloursUl.append(coloursLi);
+
+    let colourIcon = document.createElement("i");
+    colourIcon.classList.add("far", "fa-square");
+    colourIcon.style.color = jacket.attributes[1].terms[i].name;
+    coloursLi.append(colourIcon);
+
+    let colourName = document.createElement("p");
+    colourName.innerText = jacket.attributes[1].terms[i].name;
+    coloursLi.append(colourName);
+  }
+
+  //chose colours function
+  const selectedColour = document.querySelectorAll(".colour-box");
+  const selectedIcon = document.querySelectorAll(".fa-square");
+
+  //run through the colours array and listen for a click to change icon style
+  for (let j = 0; j < selectedColour.length; j++) {
+    selectedColour[j].addEventListener("click", function () {
+      for (let k = 0; k < selectedIcon.length; k++) {
+        //remove the class from all other icons
+        selectedIcon[k].classList.remove("fas");
+        //add it to the one clicked on
+        selectedIcon[j].classList.add("fas");
+      }
+      //update picture according to colour
+      picture.src = jacket.images[j + 1].src;
+    });
+  }
+
+  //create sizes
+  const newH2Sizes = document.createElement("h2");
+  newH2Sizes.innerText = "Sizes";
+  productInfo.append(newH2Sizes);
+
+  const sizesUl = document.createElement("ul");
+  sizesUl.classList.add("size-choices");
+  productInfo.append(sizesUl);
+
+  for (let l = 0; l < jacket.attributes[0].terms.length; l++) {
+    let sizesLi = document.createElement("li");
+    sizesLi.classList.add("sizes-box");
+    sizesUl.append(sizesLi);
+
+    const sizeButton = document.createElement("button");
+    sizeButton.classList.add("size-button");
+    sizeButton.innerText = jacket.attributes[0].terms[l].name;
+    sizesLi.append(sizeButton);
+  }
+
+  //chose size function
+  const selectedSize = document.querySelectorAll(".sizes-box");
+  const selectedButton = document.querySelectorAll(".size-button");
+
+  //run through the buttons array and listen for a click to change button style
+  for (let m = 0; m < selectedSize.length; m++) {
+    selectedSize[m].addEventListener("click", function () {
+      for (let n = 0; n < selectedButton.length; n++) {
+        //remove the class from all other buttons
+        selectedButton[n].style.backgroundColor = "#e9e9ed";
+        selectedButton[n].style.color = "black";
+        //add it to the one clicked on
+        selectedButton[m].style.backgroundColor = "#265591";
+        selectedButton[m].style.color = "white";
+      }
+    });
+  }
+
+  //create call to action
+  const ctaDiv = document.createElement("div");
+  ctaDiv.classList.add("call-to-action-div");
+  productInfo.append(ctaDiv);
+
+  const ctaButton = document.createElement("button");
+  ctaButton.classList.add("cta", "cta-specific-product");
+  ctaButton.innerText = "Add to cart";
+  ctaButton.dataset.id = jacket.id;
+  ctaButton.dataset.image = jacket.images[0].src;
+  ctaButton.dataset.name = jacket.name;
+  ctaButton.dataset.type = jacket.short_description;
+  ctaButton.dataset.price = jacket.prices.price;
+  ctaDiv.append(ctaButton);
+
+  //create product description
+  const newH2Description = document.createElement("h2");
+  newH2Description.innerText = "Product description";
+  descriptionContainer.append(newH2Description);
+
+  const descriptionCopy = document.createElement("p");
+  descriptionCopy.innerText = jacket.description
+    .replace("<div>", " ")
+    .replace("<div>", " ")
+    .replace("</div>", " ")
+    .replace("</div>", " ");
+  descriptionContainer.append(descriptionCopy);
+
+  //create product specs
+  const newH2Specs = document.createElement("h2");
+  newH2Specs.innerText = "Product specifications";
+  descriptionContainer.append(newH2Specs);
+
+  const specsUl = document.createElement("ul");
+  specsUl.style.display = "block";
+  specsUl.style.paddingLeft = "40px";
+  specsUl.style.listStyle = "disc";
+  descriptionContainer.append(specsUl);
+
+  for (let o = 0; o < jacket.categories.length; o++) {
+    let specsLi = document.createElement("li");
+    specsLi.innerText = jacket.categories[o].name;
+    specsLi.style.textAlign = "left";
+    specsLi.style.paddingLeft = "1rem";
+    specsUl.append(specsLi);
+  }
+
+  //create recommended sports
+  const newH2Sports = document.createElement("h2");
+  newH2Sports.innerText = "Recommended for";
+  descriptionContainer.append(newH2Sports);
+
+  const sportsUl = document.createElement("ul");
+  sportsUl.style.display = "block";
+  sportsUl.style.paddingLeft = "40px";
+  sportsUl.style.listStyle = "disc";
+  descriptionContainer.append(sportsUl);
+
+  for (let p = 0; p < jacket.tags.length; p++) {
+    let sportsLi = document.createElement("li");
+    sportsLi.innerText = jacket.tags[p].name;
+    sportsLi.style.textAlign = "left";
+    sportsLi.style.paddingLeft = "1rem";
+    sportsUl.append(sportsLi);
+  }
+
+  //append second cta at the bottom of the page
+  const ctaSupportButtonDiv = document.querySelector(".call-to-action-div-one");
+  const ctaSupportButton = document.createElement("button");
+  ctaSupportButton.classList.add("cta", "cta-specific-product");
+  ctaSupportButton.innerText = "Add to cart";
+  ctaSupportButton.dataset.id = jacket.id;
+  ctaSupportButton.dataset.image = jacket.images[0].src;
+  ctaSupportButton.dataset.name = jacket.name;
+  ctaSupportButton.dataset.type = jacket.short_description;
+  ctaSupportButton.dataset.price = jacket.prices.price;
+  ctaSupportButtonDiv.append(ctaSupportButton);
 }
