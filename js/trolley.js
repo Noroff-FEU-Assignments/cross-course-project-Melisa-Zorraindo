@@ -169,8 +169,6 @@ const totalValueJacket = document.querySelectorAll(".item-price");
 const subtotalAmount = document.querySelector(".subtotal-sum");
 const totalAmount = document.querySelector(".total-sum");
 
-console.log(totalValueJacket);
-
 //set total and subtotal amounts programmatically
 function updatePrices() {
   let finalPrice = 0;

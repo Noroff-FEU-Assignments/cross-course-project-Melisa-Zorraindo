@@ -43,6 +43,10 @@ h2 {
   font-size: 2.5rem;
 }
 
+.product-heading div {
+  margin: 0 1rem;
+}
+
 .product-subheading {
   display: flex;
   justify-content: flex-start;

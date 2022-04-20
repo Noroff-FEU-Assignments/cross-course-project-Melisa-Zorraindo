@@ -263,4 +263,91 @@ function createHTML(jacket) {
   ctaSupportButton.dataset.type = jacket.short_description;
   ctaSupportButton.dataset.price = jacket.prices.price;
   ctaSupportButtonDiv.append(ctaSupportButton);
+
+  //select modal popup elements in the dom
+  const body = document.querySelector("body");
+  const modalPopup = document.querySelector(".popup-box");
+  const overlay = document.querySelector(".overlay");
+  const closePopupButton = document.querySelector(".close-modal");
+  const addToCartButton = document.querySelectorAll(".cta-specific-product");
+
+  //open close modal popup
+  function openPopup() {
+    modalPopup.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+    body.style.overflow = "hidden";
+  }
+
+  function closePopup() {
+    modalPopup.classList.add("hidden");
+    overlay.classList.add("hidden");
+    body.style.overflow = "auto";
+  }
+
+  for (let i = 0; i < addToCartButton.length; i++) {
+    addToCartButton[i].addEventListener("click", openPopup);
+  }
+
+  closePopupButton.addEventListener("click", closePopup);
+  overlay.addEventListener("click", closePopup);
+
+  //select elements for trolley page
+  const cartBtn = document.querySelectorAll(".cta-specific-product");
+
+  for (let j = 0; j < cartBtn.length; j++) {
+    cartBtn[j].addEventListener("click", addToCart);
+  }
+
+  function addToCart() {
+    const id = this.dataset.id;
+    const image = this.dataset.image;
+    const name = this.dataset.name;
+    const type = this.dataset.type;
+    const price = this.dataset.price;
+
+    const productsInCart = fetchProductsInCart();
+
+    const productStored = productsInCart.find(function (item) {
+      return item.id === id;
+    });
+
+    if (!productStored) {
+      const product = {
+        id: id,
+        image: image,
+        name: name,
+        type: type,
+        price: price,
+      };
+
+      productsInCart.push(product);
+
+      saveProduct(productsInCart);
+    } /*  else {
+    //this part is removing the product if it's already stored
+    const newItemToPurchase = currentFavs.filter((fav) => fav.id !== id);
+    saveProduct(newItemToPurchase);
+  } */
+  }
+
+  //function to store in local storage
+  function saveProduct(itemToPurchase) {
+    localStorage.setItem("cart", JSON.stringify(itemToPurchase));
+  }
+
+  //update number of items in trolley
+  const itemsToBuy = fetchProductsInCart();
+  const numberItemsInTrolley = document.querySelector(
+    ".second-navigation a span"
+  );
+
+  function updateNumberOfItemsInTrolley() {
+    let itemQuantity = 0;
+    for (let m = 0; m < itemsToBuy.length; m++) {
+      itemQuantity = m + 1;
+    }
+    numberItemsInTrolley.innerText = itemQuantity;
+  }
+
+  updateNumberOfItemsInTrolley();
 }
