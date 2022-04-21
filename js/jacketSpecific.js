@@ -94,7 +94,7 @@ function createHTML(jacket) {
   starsLink.append(starsUl);
   for (let i = 0; i < 5; i++) {
     let starsLi = document.createElement("li");
-    starsLi.style.padding = "0.2rem";
+    starsLi.style.padding = "0.1rem";
     starsUl.append(starsLi);
     const stars = document.createElement("i");
     stars.classList.add("fas", "fa-star");

@@ -21,7 +21,6 @@ export const jacketList = [
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "000",
   }, */
-
   /*   {
     name: "Alaska",
     type: "Gore-Tex insulated jacket",
@@ -42,7 +41,6 @@ export const jacketList = [
     sizes: ["xs", "s", "m", "xl"],
     id: "001",
   }, */
-
   /*   {
     name: "Aukland",
     type: "Extra light rain jacket",
@@ -63,7 +61,6 @@ export const jacketList = [
     sizes: ["s", "m", "l", "xl"],
     id: "002",
   }, */
-
   /*   {
     name: "Baikal",
     type: "Extra light rain jacket",
@@ -84,7 +81,6 @@ export const jacketList = [
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "003",
   }, */
-
   /*   {
     name: "Chapala",
     type: "Extra lightweighted winter jacket",
@@ -106,7 +102,6 @@ export const jacketList = [
     sizes: ["xs", "s", "l", "xl"],
     id: "016",
   }, */
-
   /*   {
     name: "Daisen",
     type: "Parka",
@@ -129,8 +124,7 @@ export const jacketList = [
     sizes: ["xs", "s", "l", "xl"],
     id: "004",
   }, */
-
-  {
+  /*   {
     name: "Emei Shan",
     type: "Parka",
     stars: ["1", "2", "3", "4", "5"],
@@ -151,8 +145,7 @@ export const jacketList = [
     ],
     sizes: ["s", "m", "l", "xl"],
     id: "005",
-  },
-
+  }, */
   /*   {
     name: "Erie",
     type: "Extra lightweighted winter jacket",
@@ -174,7 +167,6 @@ export const jacketList = [
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "010",
   }, */
-
   /*  {
     name: "Everest",
     type: "Rain and windshield jacket",
@@ -197,7 +189,6 @@ export const jacketList = [
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "006",
   }, */
-
   /* {
     name: "Gaisberg",
     type: "Extra light rain jacket",
@@ -218,7 +209,6 @@ export const jacketList = [
     sizes: ["s", "m", "l", "xl"],
     id: "007",
   }, */
-
   /*   {
     name: "Helsinki",
     type: "Extra lightweighted winter jacket",
@@ -240,7 +230,6 @@ export const jacketList = [
     sizes: ["s", "m", "l", "xl"],
     id: "008",
   }, */
-
   /*   {
     name: "Himalaya",
     type: "Gore-Tex insulated jacket",
@@ -261,7 +250,6 @@ export const jacketList = [
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "009",
   }, */
-
   /*   {
     name: "Kauai",
     type: "Rain and wind shield jacket",
@@ -284,8 +272,7 @@ export const jacketList = [
     sizes: ["xs", "m", "xl"],
     id: "011",
   }, */
-
-  {
+  /*   {
     name: "Maui",
     type: "Insulated down coat",
     stars: ["1", "2", "3", "4", "5"],
@@ -306,8 +293,7 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "l", "xl"],
     id: "013",
-  },
-
+  }, */
   /*   {
     name: "Mendoza",
     type: "Rain coat",
@@ -322,8 +308,7 @@ export const jacketList = [
     sizes: ["xs", "m", "xl"],
     id: "014",
   }, */
-
-  {
+  /*   {
     name: "Noshaq",
     type: "Rain coat",
     stars: ["1", "2", "3", "4", "5"],
@@ -336,8 +321,7 @@ export const jacketList = [
     specs: ["Lightweight", "Wind resistant", "Water resistant zippers"],
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "015",
-  },
-
+  }, */
   /*   {
     name: "Rysy",
     type: "Gore-Tex insulated jacket",
@@ -358,8 +342,7 @@ export const jacketList = [
     sizes: ["xs", "s", "l", "xl"],
     id: "017",
   }, */
-
-  {
+  /*   {
     name: "Salcantay",
     type: "Extra lightweighted winter jacket",
     stars: ["1", "2", "3", "4", "5"],
@@ -379,9 +362,8 @@ export const jacketList = [
     ],
     sizes: ["s", "m", "l", "xl"],
     id: "018",
-  },
-
-  {
+  }, */
+  /*   {
     name: "Sandersee",
     type: "Rain coat",
     stars: ["1", "2", "3", "4", "5"],
@@ -394,8 +376,7 @@ export const jacketList = [
     specs: ["Lightweight", "Wind resistant", "Water resistant zippers"],
     sizes: ["xs", "m", "xl"],
     id: "012",
-  },
-
+  }, */
   /*   {
     name: "Shengena",
     type: "Insulated down coat",
@@ -418,8 +399,7 @@ export const jacketList = [
     sizes: ["xs", "s", "m", "l", "xl"],
     id: "019",
   }, */
-
-  {
+  /*   {
     name: "Tavan Bogd",
     type: "Insulated down coat",
     stars: ["1", "2", "3", "4", "5"],
@@ -440,8 +420,7 @@ export const jacketList = [
     ],
     sizes: ["xs", "s", "l", "xl"],
     id: "020",
-  },
-
+  }, */
   /*   {
     name: "Tutendo",
     type: "Rain coat",
@@ -456,7 +435,6 @@ export const jacketList = [
     sizes: ["xs", "m", "xl"],
     id: "021",
   }, */
-
   /*   {
     name: "Vancouver",
     type: "Parka",
