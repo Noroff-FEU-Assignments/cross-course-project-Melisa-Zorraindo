@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Payment" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainy Days | Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/payment.css" rel="stylesheet" />
+    <link href="/css/media.css" rel="stylesheet" />
+    <link rel="icon" href="/images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/9aef28119c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Hotjar Tracking Code for https://determined-chandrasekhar-92d414.netlify.app/index.html -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2856418, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="navigation-menu">
+        <a href="/index.html"
+          ><img
+            alt="Rainy days logo"
+            src="/images/RainyDays_Logo.png"
+            class="logo"
+        /></a>
+      </div>
+      <nav class="navigation-menu-links">
+        <ul class="links">
+          <li class="margin"><a href="/shop.html"> shop</a></li>
+          <li class="margin"><a href="/about.html"> about us</a></li>
+          <li class="margin"><a href="/contact.html">contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <nav class="second-navigation">
+        <ul>
+          <li>
+            <a class="loaded" href="/purchases/trolley.html"
+              ><i class="fas fa-shopping-basket"></i
+              ><span class="items-in-cart"></span>
+            </a>
+          </li>
+          <li>
+            <a href="/user.html" class="user"
+              ><i class="fas fa-user"></i>MarySmith83</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="breadcrumbs">
+        <a class="breadcrumbs-previous" href="../index.html">home</a>
+        <i class="fas fa-caret-right"></i>
+        <a class="breadcrumbs-previous" href="/shop.html">shop</a>
+        <i class="fas fa-caret-right"></i>
+        <p class="breadcrumbs-current">check out</p>
+      </div>
+
+      <form class="form-wrapper">
+        <h1>Payment</h1>
+        <fieldset>
+          <legend>Contact information</legend>
+          <div class="form-instructions">
+            Required fields are marked with a red asterisk
+          </div>
+          <label for="name">Full name<span>*</span> </label>
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Mary Smith"
+            id="name"
+            required
+            class="form__input"
+          />
+          <label for="email">Email<span>*</span></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="mary.smith83@mail.com"
+            required
+            class="form__input"
+          />
+          <label for="address">Address<span>*</span></label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="756 Riverlane Rd."
+            required
+            class="form__input"
+          />
+          <div class="form-wrapper-flex">
+            <div class="form-wrapper-small">
+              <label for="city">City<span>*</span></label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Far West"
+                required
+                class="form__input"
+              />
+            </div>
+            <div class="form-wrapper-small">
+              <label for="postcode">Post code<span>*</span></label>
+              <input
+                type="text"
+                name="postcode"
+                id="postcode"
+                placeholder="OR 97068"
+                required
+                class="form__input"
+              />
+            </div>
+          </div>
+          <label for="country">Country<span>*</span></label>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="USA"
+            required
+            class="form__input"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Payment information</legend>
+          <div class="form-instructions">
+            Required fields are marked with a red asterisk
+          </div>
+          <label for="cardholder-name">Cardholder's name<span>*</span></label>
+          <input
+            type="text"
+            name="cardholder-name"
+            id="cardholder-name"
+            placeholder="Mary Smith"
+            required
+            class="form__input"
+          />
+          <label for="card-number">Card number<span>*</span></label>
+          <input
+            type="text"
+            name="card-number"
+            id="card-number"
+            required
+            placeholder="XXXX XXXX XXXX XXXX"
+            pattern="^[0-9]{16,19}$"
+            required
+            minlength="16"
+            maxlength="19"
+            class="form__input"
+          />
+          <div class="form-wrapper-flex">
+            <div class="form-wrapper-small">
+              <label for="expiry-date">Expiry date<span>*</span></label>
+              <input
+                type="text"
+                name="expiry-date"
+                id="expiry-date"
+                placeholder="mm / yyyy"
+                class="form__input"
+                required
+                pattern="^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$"
+                maxlength="9"
+              />
+            </div>
+            <div class="form-wrapper-small">
+              <label for="cvv">CVV<span>*</span></label>
+              <input
+                type="password"
+                name="cvv"
+                id="cvv"
+                placeholder="123"
+                class="form__input"
+                pattern="^[0-9]{3,4}$"
+                required
+                minlength="3"
+                maxlength="4"
+              />
+            </div>
+          </div>
+        </fieldset>
+        <div class="cta-checkout">
+          <button class="cta">Check out</button>
+        </div>
+      </form>
+      <div class="popup-box hidden">
+        <button class="close-modal">&times;</button>
+        <p class="feedback-form">Thank you for your purchase</p>
+        <p>
+          We've sent you an email with an order confirmation and details of your
+          order. If you don't find it, please check your spam folder.
+        </p>
+        <p>Your order # is: 45225</p>
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+    <nav class="navbar-mobile-bottom">
+      <ul>
+        <li>
+          <a href="/index.html"> <i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="/shop.html"> <i class="fab fa-shopify"></i>Shop</a>
+        </li>
+        <li>
+          <a href="/about.html"> <i class="fas fa-info-circle"></i>About us</a>
+        </li>
+        <li>
+          <a href="/contact.html">
+            <i class="fas fa-comment-alt"></i>Contact us</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <footer>
+      <div class="footer-info contact">
+        <p><a href="/contact.html">contact us</a></p>
+        <address>
+          <ul>
+            <li>
+              <a href="mailto:info@rainydays.com">
+                <i class="fas fa-envelope"></i>info@rainydays.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:0125688896">
+                <i class="fas fa-phone-alt"></i>+01 256 88 896</a
+              >
+            </li>
+            <li>
+              <a href="/contact.html">
+                <i class="fas fa-map-marker-alt"></i>Find a store</a
+              >
+            </li>
+          </ul>
+        </address>
+        <p><a href="/contact.html#faq">faq</a></p>
+      </div>
+      <div class="footer-info">
+        <p class="about-footer"><a href="/about.html">about us</a></p>
+      </div>
+      <div class="footer-info">
+        <p class="social-media">social media</p>
+        <div>
+          <ul class="social-media-icons">
+            <li>
+              <a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/">
+                <i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/">
+                <i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/">
+                <i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/payment.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.shop-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+.shop-card {
+  flex-basis: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-card h2 {
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 1rem 0;
+  margin: 0;
+  text-align: center;
+}
+
+.shop-card a {
+  margin-bottom: 1rem;
+}
+
+.shop-collection,
+.shop-women,
+.shop-men {
+  background-image: url(/images/homepage/main-picture.jpg);
+  background-position: left center;
+  background-size: cover;
+}
+
+.shop-women {
+  background-image: url(/images/homepage/women-jackets.jpg);
+}
+
+.shop-men {
+  background-image: url(/images/homepage/men-jackets.jpg);
+  background-position: right center;
+}

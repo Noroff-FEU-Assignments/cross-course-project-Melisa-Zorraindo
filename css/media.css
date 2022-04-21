@@ -1,0 +1,371 @@
+@media only screen and (min-width: 487px) {
+  /* --------------- Pop-up box --------------- */
+
+  .popup-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  /* --------------- Product specific page --------------- */
+
+  .product-info {
+    flex-direction: row;
+  }
+
+  /* --------------- Payment --------------- */
+
+  .form-wrapper {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 727px) {
+  /* --------------- Header, Footer & Body --------------- */
+  header {
+    display: none;
+  }
+
+  .main {
+    background-image: url(../images/homepage/main-picture.jpg);
+    background-position: left;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--primary-colour);
+  }
+
+  footer ul {
+    display: block;
+  }
+
+  footer p {
+    color: var(--secondary-colour);
+    margin: 1rem;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+  }
+
+  .footer-info a,
+  .footer-info p {
+    color: var(--secondary-colour);
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  .footer-info li {
+    list-style-type: none;
+    padding: 0px 15px;
+  }
+
+  .footer-info address {
+    font-size: 1rem;
+  }
+
+  .contact {
+    text-align: left;
+  }
+
+  .contact i {
+    padding-right: 15px;
+  }
+
+  .about-footer {
+    text-align: center;
+  }
+
+  .social-media {
+    margin-right: 1rem;
+    text-align: right;
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .social-media-icons {
+    display: inline-flex;
+    justify-content: flex-end;
+    min-width: 100%;
+  }
+
+  .social-media-icons li {
+    padding: 0px 15px;
+  }
+
+  /* --------------- Navbars mobile & desktop --------------- */
+
+  .search-container {
+    display: inline-flex;
+    align-items: center;
+    height: 2rem;
+    padding: 0 1rem;
+    border: 1px solid grey;
+    border-radius: 2rem;
+  }
+
+  .search-container input {
+    border: none;
+  }
+
+  .navbar-mobile-bottom {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation-menu-links {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    align-items: center;
+  }
+
+  .navigation-menu-links a {
+    text-decoration: none;
+    padding: 5px;
+  }
+
+  .navigation-menu-links a:hover {
+    text-decoration: underline;
+  }
+
+  .logo {
+    margin-top: 1rem;
+    width: 150px;
+    padding-left: 50px;
+  }
+
+  /* --------------- Home page --------------- */
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main,
+  .about {
+    width: 100%;
+  }
+
+  .women,
+  .men {
+    width: 50%;
+    background-position: center;
+  }
+
+  .womens-collection-intro,
+  .mens-collection-intro {
+    top: 25%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* --------------- Shop --------------- */
+
+  .shop-container {
+    margin-bottom: 2rem;
+  }
+
+  /* --------------- Sections' jackets --------------- */
+
+  .items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .items-wrapper h1 {
+    grid-column: 1 / -1;
+  }
+
+  .items {
+    max-width: 75%;
+  }
+
+  /* --------------- Product specific page --------------- */
+
+  .jacket-info {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .item-description {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .call-to-action-div {
+    text-align: left;
+  }
+
+  .call-to-action-div-one {
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto;
+  }
+
+  /* --------------- Trolley --------------- */
+
+  .basket-div {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .purchase-items {
+    margin: 1rem 1rem 2.5rem;
+    flex: 0 0 80%;
+  }
+
+  .summary-wrapper {
+    margin: 1rem 1rem 2.5rem;
+    flex: 0 0 auto;
+    position: sticky;
+    top: 3rem;
+    height: fit-content;
+  }
+
+  /* --------------- Contact --------------- */
+
+  .contact-form {
+    max-width: 600px;
+  }
+
+  .store-search {
+    display: flex;
+  }
+
+  .store-search-info {
+    margin-left: 20px;
+  }
+
+  /* --------------- About --------------- */
+
+  .flex-div {
+    flex-direction: row;
+    margin-left: 1rem;
+  }
+
+  .flex-div-two {
+    flex-direction: row-reverse;
+  }
+
+  .image {
+    max-height: 300px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 728px) and (max-width: 949px) {
+  /* --------------- Shop --------------- */
+
+  .shop-container {
+    justify-content: center;
+  }
+
+  .shop-card {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  /* --------------- Trolley --------------- */
+
+  .basket-div {
+    justify-content: space-between;
+  }
+
+  .summary-wrapper {
+    flex: 0 0 55%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  /* --------------- Home page --------------- */
+
+  .main,
+  .about {
+    /* min-height: 1000px; */
+    align-items: flex-end;
+  }
+
+  .homepage-intro-text {
+    max-width: 60%;
+    text-align: left;
+  }
+
+  .homepage-intro-text h1,
+  .homepage-intro-text h2 {
+    text-align: left;
+  }
+
+  .homepage-intro-text p {
+    text-align: left;
+  }
+
+  .women,
+  .men {
+    min-height: 500px;
+  }
+
+  .women {
+    align-items: flex-start;
+  }
+
+  .men {
+    align-items: flex-end;
+  }
+
+  .womens-collection-intro {
+    text-align: right;
+    max-width: 75%;
+  }
+
+  .womens-collection-intro h2,
+  .womens-collection-intro p {
+    text-align: right;
+  }
+
+  .mens-collection-intro {
+    max-width: 75%;
+  }
+
+  .items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --------------- Shop --------------- */
+
+  .shop-card {
+    flex-basis: 30%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  /* --------------- About --------------- */
+
+  .flex-div-three {
+    flex-direction: row;
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  /* --------------- Contact --------------- */
+
+  .search-box,
+  .map-wrapper {
+    min-width: 650px;
+  }
+
+  /* --------------- About --------------- */
+
+  .flex-div-three {
+    flex-direction: row;
+  }
+}

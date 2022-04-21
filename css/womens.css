@@ -1,0 +1,84 @@
+.items {
+  margin: 1rem 1rem 2.5rem;
+  display: flex;
+  max-width: fit-content;
+  border: 1px solid gray;
+  padding: 1rem;
+  box-shadow: -3px 3px 6px gray;
+}
+
+.items i {
+  font-size: 1.375rem;
+}
+
+.jacket-image {
+  width: 110px;
+  max-height: 150px;
+}
+
+.jacket-info {
+  width: 200px;
+  margin-left: 1rem;
+}
+
+.jacket-info h2 {
+  margin: 0;
+}
+
+.jacket-info a {
+  text-decoration: none;
+  color: var(--secondary-colour);
+  font-weight: 500;
+}
+
+.jacket-info div:first-of-type {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.jacket-info div:nth-of-type(2) {
+  font-weight: var(--bold);
+  margin-bottom: 0.5rem;
+}
+
+.jacket-info div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jacket-info div:last-of-type .cta-small {
+  color: var(--white);
+}
+
+.jacket-info div:last-of-type i {
+  cursor: pointer;
+  color: red;
+}
+
+/*.jacket-name {
+  text-transform: uppercase;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--dark-blue);
+}*/
+
+/*.jacket-description {
+  margin: 0px 10px;
+}
+
+.jacket-price {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0px;
+}*/
+
+/*.fa-heart:hover {
+  color: var(--orange);
+  cursor: pointer;
+}*/
+
+@media only screen and (min-width: 1280px) {
+  main {
+    margin-left: 50px;
+  }
+}

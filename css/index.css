@@ -1,0 +1,117 @@
+main {
+  color: var(--white);
+  margin-bottom: 0px;
+}
+
+body {
+  text-align: center;
+}
+
+.backdrop-filter {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  /*position: relative;
+  z-index: 9;*/
+}
+
+.content h1,
+.content h2 {
+  font-size: var(--headings-h1);
+  font-weight: 600;
+  color: var(--white);
+  text-align: center;
+  margin: 1rem;
+}
+
+/*.content h1,
+.content h2 {
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+.content p {
+  margin-top: 0px;
+  padding-bottom: 10px;
+}*/
+
+.main,
+.women,
+.men,
+.about {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  background-image: url(../images/homepage/main-picture-mobile.jpg);
+  min-height: 700px;
+  /*background-size: cover;*/
+  background-position: right;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  /*position: relative;*/
+}
+
+/*.homepage-intro-text {
+  position: absolute;
+  top: 50%;
+}*/
+
+/*.homepage-intro-text p {
+  margin-bottom: 15px;
+}*/
+/*.womens-collection-intro {
+  top: 25%;
+}
+
+.mens-collection-intro {
+  top: 75%;
+}*/
+
+.women {
+  background-image: url(../images/homepage/women-jackets.jpg);
+  min-height: 400px;
+  background-position: left;
+  /*background-size: cover;/*
+  /*display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;*/
+}
+
+.men {
+  background-image: url(../images/homepage/men-jackets.jpg);
+  background-position: right;
+  min-height: 400px;
+  /*background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;*/
+}
+
+/*.women,
+.men {
+  min-height: 350px;
+  background-size: cover;
+}*/
+
+.about {
+  background-image: url(../images/homepage/about-us.jpg);
+  min-height: 700px;
+  background-position: center;
+  /*background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+}

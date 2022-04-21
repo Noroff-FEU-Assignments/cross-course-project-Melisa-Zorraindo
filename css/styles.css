@@ -1,0 +1,269 @@
+/* --------------- Document level adjustments --------------- */
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  font-family: "Dosis", sans-serif;
+}
+:root {
+  /* --------------- Colour palette --------------- */
+  --primary-colour: #265591;
+  --secondary-colour: #1e1e1e;
+  --terciary-colour: #037327;
+  --white: #fff;
+
+  /* --------------- Font sizes --------------- */
+  --headings-h1: 1.625rem;
+  --headings-h2: 1.375rem;
+  --headings-h3: 1.125rem;
+  --headings-h4: 1.125rem;
+  --copy: 1rem;
+  --cta-font: "Dosis", sans-serif;
+  --cta-size: 1.25rem;
+  --cta-small: 1rem;
+  --bold: 600;
+}
+
+/* --------------- Header & Logo --------------- */
+
+header {
+  background-color: var(--white);
+  /*border-bottom: 2px solid #26559180;*/
+  /*position: fixed;*/
+  /* width: 100%; */
+  /* z-index: 10; header disappears from homepage when the z-index is removed */
+  text-align: center;
+}
+
+nav ul li a {
+  color: var(--secondary-colour);
+}
+
+.logo {
+  width: 120px;
+  margin: 5px;
+}
+
+/* --------------- Headings, body, and paragraphs --------------- */
+
+h1,
+h2 {
+  text-align: left;
+  font-size: var(--headings-h1);
+  /*margin: 5px 10px;*/
+  font-weight: var(--bold);
+  color: var(--secondary-colour);
+  margin: 2.5rem 1rem;
+}
+
+h2 {
+  font-size: var(--headings-h2);
+}
+
+h3 {
+  font-size: var(--headings-h3);
+}
+
+h4 {
+  font-size: var(--headings-h4);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0px;
+  font-size: var(--copy);
+  text-align: left;
+  color: var(--secondary-colour);
+  max-width: 1100px;
+  margin: auto;
+}
+
+main {
+  margin-bottom: 4.688rem;
+}
+
+p {
+  margin: 0 1rem 1.5rem;
+  line-height: 1.5rem;
+}
+
+address {
+  font-style: normal;
+}
+/* --------------- Breadcrumbs --------------- */
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs a,
+.breadcrumbs i,
+.breadcrumbs p {
+  padding: 5px;
+  margin-left: 0;
+  color: var(--secondary-colour); /*white for shop page if not here*/
+}
+
+.breadcrumbs p {
+  margin: 0;
+}
+
+.breadcrumbs-previous {
+  color: var(--secondary-colour);
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: var(--secondary-colour); /*white for shop page if not here*/
+  font-weight: var(--bold);
+}
+/* --------------- Links in text --------------- */
+
+p a {
+  color: var(--primary-colour);
+  text-decoration: underline;
+  font-weight: var(--bold);
+}
+
+/* --------------- Buttons --------------- */
+
+.cta {
+  background-color: var(--primary-colour);
+  box-shadow: 0 0 1rem var(--white);
+  padding: 5px 35px;
+  border-radius: 50px;
+  color: var(--white);
+  font-family: var(--cta-font);
+  font-size: var(--cta-size);
+  font-weight: var(--bold);
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.cta:hover {
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.cta-small {
+  box-shadow: none;
+  padding: 5px 20px;
+  font-size: var(--cta-small);
+}
+
+/* --------------- Navbar Global --------------- */
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  text-align: center;
+}
+
+/* --------------- Second navigation --------------- */
+
+.second-navigation ul {
+  width: 100%;
+  justify-content: flex-end;
+  border-top: 1px solid #26559180;
+  border-bottom: 1px solid #26559180;
+}
+
+.second-navigation li a,
+.second-navigation li div {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: left;
+}
+
+.second-navigation a.loaded {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  width: 1.5rem;
+  position: relative;
+}
+
+.second-navigation a span {
+  position: absolute;
+  width: 1rem;
+  left: 70%;
+  bottom: 75%;
+  background-color: var(--primary-colour);
+  color: white;
+  text-align: center;
+  border-radius: 0.4rem;
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+
+.user {
+  font-size: 0.85rem;
+}
+
+.fa-user {
+  font-size: 1rem;
+}
+
+/* --------------- Navbar mobile bottom --------------- */
+
+.navbar-mobile-bottom {
+  position: fixed;
+  min-width: 100%;
+  bottom: 0;
+  z-index: 10; /*navigation bar at the bottom disappears from homepage when z-index removed*/
+  /*border-top: 1px solid var(--primary-colour);*/
+}
+
+.navbar-mobile-bottom ul {
+  background-color: var(--white);
+}
+
+.navbar-mobile-bottom a {
+  color: var(--secondary-colour);
+  text-decoration: none;
+  display: block;
+}
+
+a.active {
+  color: var(--primary-colour);
+  font-weight: var(--bold);
+}
+
+.navbar-mobile-bottom i {
+  display: block;
+}
+
+/* --------------- Navbar desktop --------------- */
+
+.navigation-menu-links {
+  display: none;
+}
+
+.active {
+  font-weight: var(--bold);
+}
+
+/* --------------- Footer --------------- */
+
+footer {
+  display: none;
+  position: sticky;
+  top: 100%;
+}
+
+.footer-info li {
+  text-align: left;
+}
