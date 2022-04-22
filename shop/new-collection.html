@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link href="/css/styles.css" rel="stylesheet" />
-    <link href="/css/womens.css" rel="stylesheet" />
+    <link href="/css/listOfJackets.css" rel="stylesheet" />
     <link href="/css/media.css" rel="stylesheet" />
     <link rel="icon" href="/images/favicon.png" />
     <script
@@ -77,6 +77,106 @@
         <a class="breadcrumbs-previous" href="../shop.html">shop</a>
         <i class="fas fa-caret-right"></i>
         <p class="breadcrumbs-current">new collection</p>
+      </div>
+      <h1></h1>
+      <div class="filter-elements"><i class="fas fa-sliders-h"></i> Filter</div>
+      <div class="filter-overlay">
+        <div class="filter-category">
+          <fieldset>
+            <legend>Jacket type</legend>
+            <div>
+              <input
+                type="checkbox"
+                id="jacket"
+                name="jacket-type"
+                value="jacket"
+              />
+              <label for="jacket">Jacket</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="down-coat"
+                name="jacket-type"
+                value="down-coat"
+              />
+              <label for="insulated-down-coat">Down coat</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="parka"
+                name="jacket-type"
+                value="parka"
+              />
+              <label for="parka">Parka</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="raincoat"
+                name="jacket-type"
+                value="raincoat"
+              />
+              <label for="raincoat">Raincoat</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="filter-category">
+          <fieldset>
+            <legend>Sports</legend>
+            <div>
+              <input
+                type="checkbox"
+                id="climbing"
+                name="sports"
+                value="climbing"
+              />
+              <label for="climbing">Climbing</label>
+            </div>
+            <div>
+              <input type="checkbox" id="water" name="sports" value="water" />
+              <label for="water">Water sports</label>
+            </div>
+            <div>
+              <input type="checkbox" id="winter" name="sports" value="winter" />
+              <label for="winter">Winter sports</label>
+            </div>
+            <div>
+              <input type="checkbox" id="hiking" name="sports" value="hiking" />
+              <label for="hiking">Hiking - Trekking</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="filter-category">
+          <fieldset>
+            <legend>Colours</legend>
+            <div>
+              <input type="checkbox" id="black" name="colour" value="black" />
+              <label for="black">Black</label>
+            </div>
+            <div>
+              <input type="checkbox" id="blue" name="colour" value="blue" />
+              <label for="blue">Blue</label>
+            </div>
+            <div>
+              <input type="checkbox" id="green" name="colour" value="green" />
+              <label for="green">Green</label>
+            </div>
+            <div>
+              <input type="checkbox" id="red" name="colour" value="red" />
+              <label for="red">Red</label>
+            </div>
+            <div>
+              <input type="checkbox" id="yellow" name="colour" value="yellow" />
+              <label for="yellow">Yellow</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="cta-container">
+          <button class="cta cta-filters">Apply</button>
+        </div>
       </div>
       <div class="items-wrapper"></div>
     </main>
@@ -150,7 +250,6 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="/js/jackets.js" type="module"></script> -->
     <script src="/js/listOfJackets.js" type="module"></script>
   </body>
 </html>

@@ -10,8 +10,50 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const page = params.get("page");
 
-//select element in the dom
+//select elements in the dom
 let divContainer = document.querySelector(".items-wrapper");
+const headingH1 = document.querySelector("h1");
+
+//set appropriate heading
+if (page === "womens") {
+  headingH1.innerHTML = "Our most fashionable designs for women";
+} else if (page === "mens") {
+  headingH1.innerHTML = "Our most comfortable designs for men";
+} else {
+  headingH1.innerHTML = "Our latest and most modern designs";
+}
+
+//select filter elements in the dom
+const filterElements = document.querySelector(".filter-elements");
+const filterOverlay = document.querySelector(".filter-overlay");
+const applyFiltersButton = document.querySelector(".cta-filters");
+//checkboxes
+const sportsCheckboxes = document.querySelectorAll("[name='sports']");
+
+let chosenSports = [];
+for (let i = 0; i < sportsCheckboxes.length; i++) {
+  sportsCheckboxes[i].addEventListener("change", function () {
+    if (chosenSports.includes(sportsCheckboxes[i].value)) {
+      chosenSports.splice(i, 1);
+    } else {
+      chosenSports.push(sportsCheckboxes[i].value);
+    }
+    console.log(i, chosenSports);
+  });
+}
+
+//filter functionality
+function openFilterOverlay() {
+  filterOverlay.classList.add("filter-overlay-active");
+}
+
+function applyFilters() {
+  filterOverlay.classList.remove("filter-overlay-active");
+}
+// climbingCheckbox.addEventListener("change", applyFilters);
+
+filterElements.addEventListener("click", openFilterOverlay);
+applyFiltersButton.addEventListener("click", applyFilters);
 
 //set api variable
 const url =
@@ -31,15 +73,6 @@ async function fetchJackets() {
 fetchJackets();
 
 function createHTML(data) {
-  //set appropriate heading
-  if (page === "womens") {
-    divContainer.innerHTML = `<h1>Our most fashionable designs for women</h1>`;
-  } else if (page === "mens") {
-    divContainer.innerHTML = `<h1>Our most comfortable designs for men</h1>`;
-  } else {
-    divContainer.innerHTML = `<h1>Our latest and most modern designs</h1>`;
-  }
-
   data.forEach((jacket) => {
     //check if item is already stored
     const isJacketStored = favs.find((fav) => {
