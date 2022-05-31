@@ -38,7 +38,7 @@ Design and development of an e-commerce site for an online sports jacket retaile
 
 ![photoshop](https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black)
 
-## Contact me
+## Contact
 
 [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/melisa-zorraindo-81719618b/)
 
