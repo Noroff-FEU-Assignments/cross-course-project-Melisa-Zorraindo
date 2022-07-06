@@ -1,0 +1,152 @@
+.product-specific-h-one {
+  margin-bottom: 0px;
+}
+.product-specific-h-two {
+  margin: 0px 10px;
+}
+.jacket-image {
+  max-width: 200px;
+  border: var(--dark-blue);
+  border-style: solid;
+  align-items: left;
+}
+
+.product-image {
+  text-align: center;
+}
+
+.jacket-price {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.links-in-text {
+  text-transform: capitalize;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+
+.fa-star {
+  color: var(--green);
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.colours h2,
+.sizes h2,
+.sizes {
+  text-align: center;
+}
+#popup {
+  max-width: 340px;
+  border: solid var(--dark-blue);
+  line-height: 40px;
+  text-align: center;
+}
+#popup h2 {
+  text-align: center;
+}
+
+.cta .popup {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.modal-popup {
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.modal-popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.payment-wrapper {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.currency {
+  text-transform: uppercase;
+}
+.estimated-shipping {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.total {
+  font-weight: 700;
+}
+
+hr {
+  max-width: 250px;
+  margin: 10px;
+}
+.colour-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+.colour-box {
+  display: flex;
+  font-size: 1.2rem;
+  margin: 3px;
+}
+
+.orange {
+  color: #fea037;
+}
+
+.fuchsia {
+  color: #cd318f;
+}
+
+.black {
+  color: #343434;
+}
+
+.green {
+  color: #346f56;
+}
+
+.red {
+  color: #d00008;
+}
+
+.yellow {
+  color: #cdab3d;
+}
+
+.size-choices {
+  display: flex;
+}
+
+.size-choices p {
+  background-color: transparent;
+  color: var(--dark-blue);
+  padding: 10px;
+  border-radius: 999px;
+  border: var(--dark-blue);
+  border-style: solid;
+  margin-bottom: 5px;
+}
+.cta-container,
+.add-wishlist {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.add-wishlist {
+  display: block ruby;
+  font-size: 1.2rem;
+}
+
+.user-reviews {
+  display: block ruby;
+}
+
+.user-reviews h3 {
+  margin-bottom: 0px;
+}
